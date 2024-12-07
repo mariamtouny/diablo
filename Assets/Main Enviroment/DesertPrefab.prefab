@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 072b2e0e2264a4d4d8e641ac12b23aca, type: 3}
       propertyPath: m_Name
-      value: DesertPRefab
+      value: DesertPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 2892590616414137093, guid: 072b2e0e2264a4d4d8e641ac12b23aca, type: 3}
       propertyPath: m_LocalPosition.x
