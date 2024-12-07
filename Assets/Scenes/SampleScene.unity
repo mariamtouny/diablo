@@ -337,23 +337,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57724cb1e115aa5499af2646a50dcc35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  environmentPrefab: {fileID: 8947070697315137037, guid: 795d9dd0162d19347ae239d30385736b, type: 3}
+  environmentPrefab: {fileID: 4868831985710757494, guid: 6eb5d87aa16d8924dab970ecd7066a96, type: 3}
   playerPrefab: {fileID: 8984351863353196830, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
   minionPrefab: {fileID: 9022760808206912335, guid: 53885a6fa81036e4f8ee908cc2e05672, type: 3}
   demonPrefab: {fileID: 1911471956790176740, guid: d056b3a5d919674439f9266559577edf, type: 3}
   potionPrefab: {fileID: 1000013317980782, guid: 2cf6690298568294cb6b655c0a3aeb87, type: 3}
   runeFragmentPrefab: {fileID: 1000012006197310, guid: 465c505844950da499dcf096a6da4409, type: 3}
   bossAreaPrefab: {fileID: 7575039803939618586, guid: 5cbcb2f654c331040b9513f1e44f94c5, type: 3}
-  minCamps: 3
-  maxCamps: 5
-  environmentSize: {x: 100, y: 100}
-  bossSpawnArea: {x: 30, y: 30}
-  totalMinions: 40
-  totalDemons: 10
-  minEnemiesPerCamp: 5
-  maxEnemiesPerCamp: 15
-  environmentParent: {fileID: 8602352243849964727, guid: 795d9dd0162d19347ae239d30385736b, type: 3}
-  requiredRuneFragments: 3
+  campShadowPrefab: {fileID: 7599187673360486295, guid: 9eed658fc16391347b6c9f66551ac715, type: 3}
+  environmentSize: {x: 1, y: 1}
+  bossSpawnArea: {x: 10, y: 10}
+  numberOfCamps: 4
+  campSpacing: 5
+  minDistanceFromPlayer: 5
+  campSize: {x: 5, y: 1, z: 5}
+  bossPotions: 5
+  environmentParent: {fileID: 5249579000244284620, guid: 6eb5d87aa16d8924dab970ecd7066a96, type: 3}
 --- !u!4 &1939441650
 Transform:
   m_ObjectHideFlags: 0
