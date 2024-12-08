@@ -6,16 +6,17 @@ using UnityEngine;
 public class PlayerLeveling : MonoBehaviour
 {
     public List<ability> abilities;
+    public List<ability> abilities;
     public int currentHealth;
     public int maxHealth = 100;
     public int healingPotions = 0;
-    private int maxHealingPotions = 3;
+    public int maxHealingPotions = 3;
 
     public int currentXP = 0;
     public int currentLevel = 1;
-    private int maxLevel = 4;
-    private int xpToNextLevel;
-    private int abilityPoints = 0;
+    public int maxLevel = 4;
+    public int xpToNextLevel;
+    public int abilityPoints = 0;
 
     public void Start()
     {
@@ -26,7 +27,7 @@ public class PlayerLeveling : MonoBehaviour
     public void Update()
     {
 
-        if (currentHealth <= 0)
+        if(currentHealth <= 0)
         {
             currentHealth = 0;
             Die();
@@ -50,9 +51,19 @@ public class PlayerLeveling : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
+            Debug.Log("XP Gained");
             GainXP(100);
         }
-        UpdateCooldowns();
+        if(Input.GetKeyDown(KeyCode.U))
+        {
+            Debug.Log("Ability Unlocked");
+            abilityPoints = 4;
+            UnlockAbility(0);
+            UnlockAbility(1);
+            UnlockAbility(2);
+            UnlockAbility(3);
+        }
+        //UpdateCooldowns();
     }
 
     private void UseHealingPotion()
@@ -111,17 +122,17 @@ public class PlayerLeveling : MonoBehaviour
         }
     }
 
-    public void UpdateCooldowns()
-    {
-        foreach (var ability in abilities)
-        {
-            if (ability.coolDownTimer > 0)
-            {
-                ability.coolDownTimer -= Mathf.CeilToInt(Time.deltaTime);
-                if (ability.coolDownTimer < 0) ability.coolDownTimer = 0;
-            }
-        }
-    }
+    //public void UpdateCooldowns()
+    //{
+    //    foreach (var ability in abilities)
+    //    {
+    //        if (ability.coolDownTimer > 0)
+    //        {
+    //            ability.coolDownTimer -= Mathf.CeilToInt(Time.deltaTime);
+    //            if (ability.coolDownTimer < 0) ability.coolDownTimer = 0;
+    //        }
+    //    }
+    //}
 
 
     public virtual void TakeDamage(int damage)

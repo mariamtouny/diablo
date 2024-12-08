@@ -8,6 +8,7 @@ public class Barbarian : PlayerLeveling
     private bool shieldActive = false;
     private Renderer renderer;
     Animator animator;
+    PlayerLeveling playerLeveling;
 
     private void Awake()
     {
@@ -28,11 +29,10 @@ public class Barbarian : PlayerLeveling
         base.Start();
         animator = GetComponent<Animator>();
         renderer = GetComponent<Renderer>();
-
     }
 
     public void UseAbility(string abilityName)
-    {
+        {
         var ability = abilities.Find(a => a.abilityName == abilityName && a.unlocked);
         if (ability == null)
         {
@@ -40,7 +40,7 @@ public class Barbarian : PlayerLeveling
             return;
         }
 
-        if (Time.time < lastAbilityUsedTime + ability.abilityCooldown)
+        if (ability.IsOnCoolDown())
         {
             Debug.Log($"{abilityName} is on cooldown!");
             return;
@@ -74,11 +74,11 @@ public class Barbarian : PlayerLeveling
         if (Input.GetKeyDown(KeyCode.S))
         {
             PerformShield();
-        }
+        } 
     }
     private void PerformBash()
     {
-        if (abilities[0].unlocked == true && !abilities[0].IsOnCoolDown())
+        if(abilities[0].unlocked == true && !abilities[0].IsOnCoolDown())
         {
             //perform bash  
             Debug.Log("Barbarian performs Bash!");
@@ -89,6 +89,8 @@ public class Barbarian : PlayerLeveling
 
     private void PerformShield()
     {
+        //Debug.Log("Shield cooldown: " + abilities[1].coolDownTimer);
+        Debug.Log(abilities[1].unlocked);
         if (abilities[1].unlocked == true && !abilities[1].IsOnCoolDown())
         {
             Debug.Log("Barbarian raises Shield!");
@@ -102,7 +104,7 @@ public class Barbarian : PlayerLeveling
     {
         // Example shield active time logic
         Debug.Log("Shield active!");
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         shieldActive = false;
         Debug.Log("Shield expired!");
     }
@@ -135,5 +137,5 @@ public class Barbarian : PlayerLeveling
             return;
         }
         base.TakeDamage(damage);
-    }
+    }   
 }

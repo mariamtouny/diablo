@@ -20,19 +20,8 @@ public class ability : MonoBehaviour
     public int abilityCooldown;
     public AbilityType abilityType;
     public Activation activation;
-    public bool unlocked;
+    public bool unlocked = false;
     public int coolDownTimer = 0;
-
-    //public ability(string name, AbilityType type, Activation act, int damage, int cooldown)
-    //{
-    //    this.abilityName = name;
-    //    this.abilityDamage = damage;
-    //    this.abilityCooldown = cooldown;
-    //    this.abilityType = type;
-    //    this.activation = act;
-    //    this.unlocked = false;
-    //}
-
     public bool IsOnCoolDown()
     {
         return coolDownTimer > 0;
@@ -42,7 +31,7 @@ public class ability : MonoBehaviour
     {
         if (coolDownTimer > 0)
         {
-            coolDownTimer -= Mathf.CeilToInt(Time.deltaTime);
+            coolDownTimer -= Mathf.FloorToInt(Time.deltaTime);
             if (coolDownTimer < 0) coolDownTimer = 0;
         }
     }
