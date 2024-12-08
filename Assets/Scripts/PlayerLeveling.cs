@@ -5,67 +5,25 @@ using UnityEngine;
 
 public class PlayerLeveling : MonoBehaviour
 {
-    public enum CharacterClass
-    {
-        Barbarian,
-        Sorcerer,
-        Rogue
-    }
+    public List<ability> abilities;
     public int currentHealth;
     public int maxHealth = 100;
     public int healingPotions = 0;
-    private int maxHealingPotions = 3;
+    public int maxHealingPotions = 3;
 
     public int currentXP = 0;
     public int currentLevel = 1;
-    private int maxLevel = 4;
-    private int xpToNextLevel;
-    private int abilityPoints = 0;
+    public int maxLevel = 4;
+    public int xpToNextLevel;
+    public int abilityPoints = 0;
 
-    public List<ability> abilities;
-    public CharacterClass characterClass;
-
-
-
-    void Start()
+    public void Start()
     {
         currentHealth = maxHealth;
         xpToNextLevel = 100 * currentLevel;
-        //set character class
-        InitializeAbilities();
     }
 
-    private void InitializeAbilities()
-    {
-        abilities = new List<ability>();
-        switch (characterClass)
-        {
-            case CharacterClass.Barbarian:
-                abilities.Add(new ability("Bash", ability.AbilityType.Basic, ability.Activation.SelectEnemy, 5, 1));
-                abilities.Add(new ability("Shield Wall", ability.AbilityType.Defensive, ability.Activation.Instant, 0, 10));
-                abilities.Add(new ability("Battle Roar", ability.AbilityType.WildCard, ability.Activation.Instant, 10, 5));
-                abilities.Add(new ability("Charge", ability.AbilityType.Ultimate, ability.Activation.SelectPosition, 20, 10));
-                break;
-
-            case CharacterClass.Sorcerer:
-                abilities.Add(new ability("Fireball", ability.AbilityType.Basic, ability.Activation.SelectEnemy, 10, 2));
-                abilities.Add(new ability("Arcane Shield", ability.AbilityType.Defensive, ability.Activation.Instant, 0, 15));
-                abilities.Add(new ability("Teleport", ability.AbilityType.WildCard, ability.Activation.SelectPosition, 0, 8));
-                abilities.Add(new ability("Meteor Strike", ability.AbilityType.Ultimate, ability.Activation.SelectPosition, 50, 20));
-                break;
-
-            case CharacterClass.Rogue:
-                abilities.Add(new ability("Arrow Shot", ability.AbilityType.Basic, ability.Activation.SelectEnemy, 7, 1));
-                abilities.Add(new ability("Evasion", ability.AbilityType.Defensive, ability.Activation.Instant, 0, 10));
-                abilities.Add(new ability("Explosive Arrow", ability.AbilityType.WildCard, ability.Activation.SelectEnemy, 15, 6));
-                abilities.Add(new ability("Rain of Arrows", ability.AbilityType.Ultimate, ability.Activation.SelectPosition, 25, 15));
-                break;
-        }
-
-        // Unlock the basic ability
-        abilities[0].unlocked = true;
-    }
-    void Update()
+    public void Update()
     {
 
         if(currentHealth <= 0)
@@ -92,8 +50,19 @@ public class PlayerLeveling : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
+            Debug.Log("XP Gained");
             GainXP(100);
         }
+        if(Input.GetKeyDown(KeyCode.U))
+        {
+            Debug.Log("Ability Unlocked");
+            abilityPoints = 4;
+            UnlockAbility(0);
+            UnlockAbility(1);
+            UnlockAbility(2);
+            UnlockAbility(3);
+        }
+        //UpdateCooldowns();
     }
 
     private void UseHealingPotion()
@@ -141,4 +110,38 @@ public class PlayerLeveling : MonoBehaviour
     {
        //gameOver
     }
+
+    public void UnlockAbility(int abilityIndex)
+    {
+        if (abilityPoints > 0 && !abilities[abilityIndex].unlocked)
+        {
+            abilities[abilityIndex].unlocked = true;
+            abilityPoints--;
+            Debug.Log("Ability unlocked: " + abilities[abilityIndex].abilityName);
+        }
+    }
+
+    //public void UpdateCooldowns()
+    //{
+    //    foreach (var ability in abilities)
+    //    {
+    //        if (ability.coolDownTimer > 0)
+    //        {
+    //            ability.coolDownTimer -= Mathf.CeilToInt(Time.deltaTime);
+    //            if (ability.coolDownTimer < 0) ability.coolDownTimer = 0;
+    //        }
+    //    }
+    //}
+
+
+    public virtual void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        if (currentHealth <= 0)
+        {
+            currentHealth = 0;
+            Die();
+        }
+    }
+
 }
