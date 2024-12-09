@@ -6,7 +6,6 @@ using UnityEngine;
 public class PlayerLeveling : MonoBehaviour
 {
     public List<ability> abilities;
-    public List<ability> abilities;
     public int currentHealth;
     public int maxHealth = 100;
     public int healingPotions = 0;
