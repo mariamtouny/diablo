@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using static UnityEngine.GraphicsBuffer;
+
 
 public class Barbarian : PlayerLeveling
 {
+    NavMeshAgent agent;
     private float lastAbilityUsedTime = 0;
     private bool shieldActive = false;
     private Renderer renderer;
     Animator animator;
-    PlayerLeveling playerLeveling;
+    Camera cam;
+
 
     private void Awake()
     {
@@ -26,13 +31,15 @@ public class Barbarian : PlayerLeveling
 
     private void Start()
     {
+        cam = Camera.main;
+        agent = GetComponent<NavMeshAgent>();
         base.Start();
         animator = GetComponent<Animator>();
         renderer = GetComponent<Renderer>();
     }
 
     public void UseAbility(string abilityName)
-        {
+    {
         var ability = abilities.Find(a => a.abilityName == abilityName && a.unlocked);
         if (ability == null)
         {
@@ -74,17 +81,31 @@ public class Barbarian : PlayerLeveling
         if (Input.GetKeyDown(KeyCode.S))
         {
             PerformShield();
-        } 
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            PerformBash();
+        }
+
+
     }
     private void PerformBash()
     {
-        if(abilities[0].unlocked == true && !abilities[0].IsOnCoolDown())
+        if (abilities[0].unlocked == true && !abilities[0].IsOnCoolDown())
         {
-            //perform bash  
+            StartCoroutine(Bash());
             Debug.Log("Barbarian performs Bash!");
 
         }
+
         //ability unavailable       
+    }
+
+    void FaceTarget(Transform target)
+    {
+        Vector3 direction = (target.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
 
     private void PerformShield()
@@ -107,6 +128,37 @@ public class Barbarian : PlayerLeveling
         yield return new WaitForSeconds(3f);
         shieldActive = false;
         Debug.Log("Shield expired!");
+    }
+
+    private IEnumerator Bash()
+    {
+        //Vector3 mousePosition = transform.position;
+        while (!Input.GetMouseButtonDown(1))
+        {
+            //mousePosition = Input.mousePosition;
+            yield return null; 
+        }
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            GameObject enemy = hit.collider.gameObject;
+            if (enemy.CompareTag("Enemy"))
+            {
+                if (enemy != null)
+                {
+                    animator.SetTrigger("Bash");
+                    Debug.Log("Mouse clicked!");
+                    agent.SetDestination(enemy.transform.position);
+                    FaceTarget(enemy.transform);
+                }
+            }
+            
+        }
+        
+       
     }
 
     private void PerformIronMaelstrom()
@@ -137,5 +189,5 @@ public class Barbarian : PlayerLeveling
             return;
         }
         base.TakeDamage(damage);
-    }   
+    }
 }
