@@ -12,13 +12,12 @@ public class Barbarian : PlayerLeveling
     private bool shieldActive = false;
     private Renderer renderer;
     Animator animator;
-    private float aoeRadius = 1.5f;
     Camera cam;
-
+    private float aoeRadius = 1.5f;
 
     private void Awake()
     {
-        base.abilities = new List<ability>
+        abilities = new List<ability>
         {
             new ability { abilityName = "Bash", abilityType = ability.AbilityType.Basic, activation = ability.Activation.SelectEnemy, abilityDamage = 5, abilityCooldown = 1 },
             new ability { abilityName = "Shield", abilityType = ability.AbilityType.Defensive, activation = ability.Activation.Instant, abilityDamage = 0, abilityCooldown = 10 },
@@ -87,10 +86,15 @@ public class Barbarian : PlayerLeveling
         {
             PerformIronMaelstrom();
         }
-        }
+    
         if (Input.GetKeyDown(KeyCode.B))
         {
             PerformBash();
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            PerformCharge();
         }
 
 
@@ -111,7 +115,7 @@ public class Barbarian : PlayerLeveling
     {
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 15f);
     }
 
     private void PerformShield()
@@ -120,11 +124,9 @@ public class Barbarian : PlayerLeveling
         Debug.Log(abilities[1].unlocked);
         if (abilities[1].unlocked == true && !abilities[1].IsOnCoolDown())
         {
-            animator.SetTrigger("shield");
             Debug.Log("Barbarian raises Shield!");
             shieldActive = true;
             StartCoroutine(ShieldDuration());
-
         }
         //ability unavailable
     }
@@ -153,16 +155,25 @@ public class Barbarian : PlayerLeveling
         if (Physics.Raycast(ray, out hit, 100))
         {
             GameObject enemy = hit.collider.gameObject;
-            if (enemy.CompareTag("Enemy"))
+
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, aoeRadius);
+            foreach (Collider hitCollider in hitColliders)
             {
-                if (enemy != null)
+                if (hitCollider.gameObject==enemy)
                 {
-                    animator.SetTrigger("Bash");
-                    Debug.Log("Mouse clicked!");
-                    agent.SetDestination(enemy.transform.position);
-                    FaceTarget(enemy.transform);
+                    if (enemy.CompareTag("Enemy"))
+                    {
+                        if (enemy != null)
+                        {
+                            animator.SetTrigger("Bash");
+                            Debug.Log("Mouse clicked!");
+                            agent.SetDestination(enemy.transform.position);
+                            FaceTarget(enemy.transform);
+                        }
+                    }
                 }
             }
+            
             
         }
         
@@ -188,12 +199,57 @@ public class Barbarian : PlayerLeveling
         //ability unavailable
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1, 0 , 0, 0.3f);
+        Gizmos.DrawSphere(transform.position, aoeRadius);
+    }
+
+    private IEnumerator Charge()
+    {
+        Debug.Log("Charging 1.0");
+        while (!Input.GetMouseButtonDown(1))
+        {
+            yield return null;
+        }
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        Debug.Log("Mouse Clicked");
+        
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            Debug.Log("found hit");
+
+            agent.SetDestination(hit.point);
+            Debug.Log("set destination");
+
+            FaceTarget(hit.transform);
+            Debug.Log("face target");
+
+            animator.SetBool("isRunning", true);
+            Debug.Log("runs");
+
+            agent.updateRotation = true;
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, aoeRadius);
+            Debug.Log("Mouse Clicked");
+
+            foreach (Collider hitCollider in hitColliders)
+            {
+                //enemies taking damage here
+                     
+            }
+        }
+
+    }
+
     private void PerformCharge()
     {
         if (abilities[3].unlocked == true && !abilities[3].IsOnCoolDown())
         {
             Debug.Log("Barbarian charges forward!");
-            // Add movement and damage logic here
+            StartCoroutine(Charge());
         }
         //ability unavailable
     }
@@ -207,12 +263,4 @@ public class Barbarian : PlayerLeveling
         }
         base.TakeDamage(damage);
     }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = new Color(1, 0, 0, 0.3f);
-        Gizmos.DrawSphere(transform.position, aoeRadius);
-    }
-
-
 }

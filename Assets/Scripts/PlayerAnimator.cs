@@ -21,7 +21,8 @@ public class PlayerAnimator : MonoBehaviour
     {
         //Debug.Log(agent.velocity.magnitude);
         if (agent.velocity.magnitude == 0)
-        {
+        {            
+            anim.SetBool("isRunning", false);
             anim.SetBool("isWalking", false);
             agent.updateRotation = false;
         }
