@@ -12,12 +12,13 @@ public class Barbarian : PlayerLeveling
     private bool shieldActive = false;
     private Renderer renderer;
     Animator animator;
+    private float aoeRadius = 1.5f;
     Camera cam;
 
 
     private void Awake()
     {
-        abilities = new List<ability>
+        base.abilities = new List<ability>
         {
             new ability { abilityName = "Bash", abilityType = ability.AbilityType.Basic, activation = ability.Activation.SelectEnemy, abilityDamage = 5, abilityCooldown = 1 },
             new ability { abilityName = "Shield", abilityType = ability.AbilityType.Defensive, activation = ability.Activation.Instant, abilityDamage = 0, abilityCooldown = 10 },
@@ -82,6 +83,11 @@ public class Barbarian : PlayerLeveling
         {
             PerformShield();
         }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            PerformIronMaelstrom();
+        }
+        }
         if (Input.GetKeyDown(KeyCode.B))
         {
             PerformBash();
@@ -114,9 +120,11 @@ public class Barbarian : PlayerLeveling
         Debug.Log(abilities[1].unlocked);
         if (abilities[1].unlocked == true && !abilities[1].IsOnCoolDown())
         {
+            animator.SetTrigger("shield");
             Debug.Log("Barbarian raises Shield!");
             shieldActive = true;
             StartCoroutine(ShieldDuration());
+
         }
         //ability unavailable
     }
@@ -166,7 +174,16 @@ public class Barbarian : PlayerLeveling
         if (abilities[2].unlocked == true && !abilities[2].IsOnCoolDown())
         {
             Debug.Log("Barbarian unleashes Iron Maelstrom!");
-            // Add AOE damage logic here
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, aoeRadius);
+            animator.SetTrigger("whirl");
+            foreach (var hitCollider in hitColliders)
+            {
+                if (hitCollider.CompareTag("Enemy"))
+                {
+                    // Add damage logic here
+                    Debug.Log("Iron Maelstrom hits enemy!");
+                }
+            }
         }
         //ability unavailable
     }
@@ -190,4 +207,12 @@ public class Barbarian : PlayerLeveling
         }
         base.TakeDamage(damage);
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1, 0, 0, 0.3f);
+        Gizmos.DrawSphere(transform.position, aoeRadius);
+    }
+
+
 }
