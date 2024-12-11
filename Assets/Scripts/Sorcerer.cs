@@ -1,21 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.UIElements;
 
-public class Sorcerer : MonoBehaviour
+public class Sorcerer : PlayerLeveling
 {
-
-    public List<ability> abilities;
+    NavMeshAgent agent;
     private float lastAbilityUsedTime = 0;
     private Renderer renderer;
     Animator animator;
-    PlayerLeveling playerLeveling;
+    Camera cam;
+    GameObject fireball;
 
     void Start()
     {
+        base.Start();
+        agent = GetComponent<NavMeshAgent>();
+        cam = Camera.main;
         animator = GetComponent<Animator>();
         renderer = GetComponent<Renderer>();
-        playerLeveling = GetComponent<PlayerLeveling>();
     }
 
     private void Awake()
@@ -41,17 +45,15 @@ public class Sorcerer : MonoBehaviour
             return;
         }
 
-        if (Time.time < lastAbilityUsedTime + ability.abilityCooldown)
+        if (ability.IsOnCoolDown())
         {
             Debug.Log($"{abilityName} is on cooldown!");
             return;
         }
 
-        lastAbilityUsedTime = Time.time;
-
         switch (abilityName)
         {
-            case "Fireball":
+            case "Fireball": 
                 PerformFireball();
                 break;
             case "Teleport":
@@ -75,6 +77,7 @@ public class Sorcerer : MonoBehaviour
     private void PerformTeleport()
     {
         Debug.Log("Teleport!");
+        StartCoroutine(Teleport());
     }
 
     private void PerformClone()
@@ -88,6 +91,43 @@ public class Sorcerer : MonoBehaviour
     }
     void Update()
     {
+        base.Update();
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            TakeDamage(10);
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            PerformTeleport();
+        }
         
+    }
+
+    private IEnumerator Teleport()
+    {
+        while (!Input.GetMouseButtonDown(1))
+        {
+            yield return null;
+        }
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+
+            transform.position = hit.point;
+            agent.SetDestination(hit.point);
+            FaceTarget(hit.transform);
+        }
+
+    }
+
+    void FaceTarget(Transform target)
+    {
+        Vector3 direction = (target.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 15f);
     }
 }

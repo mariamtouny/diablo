@@ -8,7 +8,6 @@ using static UnityEngine.GraphicsBuffer;
 public class Barbarian : PlayerLeveling
 {
     NavMeshAgent agent;
-    private float lastAbilityUsedTime = 0;
     private bool shieldActive = false;
     private Renderer renderer;
     Animator animator;
@@ -53,7 +52,6 @@ public class Barbarian : PlayerLeveling
             return;
         }
 
-        lastAbilityUsedTime = Time.time;
 
         switch (abilityName)
         {
@@ -207,7 +205,6 @@ public class Barbarian : PlayerLeveling
 
     private IEnumerator Charge()
     {
-        Debug.Log("Charging 1.0");
         while (!Input.GetMouseButtonDown(1))
         {
             yield return null;
@@ -215,25 +212,20 @@ public class Barbarian : PlayerLeveling
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        Debug.Log("Mouse Clicked");
         
 
         if (Physics.Raycast(ray, out hit, 100))
         {
-            Debug.Log("found hit");
 
             agent.SetDestination(hit.point);
-            Debug.Log("set destination");
 
             FaceTarget(hit.transform);
-            Debug.Log("face target");
 
-            animator.SetBool("isRunning", true);
+            animator.SetTrigger("Run");
             Debug.Log("runs");
 
             agent.updateRotation = true;
             Collider[] hitColliders = Physics.OverlapSphere(transform.position, aoeRadius);
-            Debug.Log("Mouse Clicked");
 
             foreach (Collider hitCollider in hitColliders)
             {

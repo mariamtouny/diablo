@@ -18,6 +18,13 @@ public class CameraController : MonoBehaviour
     private float currentZoom = 15f;
     private float currentYaw = 0f;
 
+    private void Start()
+    {
+        
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+        Debug.Log(target);
+    }
+
     void Update()
     {
         // Adjust our zoom based on the scrollwheel
