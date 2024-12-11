@@ -3549,9 +3549,10 @@ GameObject:
   - component: {fileID: -1143268456249217536}
   - component: {fileID: -277383840753057090}
   - component: {fileID: 6337633171885574161}
+  - component: {fileID: -2448675653301990986}
   m_Layer: 0
   m_Name: BarbarianPrefab
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3583,7 +3584,7 @@ Animator:
   m_GameObject: {fileID: 8984351863353196830}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 9762d1a8208c1364aaad5713d47a5bc8, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2363be9dd29b7b649ac4c987330bc0bf, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3655,6 +3656,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc2bd04848c8ff45a6f93d44274166a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2448675653301990986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8984351863353196830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6497c1940e8ca04f80182fd4cadfb53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilities: []
+  currentHealth: 0
+  maxHealth: 100
+  healingPotions: 0
+  maxHealingPotions: 3
+  currentXP: 0
+  currentLevel: 1
+  maxLevel: 4
+  xpToNextLevel: 0
+  abilityPoints: 0
 --- !u!1 &9079770610187130170
 GameObject:
   m_ObjectHideFlags: 0

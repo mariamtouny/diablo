@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
         motor = GetComponent<PlayerMotor>();
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+        movementMask = LayerMask.GetMask("ground");
     }
 
     void Update()
