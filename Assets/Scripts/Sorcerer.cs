@@ -284,11 +284,18 @@ public class Sorcerer : PlayerLeveling
         foreach (Collider collider in colliders)
         {
             Debug.Log("Overlap detected with: " + collider.gameObject.name);
-            if (collider.gameObject.CompareTag("Enemy"))
+            if (collider.gameObject.CompareTag("Demon"))
             {
-                Enemy enemy = collider.gameObject.GetComponent<Enemy>();
-                enemy.TakeDamage();
+                Demon demon = collider.gameObject.GetComponent<Demon>();
+                demon.TakeDamage(5);
+                GainXP(30);
             }
+            //else if (collider.gameObject.CompareTag("Minion"))
+            //{
+            //    Minion minion = collider.gameObject.GetComponent<Minion>();
+            //    minion.TakeDamage(5);
+            //    GainXP(10);
+            //}
         }
         // Optionally, you can destroy the fireball after it has moved
         Destroy(fball);
