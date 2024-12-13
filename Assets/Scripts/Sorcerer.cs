@@ -275,11 +275,21 @@ public class Sorcerer : PlayerLeveling
 
             // Move the fireball towards the target
             fball.transform.position = Vector3.Lerp(fball.transform.position, targetPosition, fractionOfJourney);
-
             // Wait for the next frame
             yield return null;
         }
 
+        Collider[] colliders = Physics.OverlapSphere(fball.transform.position, 1f); // Radius 1
+
+        foreach (Collider collider in colliders)
+        {
+            Debug.Log("Overlap detected with: " + collider.gameObject.name);
+            if (collider.gameObject.CompareTag("Enemy"))
+            {
+                Enemy enemy = collider.gameObject.GetComponent<Enemy>();
+                enemy.TakeDamage();
+            }
+        }
         // Optionally, you can destroy the fireball after it has moved
         Destroy(fball);
     }
