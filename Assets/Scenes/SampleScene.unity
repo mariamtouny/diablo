@@ -246,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &659549246
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ GameObject:
   - component: {fileID: 1119138752}
   m_Layer: 3
   m_Name: Nav Surface
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -565,7 +565,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 6d117091e2b79e64f803e25830984291, type: 2}
+  m_NavMeshData: {fileID: 0}
   m_BuildHeightMesh: 0
 --- !u!4 &1119138753
 Transform:
@@ -593,6 +593,10 @@ PrefabInstance:
     - target: {fileID: 3053556898663338245, guid: f7ac106dbddb32540b21bcc5fd4a7c4c, type: 3}
       propertyPath: m_Name
       value: MainEnviroment 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053556898663338245, guid: f7ac106dbddb32540b21bcc5fd4a7c4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6538647057178639511, guid: f7ac106dbddb32540b21bcc5fd4a7c4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -653,7 +657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8639316715927837604, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -175.7
+      value: -155.8
       objectReference: {fileID: 0}
     - target: {fileID: 8639316715927837604, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
       propertyPath: m_LocalPosition.y
@@ -661,11 +665,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8639316715927837604, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 212.52
+      value: 199.5
       objectReference: {fileID: 0}
     - target: {fileID: 8639316715927837604, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.27940404
+      value: -0.36566398
       objectReference: {fileID: 0}
     - target: {fileID: 8639316715927837604, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
       propertyPath: m_LocalRotation.x
@@ -673,7 +677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8639316715927837604, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.96017367
+      value: 0.930747
       objectReference: {fileID: 0}
     - target: {fileID: 8639316715927837604, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
       propertyPath: m_LocalRotation.z
@@ -685,7 +689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8639316715927837604, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 147.551
+      value: 222.897
       objectReference: {fileID: 0}
     - target: {fileID: 8639316715927837604, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -694,6 +698,10 @@ PrefabInstance:
     - target: {fileID: 8984351863353196830, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
       propertyPath: m_Name
       value: BarbarianPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984351863353196830, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -716,7 +724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1939441649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,6 +751,7 @@ MonoBehaviour:
   house1Prefab: {fileID: 100024, guid: 9b8864b3743caf641b02b0ee7f58d77b, type: 3}
   house2Prefab: {fileID: 136122, guid: 2eef7049338fd0f439def2ceed613e7e, type: 3}
   mainCamera: {fileID: 963194227}
+  navMeshSurface: {fileID: 1119138752}
   environmentSize: {x: 1, y: 1}
 --- !u!4 &1939441650
 Transform:
@@ -770,6 +779,10 @@ PrefabInstance:
     - target: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: m_Name
       value: Demon_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5314731379862679534, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: m_LocalPosition.x
