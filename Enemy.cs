@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
-    public Transform playerObject;
+    //public Transform playerObject;
     public NavMeshAgent agent;
     public Animator animator;
     public bool alert = false;
@@ -26,7 +26,25 @@ public class Enemy : MonoBehaviour
     public virtual void ApproachPlayer();
 
     // State and Damage Methods
-    public virtual void TakeDamage();
+    public virtual void TakeDamage(int damage)
+    {
+        // Basic damage logic
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    public virtual void TakeDamage()
+    {
+        // Basic damage logic
+        health -= 5;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
 
     public virtual void GetStunned();
 

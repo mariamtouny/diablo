@@ -7,12 +7,18 @@ public class Demon : Enemy
     private NavMeshAgent a;
     private Transform[] Targets;
     private int i = 0;
+    private PlayerLeveling player;
+    public GameObject playerGameObject;
+    public Transform playerObject;
 
     [SerializeField] private float patrolRadius = 5f; // Configurable patrol radius
 
 
     public override void Start()
     {
+        playerGameObject = GameObject.FindWithTag("Player");
+        playerObject = playerGameObject.transform;
+
         health = 40f; // Set a custom health value for the Demon
         alert = false; // Default alert state
 
@@ -20,6 +26,11 @@ public class Demon : Enemy
         animator = GetComponent<Animator>();
         StartCoroutine(Delay());
         audioSource = GetComponent<AudioSource>();
+
+        if (playerObject != null)
+        {
+            player = playerGameObject.GetComponent<Barbarian>();
+        }
 
         // Create patrol points
         CreatePatrolPoints();
@@ -68,7 +79,7 @@ public class Demon : Enemy
         {
             StartCoroutine(StopRunning());
         }
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             TakeDamage();
         }
@@ -76,11 +87,11 @@ public class Demon : Enemy
         {
             GetStunned();
         }
-        else if (Input.GetKeyDown(KeyCode.A))
+        else if (Input.GetKeyDown(KeyCode.J))
         {
             SwordAttack();
         }
-        else if (Input.GetKeyDown(KeyCode.S))
+        else if (Input.GetKeyDown(KeyCode.K))
         {
             BombAttack();
         }
@@ -97,9 +108,9 @@ public class Demon : Enemy
         animator.SetTrigger("attack1");
         StartCoroutine(Reset());
 
-        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 1f)
+        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 4f)
         {
-            // Placeholder for player damage
+            player.TakeDamage(10);
         }
     }
 
@@ -110,9 +121,9 @@ public class Demon : Enemy
         animator.SetTrigger("attack2");
         StartCoroutine(Reset());
 
-        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 5f)
+        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 8f)
         {
-            // Placeholder for player damage
+            player.TakeDamage(10);
         }
     }
 
@@ -141,6 +152,21 @@ public class Demon : Enemy
     }
 
     public override void TakeDamage()
+    {
+        animator.SetBool("isIdle", false);
+        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 1f)
+        {
+            animator.SetTrigger("damage");
+            health -= 5f;
+            if (health <= 0)
+            {
+                Die();
+            }
+            StartCoroutine(Reset());
+        }
+    }
+
+    public override void TakeDamage(int damage)
     {
         animator.SetBool("isIdle", false);
         if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 1f)

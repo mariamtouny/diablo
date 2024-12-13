@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.AI; // Include AI Navigation namespace
+using Unity.AI.Navigation;
 
 public class LevelGenerator : MonoBehaviour
 {
@@ -17,6 +19,9 @@ public class LevelGenerator : MonoBehaviour
     public GameObject house1Prefab;
     public GameObject house2Prefab;
     public Camera mainCamera;
+
+    //NavMesh Surface
+    public NavMeshSurface navMeshSurface;
 
     [Header("Settings")]
     public Vector2 environmentSize = new Vector2(80, 80);
@@ -97,6 +102,8 @@ public class LevelGenerator : MonoBehaviour
         GenerateTrees();
         GenerateRocks();
         GenerateHouses();
+
+        BakeNavMesh();
     }
 
     void GenerateMainEnvironment()
@@ -176,7 +183,7 @@ public class LevelGenerator : MonoBehaviour
         // Spawn demons within the 50x50 camp area
         for (int i = 0; i < demonCount; i++)
         {
-            Vector3 spawnOffset = new Vector3(Random.Range(-15, 20), 5, Random.Range(-10, 20));
+            Vector3 spawnOffset = new Vector3(Random.Range(-15, 20), 5.5f, Random.Range(-10, 20));
             Instantiate(demonPrefab, campPosition + spawnOffset, Quaternion.identity);
         }
 
@@ -275,5 +282,18 @@ public class LevelGenerator : MonoBehaviour
             0,
             Random.Range(-halfHeight, halfHeight)
         );
+    }
+
+    void BakeNavMesh()
+    {
+        if (navMeshSurface != null)
+        {
+            Debug.Log("Baking NavMesh...");
+            navMeshSurface.BuildNavMesh(); // Dynamically bake the NavMesh
+        }
+        else
+        {
+            Debug.LogError("NavMeshSurface is not assigned or found!");
+        }
     }
 }

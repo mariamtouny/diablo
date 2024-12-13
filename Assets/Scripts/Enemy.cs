@@ -44,6 +44,16 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public virtual void TakeDamage(int damage)
+    {
+        // Basic damage logic
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
     public virtual void GetStunned()
     {
         // Basic stun logic
