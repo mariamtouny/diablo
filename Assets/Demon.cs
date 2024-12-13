@@ -155,6 +155,17 @@ public class Demon : Enemy
         }
     }
 
+    public override void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+        StartCoroutine(Reset());
+
+    }
+
     public override void ApproachPlayer()
     {
         animator.SetBool("isIdle", false);
