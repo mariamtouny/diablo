@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
     // Core Lifecycle Methods
     public virtual void Start()
     {
+        playerObject = GameObject.FindGameObjectWithTag("Player").transform;
+        agent = GetComponent<NavMeshAgent>();
         // Basic initialization to be implemented by child classes
     }
 
@@ -50,6 +52,7 @@ public class Enemy : MonoBehaviour
     public virtual void Die()
     {
         // Basic death logic
+        Debug.Log("enemy died");
     }
 
     // Coroutines
