@@ -143,6 +143,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1911471956790176740, guid: d056b3a5d919674439f9266559577edf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6607886175126899143}
+    - targetCorrespondingSourceObject: {fileID: 1911471956790176740, guid: d056b3a5d919674439f9266559577edf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5469451258260161062}
   m_SourcePrefab: {fileID: 100100000, guid: d056b3a5d919674439f9266559577edf, type: 3}
 --- !u!4 &4557157661184728243 stripped
 Transform:
@@ -188,8 +191,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62c2d9fdca81864792aed5dcddad6eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Targets:
-  - {fileID: 0}
-  - {fileID: 0}
   playerObject: {fileID: 0}
   health: 40
+  deathSound: {fileID: 0}
+  patrolRadius: 5
+--- !u!64 &-5469451258260161062
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4794759809555920212}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
