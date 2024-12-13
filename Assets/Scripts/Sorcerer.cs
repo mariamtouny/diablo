@@ -5,12 +5,15 @@ using UnityEngine.AI;
 public class Sorcerer : PlayerLeveling
 {
     NavMeshAgent agent;
-    private float lastAbilityUsedTime = 0;
     private Renderer renderer;
     Animator animator;
     Camera cam;
-    GameObject fireball;
     bool infernoActive = false;
+    public GameObject fireball;
+    private Vector3 scaleChange = new Vector3(-0.6f, -0.6f, -0.6f);
+    private Vector3 positionChange = new Vector3(0.0f, 0.0f, 5.0f);
+
+
 
     void Start()
     {
@@ -19,6 +22,7 @@ public class Sorcerer : PlayerLeveling
         cam = Camera.main;
         animator = GetComponent<Animator>();
         renderer = GetComponent<Renderer>();
+        fireball.SetActive(false);
     }
 
     private void Awake()
@@ -72,6 +76,8 @@ public class Sorcerer : PlayerLeveling
     private void PerformFireball()
     {
         Debug.Log("Fireball!");
+        StartCoroutine(Fireball());
+
     }
     private void PerformTeleport()
     {
@@ -159,11 +165,19 @@ public class Sorcerer : PlayerLeveling
         {
             PerformTeleport();
         }
+<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.I))
         {
             PerformInferno();
         }
         
+=======
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            PerformFireball();
+        }
+
+>>>>>>> c3520abac2fe5117c15ed665e45c3663dca1cecf
     }
 
     private IEnumerator Teleport()
@@ -185,6 +199,92 @@ public class Sorcerer : PlayerLeveling
             FaceTarget(hit.transform);
         }
 
+    }
+
+    private IEnumerator Fireball()
+    {
+        while (!Input.GetMouseButtonDown(1))
+        {
+            yield return null;
+        }
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            GameObject enemy = hit.collider.gameObject;
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5.0f);
+            foreach (Collider hitCollider in hitColliders)
+            {
+
+                if (hitCollider.gameObject == enemy)
+                {
+
+                    if (enemy.CompareTag("Enemy"))
+                    {
+
+                        if (enemy != null)
+                        {
+                            //FaceTarget(enemy.transform);
+
+                             Vector3 direction = (enemy.transform.position - transform.position).normalized;
+                            //direction.y = 0; // We only want to rotate around the y-axis
+
+                    
+                        // Calculate the target rotation that looks towards the enemy
+                            Quaternion targetRotation = Quaternion.LookRotation(direction);
+
+                        // Rotate 60 degrees around the Y-axis
+                            Quaternion additionalRotation = Quaternion.Euler(0, 60, 0);
+                            Quaternion finalRotation = targetRotation * additionalRotation;
+
+                        // Smoothly interpolate to the final target rotation
+                            //transform.rotation = Quaternion.Slerp(transform.rotation, finalRotation, Time.deltaTime * 15f);
+                    
+                            fireball.SetActive(true);
+                            animator.SetTrigger("Fireball");
+
+                            yield return new WaitForSeconds(2f);
+                            Vector3 position = transform.position;
+                            GameObject fball = Instantiate(fireball, new Vector3(position.x - 0.122494f, position.y + 1.13f, position.z + 0.9492f), Quaternion.identity);
+                            fball.transform.localScale += scaleChange;
+                            StartCoroutine(MoveFireball(fball, enemy.transform.position));
+
+                            fireball.SetActive(false);
+                            Debug.Log("Mouse clicked!");
+                            
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+    private IEnumerator MoveFireball(GameObject fball, Vector3 targetPosition)
+    {
+        float speed = 5f; // Adjust the speed of the fireball
+        float journeyLength = Vector3.Distance(fball.transform.position, targetPosition);
+        float startTime = Time.time;
+
+        while (Vector3.Distance(fball.transform.position, targetPosition) > 0.1f)
+        {
+            // Calculate how far along the journey we are
+            float distCovered = (Time.time - startTime) * speed;
+            float fractionOfJourney = distCovered / journeyLength;
+
+            // Move the fireball towards the target
+            fball.transform.position = Vector3.Lerp(fball.transform.position, targetPosition, fractionOfJourney);
+
+            // Wait for the next frame
+            yield return null;
+        }
+
+        // Optionally, you can destroy the fireball after it has moved
+        Destroy(fball);
     }
 
     void FaceTarget(Transform target)

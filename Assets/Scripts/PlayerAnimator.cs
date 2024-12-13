@@ -5,9 +5,6 @@ using UnityEngine.AI;
 
 public class PlayerAnimator : MonoBehaviour
 {
-
-    const float locomationAnimationSmoothTime = .1f;
-
     NavMeshAgent agent;
     Animator anim;
 
