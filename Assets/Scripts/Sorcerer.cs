@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UIElements;
-
 public class Sorcerer : PlayerLeveling
 {
     NavMeshAgent agent;
@@ -12,6 +10,7 @@ public class Sorcerer : PlayerLeveling
     Animator animator;
     Camera cam;
     GameObject fireball;
+    bool infernoActive = false;
 
     void Start()
     {
@@ -87,7 +86,67 @@ public class Sorcerer : PlayerLeveling
 
     private void PerformInferno()
     {
-        Debug.Log("Inferno!");
+        if (abilities[3].unlocked && !abilities[3].IsOnCoolDown())
+        {
+            Debug.Log("Inferno activated!");
+            StartCoroutine(InfernoRoutine());
+        }
+    }
+
+    private IEnumerator InfernoRoutine()
+    {
+        Debug.Log("Select a point for Inferno...");
+        while (!Input.GetMouseButtonDown(1))
+        {
+            yield return null;
+        }
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            Vector3 spawnPosition = hit.point;
+
+            GameObject fireCircle = Instantiate(fireball, spawnPosition, Quaternion.identity);
+            Debug.Log("Inferno spawned at " + spawnPosition);
+
+            ApplyDamage(spawnPosition, 1.5f, abilities[3].abilityDamage);
+
+            StartCoroutine(ContinuousDamage(spawnPosition, 1.5f, abilities[3].abilityDamage / 2, 5f));
+
+            Destroy(fireCircle, 5f);
+
+            Debug.Log("Inferno finished!");
+        }
+        else
+        {
+            Debug.Log("No valid point selected!");
+        }
+    }
+    private void ApplyDamage(Vector3 position, float radius, int damage)
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(position, radius);
+        foreach (var hitCollider in hitColliders)
+        {
+            if (hitCollider.CompareTag("Enemy"))
+            {
+                // damage enemies
+                Debug.Log($"Enemy at {hitCollider.transform.position} took {damage} damage!");
+            }
+        }
+    }
+    private IEnumerator ContinuousDamage(Vector3 position, float radius, int damage, float duration)
+    {
+        float elapsed = 0f;
+        float tickInterval = 1f;
+
+        while (elapsed < duration)
+        {
+            ApplyDamage(position, radius, damage);
+            yield return new WaitForSeconds(tickInterval);
+            elapsed += tickInterval;
+        }
     }
     void Update()
     {
@@ -99,6 +158,10 @@ public class Sorcerer : PlayerLeveling
         if (Input.GetKeyDown(KeyCode.P))
         {
             PerformTeleport();
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            PerformInferno();
         }
         
     }

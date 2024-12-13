@@ -26,7 +26,7 @@ public class PlayerAnimator : MonoBehaviour
             agent.updateRotation = false;
         } else if (Mathf.FloorToInt(agent.velocity.magnitude) == 2)
         {
-            anim.SetTrigger("Run");
+            //anim.SetTrigger("Run");
         }
     }
 }
