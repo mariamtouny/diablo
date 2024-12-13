@@ -5,9 +5,6 @@ using UnityEngine.AI;
 
 public class PlayerAnimator : MonoBehaviour
 {
-
-    const float locomationAnimationSmoothTime = .1f;
-
     NavMeshAgent agent;
     Animator anim;
 
@@ -26,7 +23,7 @@ public class PlayerAnimator : MonoBehaviour
             agent.updateRotation = false;
         } else if (Mathf.FloorToInt(agent.velocity.magnitude) == 2)
         {
-            anim.SetTrigger("Run");
+            //anim.SetTrigger("Run");
         }
     }
 }
