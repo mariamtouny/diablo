@@ -165,19 +165,16 @@ public class Sorcerer : PlayerLeveling
         {
             PerformTeleport();
         }
-<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.I))
         {
             PerformInferno();
         }
         
-=======
         if (Input.GetKeyDown(KeyCode.F))
         {
             PerformFireball();
         }
 
->>>>>>> c3520abac2fe5117c15ed665e45c3663dca1cecf
     }
 
     private IEnumerator Teleport()
