@@ -9,6 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Items Models/arrow/source/blinn2.mat
   m_Name: blinn2
 ========
@@ -27,12 +28,17 @@ Material:
 <<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 1/Tree 1 Branches.mat
   m_Name: Tree 1 Branches
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 1.mat
+  m_Name: diff_fence_gate 1
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 ========
   m_Name: blinn2
 >>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/blinn2.mat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
+<<<<<<< HEAD
   m_ValidKeywords:
 <<<<<<< HEAD
   - _EMISSION
@@ -46,13 +52,21 @@ Material:
 =======
   - _ALPHATEST_ON
   - _NORMALMAP
+=======
+  m_ValidKeywords: []
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
+<<<<<<< HEAD
   m_CustomRenderQueue: 2450
   stringTagMap:
     RenderType: TransparentCutout
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -61,9 +75,13 @@ Material:
     m_TexEnvs:
     - _BumpMap:
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Texture: {fileID: 0}
 =======
         m_Texture: {fileID: 2800000, guid: 59982beff7917804588c5a0075ce02c0, type: 3}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+        m_Texture: {fileID: 0}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -86,12 +104,16 @@ Material:
     - _MainTex:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 01ce197200b6ad64c8f1187ffc2dd0ad, type: 3}
 =======
         m_Texture: {fileID: 2800000, guid: 918ce80ee56486f499b5e482dcdb43b4, type: 3}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
         m_Texture: {fileID: 2800000, guid: e01e63573f8777d47891f3bfda815117, type: 3}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+        m_Texture: {fileID: 8900000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -110,19 +132,26 @@ Material:
     m_Ints: []
     m_Floats:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     - _EmissionScaleUI: 0
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - _GlossMapScale: 1
     - _Glossiness: 0.14671333
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
+<<<<<<< HEAD
 =======
     - _BumpScale: 1.23
     - _Cutoff: 0.391
@@ -138,6 +167,8 @@ Material:
     - _Metallic: 0.327
     - _Mode: 1
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -146,6 +177,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Items Models/arrow/source/blinn2.mat
@@ -171,5 +203,13 @@ Material:
 <<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 1.mat
+    - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+========
+    - _Color: {r: 0.6624204, g: 0.6624204, b: 0.6624204, a: 1}
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/blinn2.mat
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_BuildTextureStacks: []

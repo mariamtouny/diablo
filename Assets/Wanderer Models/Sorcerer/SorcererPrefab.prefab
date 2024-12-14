@@ -682,6 +682,9 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
@@ -696,11 +699,14 @@ GameObject:
   m_TagString: Player
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   m_Layer: 0
   m_Name: SorcererPrefab
   m_TagString: Untagged
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
@@ -739,10 +745,14 @@ Animator:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 0115861b13d3cfe4ca6fa02ef380f336, type: 2}
 =======
   m_Controller: {fileID: 0}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_Controller: {fileID: 9100000, guid: 0115861b13d3cfe4ca6fa02ef380f336, type: 2}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
   m_Controller: {fileID: 9100000, guid: 0115861b13d3cfe4ca6fa02ef380f336, type: 2}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -762,6 +772,9 @@ Animator:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
@@ -852,8 +865,11 @@ MonoBehaviour:
   abilityPoints: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======

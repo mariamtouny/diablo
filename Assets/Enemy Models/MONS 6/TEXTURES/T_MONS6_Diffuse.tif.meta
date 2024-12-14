@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse.tif.meta
 guid: a8133ba6d27bc2c40b00579c9c971ecd
+========
+guid: 2b4fd1f80e9b39b4494b0cdf13a885b2
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/textures/Arrow_metal_Albedo.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

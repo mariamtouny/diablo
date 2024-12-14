@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Items Models/arrow/textures/Arrow_metal_Albedo.png.meta
 guid: 2b4fd1f80e9b39b4494b0cdf13a885b2
 ========
@@ -16,6 +17,17 @@ TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse.tif.meta
+guid: a8133ba6d27bc2c40b00579c9c971ecd
+========
+guid: 2b4fd1f80e9b39b4494b0cdf13a885b2
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/textures/Arrow_metal_Albedo.png.meta
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -43,11 +55,16 @@ TextureImporter:
   cubemapConvolution: 0
   seamlessCubemap: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   textureFormat: 1
   maxTextureSize: 2048
 =======
   textureFormat: -1
   maxTextureSize: 512
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  textureFormat: 1
+  maxTextureSize: 2048
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   textureSettings:
     serializedVersion: 2
@@ -81,12 +98,16 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
     maxTextureSize: 2048
 =======
   applyGammaDecoding: 1
@@ -96,6 +117,22 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 512
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,9 +147,13 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
 <<<<<<< HEAD
+<<<<<<< HEAD
     maxTextureSize: 2048
 =======
     maxTextureSize: 512
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    maxTextureSize: 2048
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
@@ -125,11 +166,16 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+<<<<<<< HEAD
     buildTarget: Android
 <<<<<<< HEAD
     maxTextureSize: 2048
 =======
     maxTextureSize: 512
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    buildTarget: Server
+    maxTextureSize: 2048
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1

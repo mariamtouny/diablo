@@ -3,14 +3,19 @@
 --- !u!21 &2100000
 Material:
 <<<<<<< HEAD
+<<<<<<< HEAD
   serializedVersion: 8
 =======
   serializedVersion: 6
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  serializedVersion: 8
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<<< HEAD:Assets/DungeonModularPack/Meshes/Materials/T_Pillar_C.mat
@@ -29,10 +34,15 @@ Material:
 <<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 2/Tree 2 Mat.mat
   m_Name: Tree 2 Mat
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 2.mat
+  m_Name: diff_fence_gate 2
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 ========
   m_Name: T_Pillar_C
 >>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/DungeonModularPack/Meshes/Materials/T_Pillar_C.mat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -40,10 +50,16 @@ Material:
   - _ALPHATEST_ON
   - _NORMALMAP
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -63,10 +79,17 @@ Material:
   stringTagMap: {}
   disabledShaderPasses: []
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         m_Texture: {fileID: 0}
@@ -75,6 +98,9 @@ Material:
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
         m_Texture: {fileID: 2800000, guid: a1337f04a0828ab4cbaa3af2423f0b82, type: 3}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+        m_Texture: {fileID: 0}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -97,6 +123,7 @@ Material:
     - _MainTex:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/DungeonModularPack/Meshes/Materials/T_Pillar_C.mat
         m_Texture: {fileID: 2800000, guid: 01ce197200b6ad64c8f1187ffc2dd0ad, type: 3}
 ========
@@ -109,10 +136,18 @@ Material:
         m_Texture: {fileID: 2800000, guid: 01ce197200b6ad64c8f1187ffc2dd0ad, type: 3}
 >>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/DungeonModularPack/Meshes/Materials/T_Pillar_C.mat
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 2.mat
+        m_Texture: {fileID: 8900000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
+========
+        m_Texture: {fileID: 2800000, guid: 01ce197200b6ad64c8f1187ffc2dd0ad, type: 3}
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/DungeonModularPack/Meshes/Materials/T_Pillar_C.mat
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+<<<<<<< HEAD
 =======
 <<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 2/Tree 2 Mat.mat
         m_Texture: {fileID: 2800000, guid: f81fea05d72361d44bdaeba00dace253, type: 3}
@@ -123,6 +158,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: a5776df05c721f44e92017f62872f53d, type: 3}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -135,6 +172,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Ints: []
     m_Floats:
 <<<<<<< HEAD
@@ -144,12 +182,19 @@ Material:
     - _BumpScale: -1.82
     - _Cutoff: 0.235
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _Metallic: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     - _Mode: 0
 =======
@@ -167,6 +212,9 @@ Material:
     - _Metallic: 0
     - _Mode: 0
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    - _Mode: 0
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -175,6 +223,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<<< HEAD:Assets/DungeonModularPack/Meshes/Materials/T_Pillar_C.mat
@@ -201,4 +250,13 @@ Material:
 =======
   m_BuildTextureStacks: []
 >>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/DungeonModularPack/Meshes/Materials/T_Pillar_C.mat
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 2.mat
+    - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+========
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/DungeonModularPack/Meshes/Materials/T_Pillar_C.mat
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6

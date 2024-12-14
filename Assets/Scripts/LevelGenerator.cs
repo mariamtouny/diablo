@@ -2,8 +2,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using System.Collections.Generic;
 using UnityEngine;
+=======
+using UnityEngine;
+using UnityEngine.AI; // Include AI Navigation namespace
+using Unity.AI.Navigation;
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 using UnityEngine;
 using UnityEngine.AI; // Include AI Navigation namespace
@@ -28,6 +34,7 @@ using Unity.AI.Navigation;
 public class LevelGenerator : MonoBehaviour
 {
     [Header("Prefabs")]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -73,6 +80,8 @@ public class LevelGenerator : MonoBehaviour
         //GenerateGate();
         GenerateBossArea();
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
@@ -181,6 +190,9 @@ public class LevelGenerator : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -198,9 +210,12 @@ public class LevelGenerator : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             GameObject environment = Instantiate(environmentPrefab, Vector3.zero, Quaternion.identity, environmentParent);
             environment.name = "MainEnvironment";
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
@@ -225,6 +240,9 @@ public class LevelGenerator : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -239,6 +257,7 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -268,6 +287,8 @@ public class LevelGenerator : MonoBehaviour
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     GameObject GeneratePlayer()
     {
         Vector3 playerPosition = new Vector3(0, 0, 0);
@@ -291,6 +312,9 @@ public class LevelGenerator : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -303,6 +327,7 @@ public class LevelGenerator : MonoBehaviour
 
     void GenerateEnemyCamps()
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -387,6 +412,8 @@ public class LevelGenerator : MonoBehaviour
     {
         return new Vector3(Random.Range(0, range.x), 0, Random.Range(0, range.y));
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
@@ -494,6 +521,9 @@ public class LevelGenerator : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -512,6 +542,7 @@ public class LevelGenerator : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     bool IsPositionTooClose(Vector3 position, List<Vector3> existingPositions, float minDistance)
     {
         foreach (var existing in existingPositions)
@@ -525,6 +556,8 @@ public class LevelGenerator : MonoBehaviour
     }
 }
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
@@ -568,6 +601,10 @@ public class LevelGenerator : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 }
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
