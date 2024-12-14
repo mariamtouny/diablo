@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Enemy Models/Fences/diff_fence_column.psd.meta
 guid: 486b04940bb5f4b4dab1b4233ad796e1
 ========
@@ -12,6 +13,17 @@ TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse_3.tif.meta
+guid: d2d22c01dfdaf464786d073975e94ee1
+========
+guid: 486b04940bb5f4b4dab1b4233ad796e1
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_column.psd.meta
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -77,7 +89,28 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
     maxTextureSize: 512
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse_3.tif.meta
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+========
+    maxTextureSize: 512
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_column.psd.meta
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -102,8 +135,18 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+<<<<<<< HEAD
     buildTarget: Android
     maxTextureSize: 512
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse_3.tif.meta
+    buildTarget: Server
+    maxTextureSize: 2048
+========
+    buildTarget: Android
+    maxTextureSize: 512
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_column.psd.meta
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1

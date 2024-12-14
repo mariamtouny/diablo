@@ -8,6 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 2/Tree 2 Mat.mat
   m_Name: Tree 2 Mat
 ========
@@ -16,6 +17,9 @@ Material:
 =======
   m_Name: Tree 2 Mat
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  m_Name: Tree 2 Mat
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 4
@@ -49,6 +53,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 2/Tree 2 Mat.mat
         m_Texture: {fileID: 2800000, guid: f81fea05d72361d44bdaeba00dace253, type: 3}
 ========
@@ -57,6 +62,9 @@ Material:
 =======
         m_Texture: {fileID: 2800000, guid: f81fea05d72361d44bdaeba00dace253, type: 3}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+        m_Texture: {fileID: 2800000, guid: f81fea05d72361d44bdaeba00dace253, type: 3}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -90,6 +98,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 2/Tree 2 Mat.mat
     - _Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
@@ -102,3 +111,7 @@ Material:
     - _Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    - _Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness.tif.meta
 guid: 626ae0701a0c10b4f83278c8ad5d33b5
+========
+guid: cdc904f97d1ea5040b465b700a4acfd8
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/DungeonModularPack/Textures/T_Arch_C.tga.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,6 +110,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness.tif.meta
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
@@ -119,6 +124,8 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+========
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/DungeonModularPack/Textures/T_Arch_C.tga.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []

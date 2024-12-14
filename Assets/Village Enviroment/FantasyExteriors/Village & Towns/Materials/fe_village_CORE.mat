@@ -9,6 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Materials/fe_village_CORE.mat
   m_Name: fe_village_CORE
 ========
@@ -20,6 +21,9 @@ Material:
 =======
   m_Name: fe_village_CORE
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  m_Name: fe_village_CORE
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -94,6 +98,7 @@ Material:
     m_Colors:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Materials/fe_village_CORE.mat
     - _Color: {r: 0.2627451, g: 0.20000002, b: 0.14901961, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
@@ -112,4 +117,9 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    - _Color: {r: 0.2627451, g: 0.20000002, b: 0.14901961, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_BuildTextureStacks: []
