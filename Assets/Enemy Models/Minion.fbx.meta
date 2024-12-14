@@ -433,6 +433,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Body
 <<<<<<< HEAD
+<<<<<<< HEAD
       parentName: Minion(Clone)
       position: {x: -0, y: 3.6908443, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
@@ -443,6 +444,15 @@ ModelImporter:
 =======
       parentName: Creep_mesh(Clone)
       position: {x: -0, y: 0.02768133, z: 0}
+=======
+      parentName: Creep_mesh(Clone)
+      position: {x: -0, y: 0.02768133, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Creep
+      parentName: Creep_mesh(Clone)
+      position: {x: 0, y: 0.004584304, z: -0.0013952294}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
     - name: Creep
@@ -524,7 +534,11 @@ ModelImporter:
     - name: Torso
       parentName: Creep
 <<<<<<< HEAD
+<<<<<<< HEAD
       position: {x: 2.937866e-19, y: 0.0013230973, z: 0.030059313}
+=======
+      position: {x: 2.2033993e-21, y: 0.000009923228, z: 0.00022544486}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
       position: {x: 2.2033993e-21, y: 0.000009923228, z: 0.00022544486}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -538,7 +552,11 @@ ModelImporter:
     - name: Neck
       parentName: Chest
 <<<<<<< HEAD
+<<<<<<< HEAD
       position: {x: 2.134566e-16, y: 0.0063958233, z: -1.4901161e-10}
+=======
+      position: {x: 1.6009244e-18, y: 0.00004796868, z: -1.1175868e-12}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
       position: {x: 1.6009244e-18, y: 0.00004796868, z: -1.1175868e-12}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -552,7 +570,11 @@ ModelImporter:
     - name: Jaw1
       parentName: Head
 <<<<<<< HEAD
+<<<<<<< HEAD
       position: {x: 2.3514424e-14, y: 0.0046012164, z: -0.0000000047683715}
+=======
+      position: {x: 1.7635816e-16, y: 0.000034509125, z: -3.5762778e-11}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
       position: {x: 1.7635816e-16, y: 0.000034509125, z: -3.5762778e-11}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -561,7 +583,11 @@ ModelImporter:
     - name: Jaw2
       parentName: Head
 <<<<<<< HEAD
+<<<<<<< HEAD
       position: {x: 2.3514424e-14, y: 0.0046012164, z: -0.0000000047683715}
+=======
+      position: {x: 1.7635816e-16, y: 0.000034509125, z: -3.5762778e-11}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
       position: {x: 1.7635816e-16, y: 0.000034509125, z: -3.5762778e-11}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -595,6 +621,9 @@ ModelImporter:
     - name: Shoulder.L
       parentName: Chest
       position: {x: 1.6009244e-18, y: 0.00004796868, z: -1.1175868e-12}
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       rotation: {x: 0.093053564, y: 0.08992052, z: 0.72819805, w: 0.6730401}
       scale: {x: 0.9999999, y: 1, z: 0.99999976}
@@ -605,6 +634,7 @@ ModelImporter:
       scale: {x: 1, y: 1.0000004, z: 0.9999999}
     - name: Arm2.L
       parentName: Arm1.L
+<<<<<<< HEAD
 <<<<<<< HEAD
       position: {x: -0.0000000031292438, y: 0.01277438, z: -7.45058e-10}
       rotation: {x: 0.015231544, y: 0.04490885, z: -0.02265761, w: 0.99861795}
@@ -743,12 +773,15 @@ ModelImporter:
       parentName: Leg1.L
       position: {x: -2.9802322e-10, y: 0.016318558, z: 1.4901161e-10}
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       position: {x: -2.3469325e-11, y: 0.000095807845, z: -5.587935e-12}
       rotation: {x: 0.40215942, y: 0.03356144, z: -0.12708186, w: 0.9060859}
       scale: {x: 0.9999999, y: 1.0000001, z: 1.0000005}
     - name: Leg1.R
       parentName: Torso
       position: {x: 0.000026130147, y: -0.00000860305, z: -0.00000089877403}
+<<<<<<< HEAD
       rotation: {x: 0.5272935, y: 0.48586473, z: 0.69398105, w: 0.065477595}
       scale: {x: 1, y: 0.9999997, z: 0.99999964}
     - name: Leg2.R
@@ -781,19 +814,43 @@ ModelImporter:
     - name: Leg1.R
       parentName: Torso
       position: {x: 0.0034840195, y: -0.0011470735, z: -0.00011983654}
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       rotation: {x: 0.5272935, y: 0.48586473, z: 0.69398105, w: 0.065477595}
       scale: {x: 1, y: 0.9999997, z: 0.99999964}
     - name: Leg2.R
       parentName: Leg1.R
+<<<<<<< HEAD
       position: {x: 2.9802322e-10, y: 0.016318554, z: 0.0000000027567149}
+=======
+      position: {x: 2.2351736e-12, y: 0.00012238912, z: 2.0675362e-11}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       rotation: {x: -0.54784733, y: 0.07032208, z: 0.6268258, w: 0.5495521}
       scale: {x: 1, y: 1.0000002, z: 1}
     - name: Leg3.R
       parentName: Leg2.R
-      position: {x: 6.1467287e-10, y: 0.009925114, z: -0.0000000014109537}
+      position: {x: 4.6100463e-12, y: 0.00007443834, z: -1.0582152e-11}
       rotation: {x: 0.33215633, y: -0.018013978, z: -0.4757733, w: 0.8142404}
       scale: {x: 0.9999997, y: 1, z: 0.9999998}
+<<<<<<< HEAD
 =======
+=======
+    - name: Leg1.L
+      parentName: Torso
+      position: {x: -0.000026130147, y: -0.00000860305, z: -0.0000008987864}
+      rotation: {x: -0.5272922, y: 0.48586318, z: 0.69398314, w: -0.06547762}
+      scale: {x: 0.9999999, y: 0.9999994, z: 1.0000002}
+    - name: Leg2.L
+      parentName: Leg1.L
+      position: {x: -2.2351736e-12, y: 0.00012238917, z: 1.1175868e-12}
+      rotation: {x: -0.5478469, y: -0.07032226, z: -0.6268256, w: 0.5495528}
+      scale: {x: 0.9999994, y: 0.9999994, z: 0.99999934}
+    - name: Leg3.L
+      parentName: Leg2.L
+      position: {x: -1.117587e-11, y: 0.000074438336, z: -9.228824e-12}
+      rotation: {x: 0.33215627, y: 0.018014142, z: 0.47577348, w: 0.81424034}
+      scale: {x: 1.0000001, y: 1.0000004, z: 0.99999976}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - name: Hand.R
       parentName: Creep
       position: {x: 0.00016717818, y: -0.000083340725, z: 0.00016953675}

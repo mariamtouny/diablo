@@ -1,6 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 using System.Collections.Generic;
 using UnityEngine;
+=======
+using UnityEngine;
+using UnityEngine.AI; // Include AI Navigation namespace
+using Unity.AI.Navigation;
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 using UnityEngine;
 using UnityEngine.AI; // Include AI Navigation namespace
@@ -10,6 +16,7 @@ using Unity.AI.Navigation;
 public class LevelGenerator : MonoBehaviour
 {
     [Header("Prefabs")]
+<<<<<<< HEAD
 <<<<<<< HEAD
     public GameObject environmentPrefab; // Main level environment prefab
     public GameObject playerPrefab;
@@ -52,6 +59,8 @@ public class LevelGenerator : MonoBehaviour
         //GenerateGate();
         GenerateBossArea();
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     public GameObject environmentPrefab;
     public GameObject playerPrefab;
     public GameObject minionPrefab;
@@ -151,6 +160,9 @@ public class LevelGenerator : MonoBehaviour
         GenerateHouses();
 
         BakeNavMesh();
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     }
 
@@ -159,9 +171,12 @@ public class LevelGenerator : MonoBehaviour
         if (environmentPrefab != null)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             GameObject environment = Instantiate(environmentPrefab, Vector3.zero, Quaternion.identity, environmentParent);
             environment.name = "MainEnvironment";
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
             GameObject environment = Instantiate(environmentPrefab, new Vector3(0, 4, 0), Quaternion.identity);
             environment.name = "MainEnvironment";
 
@@ -177,6 +192,9 @@ public class LevelGenerator : MonoBehaviour
                 scale.z *= environmentSize.y / currentSize.z;
                 environment.transform.localScale = scale;
             }
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         }
         else
@@ -185,6 +203,7 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     Vector3 GeneratePlayer()
     {
@@ -205,6 +224,8 @@ public class LevelGenerator : MonoBehaviour
             // Rotate the camera to look at the player
             mainCamera.transform.LookAt(playerPosition);
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     GameObject GeneratePlayer()
     {
         Vector3 playerPosition = new Vector3(0, 0, 0);
@@ -225,12 +246,16 @@ public class LevelGenerator : MonoBehaviour
         else
         {
             Debug.LogError("Main Camera is not assigned!");
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         }
     }
 
     void GenerateEnemyCamps()
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         int campCount = Random.Range(minCamps, maxCamps + 1);
         int remainingMinions = totalMinions;
@@ -312,6 +337,8 @@ public class LevelGenerator : MonoBehaviour
     {
         return new Vector3(Random.Range(0, range.x), 0, Random.Range(0, range.y));
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         foreach (Vector3 campPosition in campPositions)
         {
             GenerateCamp(campPosition);
@@ -410,6 +437,9 @@ public class LevelGenerator : MonoBehaviour
 
         // Spawn the second house at the fixed position
         Instantiate(house2Prefab, house2Position, Quaternion.identity);
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     }
 
@@ -418,6 +448,7 @@ public class LevelGenerator : MonoBehaviour
         return center + new Vector3(Random.Range(-radius, radius), 0, Random.Range(-radius, radius));
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     bool IsPositionTooClose(Vector3 position, List<Vector3> existingPositions, float minDistance)
     {
@@ -432,6 +463,8 @@ public class LevelGenerator : MonoBehaviour
     }
 }
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     Vector3 GetSpacedPosition(Vector3 center, float minSpacing, float maxSpacing)
     {
         float spacing = Random.Range(minSpacing, maxSpacing);
@@ -466,5 +499,9 @@ public class LevelGenerator : MonoBehaviour
             Debug.LogError("NavMeshSurface is not assigned or found!");
         }
     }
+<<<<<<< HEAD
+}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 }
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6

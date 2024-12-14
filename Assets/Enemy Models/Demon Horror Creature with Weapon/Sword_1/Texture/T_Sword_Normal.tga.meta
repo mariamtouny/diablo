@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Texture/T_Sword_Normal.tga.meta
 guid: 623b4707609b2c346ad8b829eb051a08
 TextureImporter:
@@ -10,6 +11,8 @@ TextureImporter:
     enableMipMap: 1
     sRGBTexture: 1
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 guid: c0ca8cda00e4bad4c9a9f52643dcc4c8
 TextureImporter:
   fileIDToRecycleName: {}
@@ -19,7 +22,10 @@ TextureImporter:
     mipMapMode: 0
     enableMipMap: 1
     sRGBTexture: 0
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Normal.tga.meta
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -32,6 +38,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Texture/T_Sword_Normal.tga.meta
     flipGreenChannel: 0
   isReadable: 0
@@ -44,6 +51,11 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Normal.tga.meta
+=======
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -52,6 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Texture/T_Sword_Normal.tga.meta
     filterMode: 1
     aniso: 1
@@ -60,13 +73,18 @@ TextureImporter:
     wrapV: 0
     wrapW: 0
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: -1
     wrapV: -1
     wrapW: -1
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Normal.tga.meta
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -81,6 +99,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Texture/T_Sword_Normal.tga.meta
   textureType: 0
   textureShape: 1
@@ -99,6 +118,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   textureType: 1
   textureShape: 1
   singleChannelComponent: 0
@@ -109,7 +130,10 @@ TextureImporter:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 4096
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Normal.tga.meta
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -117,6 +141,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Texture/T_Sword_Normal.tga.meta
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
@@ -125,11 +150,16 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 4096
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Normal.tga.meta
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -137,6 +167,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Texture/T_Sword_Normal.tga.meta
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
@@ -145,11 +176,16 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
     maxTextureSize: 4096
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Normal.tga.meta
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -157,6 +193,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Texture/T_Sword_Normal.tga.meta
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
@@ -164,6 +201,9 @@ TextureImporter:
 =======
     androidETC2FallbackOverride: 0
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Normal.tga.meta
+=======
+    androidETC2FallbackOverride: 0
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -171,14 +211,18 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Texture/T_Sword_Normal.tga.meta
     internalID: 0
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Normal.tga.meta
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     vertices: []
     indices: 
     edges: []
     weights: []
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Texture/T_Sword_Normal.tga.meta
     secondaryTextures: []
     nameFileIdTable: {}
@@ -189,6 +233,11 @@ TextureImporter:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Normal.tga.meta
+=======
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   userData: 
   assetBundleName: 
   assetBundleVariant: 

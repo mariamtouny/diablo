@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
 
     // Health and Attack Variables
 <<<<<<< HEAD
+<<<<<<< HEAD
     public float health;
     public float currentAttack = 0;
 
@@ -18,18 +19,28 @@ public class Enemy : MonoBehaviour
     //[SerializeField] public AudioClip deathSound;
     //public AudioSource audioSource;
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     public float health = 40f;
     public float currentAttack = 0;
 
     // Audio Variables
     [SerializeField] public AudioClip deathSound;
     public AudioSource audioSource;
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 
     // Core Lifecycle Methods
     public virtual void Start()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        playerObject = GameObject.FindGameObjectWithTag("Player").transform;
+        agent = GetComponent<NavMeshAgent>();
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
         playerObject = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
@@ -45,6 +56,7 @@ public class Enemy : MonoBehaviour
     // Movement Methods
     public virtual void ApproachPlayer() { }
 <<<<<<< HEAD
+<<<<<<< HEAD
     // State and Damage Methods
     public virtual void TakeDamage() { }
 
@@ -52,6 +64,8 @@ public class Enemy : MonoBehaviour
 
     public virtual void Die() { }
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 
     // State and Damage Methods
     public virtual void TakeDamage()
@@ -84,6 +98,9 @@ public class Enemy : MonoBehaviour
         // Basic death logic
         Debug.Log("enemy died");
     }
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 
     // Coroutines
