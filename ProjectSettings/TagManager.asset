@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Arrow
   - Fireball
+  - Demon
   layers:
   - Default
   - TransparentFX

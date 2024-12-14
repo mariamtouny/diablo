@@ -138,9 +138,14 @@ public class Sorcerer : PlayerLeveling
         Collider[] hitColliders = Physics.OverlapSphere(position, radius);
         foreach (var hitCollider in hitColliders)
         {
-            if (hitCollider.CompareTag("Enemy"))
+            if (hitCollider.CompareTag("Demon"))
             {
-                // damage enemies
+                if (hitCollider.gameObject.CompareTag("Demon"))
+                {
+                    Demon demon = hitCollider.gameObject.GetComponent<Demon>();
+                    demon.TakeDamage(20);
+                    GainXP(30);
+                }
                 Debug.Log($"Enemy at {hitCollider.transform.position} took {damage} damage!");
             }
         }
