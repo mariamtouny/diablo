@@ -120,9 +120,9 @@ public class Sorcerer : PlayerLeveling
             Destroy(fireCircle, 5f);
             Debug.Log("Inferno spawned at " + spawnPosition);
 
-            ApplyDamage(spawnPosition, 1.5f, abilities[3].abilityDamage);
+            ApplyDamage(spawnPosition, 1.5f, 10);
 
-            StartCoroutine(ContinuousDamage(spawnPosition, 2f, abilities[3].abilityDamage / 2, 5f));
+            StartCoroutine(ContinuousDamage(spawnPosition, 2f, 2, 5f));
 
             Destroy(fireCircle, 5f);
 
@@ -144,9 +144,10 @@ public class Sorcerer : PlayerLeveling
         {
             Debug.Log($"Detected object: {hitCollider.gameObject.name}");
 
-            if (hitCollider.gameObject.CompareTag("Demon")) 
+            if (hitCollider.gameObject.CompareTag("Enemy")) 
             {
-                Demon demon = hitCollider.gameObject.GetComponent<Demon>();
+                //Demon demon = hitCollider.gameObject.GetComponent<Demon>();
+                Enemy demon = hitCollider.gameObject.GetComponent<Enemy>();
                 if (demon != null)
                 {
                     demon.TakeDamage(damage);
@@ -160,6 +161,7 @@ public class Sorcerer : PlayerLeveling
     {
         float elapsed = 0f;
         float tickInterval = 1f;
+        yield return new WaitForSeconds(1f);
 
         while (elapsed < duration)
         {
