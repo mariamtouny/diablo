@@ -495,11 +495,47 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7240055334353771643, guid: 05b6513870d758e4e95a92535e681699, type: 3}
+      propertyPath: m_Speed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05b6513870d758e4e95a92535e681699, type: 3}
+--- !u!1 &784975696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6307070917912366784, guid: 05b6513870d758e4e95a92535e681699, type: 3}
+  m_PrefabInstance: {fileID: 784975695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &901959902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7113761399669513825, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
+  m_PrefabInstance: {fileID: 1637464919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &901959905
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901959902}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1148277235012568801, guid: b7925e36133e71d488f70c496dc9d601, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +653,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5469451258260161062, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2350919397670358339, guid: 72b8548a02478ed45a0f692f82713477, type: 3}
+    - target: {fileID: 4627289610415890024, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
+      propertyPath: m_TagString
+      value: Demon
+      objectReference: {fileID: 0}
     - target: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: m_Name
       value: Demon_Prefab Variant
@@ -624,6 +668,10 @@ PrefabInstance:
     - target: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
+      propertyPath: m_TagString
+      value: Demon
       objectReference: {fileID: 0}
     - target: {fileID: 5314731379862679534, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: m_LocalPosition.x
@@ -665,6 +713,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5611208672094302889, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
+      propertyPath: m_TagString
+      value: Demon
+      objectReference: {fileID: 0}
     - target: {fileID: 6607886175126899143, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: deathSound
       value: 
@@ -677,6 +729,10 @@ PrefabInstance:
       propertyPath: playerObject
       value: 
       objectReference: {fileID: 36328468}
+    - target: {fileID: 7113761399669513825, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
+      propertyPath: m_TagString
+      value: Demon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -684,6 +740,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1637464921}
+    - targetCorrespondingSourceObject: {fileID: 7113761399669513825, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 901959905}
   m_SourcePrefab: {fileID: 100100000, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
 --- !u!1 &1637464920 stripped
 GameObject:
@@ -885,9 +944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   environmentPrefab: {fileID: 1695219728625858851, guid: 1976afd52d2181e428f375440ab3cfd7, type: 3}
-  playerPrefab: {fileID: 8984351863353196830, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
+  playerPrefab: {fileID: 784975696}
   minionPrefab: {fileID: 9022760808206912335, guid: 53885a6fa81036e4f8ee908cc2e05672, type: 3}
-  demonPrefab: {fileID: 1637464920}
+  demonPrefab: {fileID: 559670741228145182, guid: 608806a22ea7ef547960f6c34d20cafe, type: 3}
   campShadowPrefab: {fileID: 573614792713930383, guid: f124fc1051b4d0a4db8898a97beea416, type: 3}
   potionPrefab: {fileID: 1000013317980782, guid: 2cf6690298568294cb6b655c0a3aeb87, type: 3}
   runeFragmentPrefab: {fileID: 1000012006197310, guid: 465c505844950da499dcf096a6da4409, type: 3}
