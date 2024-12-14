@@ -95,15 +95,14 @@ public class LevelGenerator : MonoBehaviour
     void Start()
     {
         GenerateMainEnvironment();
-        GameObject player = GeneratePlayer();
-        SetupCamera(player);
+        //GeneratePlayer();
+        //SetupCamera(player);
         GenerateEnemyCamps();
         GenerateBossArea();
         GenerateTrees();
         GenerateRocks();
         GenerateHouses();
-
-        BakeNavMesh();
+        //BakeNavMesh();
     }
 
     void GenerateMainEnvironment()
@@ -111,7 +110,17 @@ public class LevelGenerator : MonoBehaviour
         if (environmentPrefab != null)
         {
             GameObject environment = Instantiate(environmentPrefab, new Vector3(0, 4, 0), Quaternion.identity);
-            environment.name = "MainEnvironment";
+            //environment.name = "MainEnvironment";
+            //environment.layer = 3;
+
+            //foreach (Transform child in environment.transform)
+            //{
+            //    child.gameObject.layer = 3;
+            //    foreach (Transform child1 in child)
+            //    {
+            //        child1.gameObject.layer = 3;
+            //    }
+            //}
 
             // Ensure the environment maintains the correct size
             Renderer environmentRenderer = environment.GetComponent<Renderer>();
@@ -125,6 +134,7 @@ public class LevelGenerator : MonoBehaviour
                 scale.z *= environmentSize.y / currentSize.z;
                 environment.transform.localScale = scale;
             }
+            //navMeshSurface = environment.AddComponent<NavMeshSurface>();
         }
         else
         {
@@ -288,6 +298,8 @@ public class LevelGenerator : MonoBehaviour
     {
         if (navMeshSurface != null)
         {
+            navMeshSurface.collectObjects = CollectObjects.All;
+            navMeshSurface.layerMask = LayerMask.GetMask("ground");
             Debug.Log("Baking NavMesh...");
             navMeshSurface.BuildNavMesh(); // Dynamically bake the NavMesh
         }

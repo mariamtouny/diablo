@@ -34,16 +34,6 @@ public class Enemy : MonoBehaviour
     public virtual void ApproachPlayer() { }
 
     // State and Damage Methods
-    public virtual void TakeDamage(int damage)
-    {
-        // Basic damage logic
-        health -= damage;
-
-        if (health <= 0)
-        {
-            Die();
-        }
-    }
 
     public virtual void TakeDamage()
     {

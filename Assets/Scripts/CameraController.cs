@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour
 
     public Transform target;    
 
-    public Vector3 offset;          
+    public Vector3 offset = new Vector3 (0, -1.17999995f, -0.790000021f);          
 
     public float pitch = 1.5f;        
 
