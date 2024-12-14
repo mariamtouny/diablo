@@ -10,16 +10,30 @@ public class Enemy : MonoBehaviour
     public bool alert = false;
 
     // Health and Attack Variables
+<<<<<<< HEAD
     public float health;
     public float currentAttack = 0;
 
     // Audio Variables
     //[SerializeField] public AudioClip deathSound;
     //public AudioSource audioSource;
+=======
+    public float health = 40f;
+    public float currentAttack = 0;
+
+    // Audio Variables
+    [SerializeField] public AudioClip deathSound;
+    public AudioSource audioSource;
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 
     // Core Lifecycle Methods
     public virtual void Start()
     {
+<<<<<<< HEAD
+=======
+        playerObject = GameObject.FindGameObjectWithTag("Player").transform;
+        agent = GetComponent<NavMeshAgent>();
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         // Basic initialization to be implemented by child classes
     }
 
@@ -30,12 +44,47 @@ public class Enemy : MonoBehaviour
 
     // Movement Methods
     public virtual void ApproachPlayer() { }
+<<<<<<< HEAD
     // State and Damage Methods
     public virtual void TakeDamage() { }
 
     public virtual void GetStunned() { }
 
     public virtual void Die() { }
+=======
+
+    // State and Damage Methods
+    public virtual void TakeDamage()
+    {
+        // Basic damage logic
+        health -= 5f;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    public virtual void TakeDamage(int damage)
+    {
+        // Basic damage logic
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    public virtual void GetStunned()
+    {
+        // Basic stun logic
+    }
+
+    public virtual void Die()
+    {
+        // Basic death logic
+        Debug.Log("enemy died");
+    }
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 
     // Coroutines
     public virtual IEnumerator Delay()

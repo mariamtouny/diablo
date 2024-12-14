@@ -4,16 +4,23 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Camp
   - Enemy
+=======
+  - Enemy
+  - Arrow
+  - Fireball
+  - Ground
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ground
   - Water
   - UI
-  - 
+  - enemy
   - 
   - 
   - 
