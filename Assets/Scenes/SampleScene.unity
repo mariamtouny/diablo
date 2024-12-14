@@ -123,13 +123,19 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 --- !u!4 &36328468 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8639316715927837604, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
   m_PrefabInstance: {fileID: 1646466964}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 --- !u!1 &381837086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
@@ -250,10 +256,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsActive: 0
 =======
   m_IsActive: 1
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_IsActive: 0
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 --- !u!135 &659549246
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -529,12 +539,15 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &1693972667
 =======
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 --- !u!1 &1119138751
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +559,7 @@ GameObject:
   - component: {fileID: 1119138753}
   - component: {fileID: 1119138752}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Layer: 3
   m_Name: Nav Surface
   m_TagString: Ground
@@ -554,6 +568,11 @@ GameObject:
   m_Name: Nav Surface
   m_TagString: Untagged
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_Layer: 3
+  m_Name: Nav Surface
+  m_TagString: Ground
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,10 +607,14 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_NavMeshData: {fileID: 0}
 =======
   m_NavMeshData: {fileID: 23800000, guid: 6d117091e2b79e64f803e25830984291, type: 2}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_NavMeshData: {fileID: 0}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_BuildHeightMesh: 0
 --- !u!4 &1119138753
 Transform:
@@ -611,11 +634,14 @@ Transform:
 --- !u!1001 &1642987651
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -623,6 +649,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -681,17 +708,25 @@ PrefabInstance:
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - target: {fileID: 3053556898663338245, guid: f7ac106dbddb32540b21bcc5fd4a7c4c, type: 3}
       propertyPath: m_Name
       value: MainEnviroment 1
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - target: {fileID: 3053556898663338245, guid: f7ac106dbddb32540b21bcc5fd4a7c4c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - target: {fileID: 6538647057178639511, guid: f7ac106dbddb32540b21bcc5fd4a7c4c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -247.18344
@@ -738,6 +773,9 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7ac106dbddb32540b21bcc5fd4a7c4c, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 --- !u!1001 &1646466964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -804,11 +842,14 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 --- !u!1 &1939441648
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,9 +894,13 @@ MonoBehaviour:
   house2Prefab: {fileID: 136122, guid: 2eef7049338fd0f439def2ceed613e7e, type: 3}
   mainCamera: {fileID: 963194227}
 <<<<<<< HEAD
+<<<<<<< HEAD
   navMeshSurface: {fileID: 1119138752}
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  navMeshSurface: {fileID: 1119138752}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   environmentSize: {x: 1, y: 1}
 --- !u!4 &1939441650
 Transform:
@@ -885,12 +930,18 @@ PrefabInstance:
       value: Demon_Prefab
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - target: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - target: {fileID: 5314731379862679534, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: m_LocalPosition.x
       value: -168.94635
@@ -943,10 +994,14 @@ PrefabInstance:
       propertyPath: playerObject
       value: 
 <<<<<<< HEAD
+<<<<<<< HEAD
       objectReference: {fileID: 36328468}
 =======
       objectReference: {fileID: 659549249}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+      objectReference: {fileID: 36328468}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - target: {fileID: 6607886175126899143, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: Targets.Array.data[0]
       value: 
@@ -973,16 +1028,20 @@ SceneRoots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 1693972667}
 =======
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   - {fileID: 1642987651}
   - {fileID: 1119138753}
   - {fileID: 6301195563091343167}
   - {fileID: 659549249}
+<<<<<<< HEAD
 <<<<<<< HEAD
   - {fileID: 1646466964}
 <<<<<<< HEAD
@@ -991,3 +1050,6 @@ SceneRoots:
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  - {fileID: 1646466964}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6

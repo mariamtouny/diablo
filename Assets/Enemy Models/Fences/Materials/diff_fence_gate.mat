@@ -2,11 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
+<<<<<<< HEAD
   serializedVersion: 8
+=======
+  serializedVersion: 6
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
   m_Name: diff_fence_gate
 ========
@@ -17,18 +22,34 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
+=======
+<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 1/Tree 1 Mat.mat
+  m_Name: Tree 1 Mat
+========
+  m_Name: diff_fence_gate
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+<<<<<<< HEAD
   m_LockedProperties: 
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
+<<<<<<< HEAD
         m_Texture: {fileID: 0}
+=======
+        m_Texture: {fileID: 2800000, guid: 0930a3da78b5cbd428169d021d4f9d26, type: 3}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -48,6 +69,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
         m_Texture: {fileID: 2800000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
 ========
@@ -57,6 +79,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+=======
+<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 1/Tree 1 Mat.mat
+        m_Texture: {fileID: 2800000, guid: 3d099ac7959bdb3488c11c0c2bc63e2f, type: 3}
+========
+        m_Texture: {fileID: 2800000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: cb71793383bb2754c955cceeb16d9840, type: 3}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -67,13 +100,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+<<<<<<< HEAD
     m_Ints: []
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+<<<<<<< HEAD
     - _GlossMapScale: 1
+=======
+    - _GlossMapScale: 0.194
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _Metallic: 0
@@ -86,6 +126,17 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< HEAD
     - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
+=======
+<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 1/Tree 1 Mat.mat
+    - _Color: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+========
+    - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6

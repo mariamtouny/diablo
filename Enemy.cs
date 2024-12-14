@@ -5,10 +5,14 @@ using System.Collections;
 public class Enemy : MonoBehaviour
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     //public Transform playerObject;
 =======
     public Transform playerObject;
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    //public Transform playerObject;
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     public NavMeshAgent agent;
     public Animator animator;
     public bool alert = false;
@@ -31,6 +35,9 @@ public class Enemy : MonoBehaviour
 
     // State and Damage Methods
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     public virtual void TakeDamage(int damage)
     {
         // Basic damage logic
@@ -50,9 +57,12 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
+<<<<<<< HEAD
 =======
     public virtual void TakeDamage();
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 
     public virtual void GetStunned();
 

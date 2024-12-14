@@ -2774,10 +2774,14 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 14fd341493fac1348a57e53fc2e76427, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 244542d05c35fbd45adba0c03d7e7fb7, type: 2}
 =======
   m_Controller: {fileID: 0}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_Controller: {fileID: 9100000, guid: 244542d05c35fbd45adba0c03d7e7fb7, type: 2}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1

@@ -680,6 +680,9 @@ GameObject:
   - component: {fileID: 1759860317156533159}
   - component: {fileID: 5660016990125177309}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   - component: {fileID: -3309145041970624525}
   - component: {fileID: -962135575748680149}
   - component: {fileID: -7519326251126653866}
@@ -688,11 +691,14 @@ GameObject:
   m_Layer: 0
   m_Name: SorcererPrefab
   m_TagString: Player
+<<<<<<< HEAD
 =======
   m_Layer: 0
   m_Name: SorcererPrefab
   m_TagString: Untagged
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -725,10 +731,14 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6aca5989105967446999002ffdcde611, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 0115861b13d3cfe4ca6fa02ef380f336, type: 2}
 =======
   m_Controller: {fileID: 0}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_Controller: {fileID: 9100000, guid: 0115861b13d3cfe4ca6fa02ef380f336, type: 2}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -740,6 +750,9 @@ Animator:
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 --- !u!195 &-3309145041970624525
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -824,8 +837,11 @@ MonoBehaviour:
   maxLevel: 4
   xpToNextLevel: 0
   abilityPoints: 0
+<<<<<<< HEAD
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 --- !u!1 &1382977093425507193
 GameObject:
   m_ObjectHideFlags: 0

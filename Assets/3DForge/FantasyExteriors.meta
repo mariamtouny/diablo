@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/3DForge/FantasyExteriors.meta
 guid: 50aca929d5fae4a44b1abf8ab1f2a0d4
+========
+guid: 20c732508a6ec26478bc76e9992c0853
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/3DForge.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

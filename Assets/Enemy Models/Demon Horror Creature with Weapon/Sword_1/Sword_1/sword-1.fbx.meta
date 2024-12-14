@@ -1,6 +1,7 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Sword_1/sword-1.fbx.meta
 guid: c0906b17f55c28e42968429f50f91ef8
 ModelImporter:
@@ -17,6 +18,8 @@ ModelImporter:
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 guid: 10ba63e143214a442b53e900b64d455c
 ModelImporter:
   serializedVersion: 22200
@@ -59,11 +62,14 @@ ModelImporter:
     materialLocation: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Sword_1/sword-1.fbx.meta
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -89,6 +95,7 @@ ModelImporter:
     clipAnimations: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Sword_1/sword-1.fbx.meta
     isReadable: 0
 =======
@@ -100,6 +107,9 @@ ModelImporter:
 =======
     isReadable: 1
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    isReadable: 1
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -112,6 +122,7 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Sword_1/sword-1.fbx.meta
@@ -129,6 +140,10 @@ ModelImporter:
     nodeNameCollisionStrategy: 0
     fileIdsGeneration: 1
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -147,6 +162,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Sword_1/sword-1.fbx.meta
     secondaryUVMarginMethod: 1
 =======
@@ -158,6 +174,9 @@ ModelImporter:
 =======
     secondaryUVMarginMethod: 0
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    secondaryUVMarginMethod: 0
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
@@ -193,6 +212,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Sword_1/sword-1.fbx.meta
   animationType: 2
   humanoidOversampling: 1
@@ -205,6 +225,8 @@ ModelImporter:
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
@@ -213,11 +235,14 @@ ModelImporter:
   remapMaterialsIfMaterialImportModeIsNone: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Sword_1/sword-1.fbx.meta
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   additionalBone: 0
   userData: 
   assetBundleName: 

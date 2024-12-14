@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/3DForge.meta
 guid: 20c732508a6ec26478bc76e9992c0853
 ========
 guid: 718a8094bcade434c84275b2496f5161
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/DungeonModularPack.meta
+=======
+<<<<<<<< HEAD:Assets/3DForge/FantasyExteriors.meta
+guid: 50aca929d5fae4a44b1abf8ab1f2a0d4
+========
+guid: 20c732508a6ec26478bc76e9992c0853
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/3DForge.meta
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
