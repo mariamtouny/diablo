@@ -1,6 +1,7 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Enemy Models/Fences/diff_fence_column.psd.meta
 guid: 486b04940bb5f4b4dab1b4233ad796e1
 ========
@@ -16,6 +17,10 @@ TextureImporter:
 =======
 <<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse_3.tif.meta
 guid: d2d22c01dfdaf464786d073975e94ee1
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness_3.tif.meta
+guid: 7a563f6a7a1b39c4c8bf4571f29ead38
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 ========
 guid: 486b04940bb5f4b4dab1b4233ad796e1
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_column.psd.meta
@@ -23,6 +28,9 @@ TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
+<<<<<<< HEAD
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   mipmaps:
     mipMapMode: 0
@@ -90,9 +98,13 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
 <<<<<<< HEAD
+<<<<<<< HEAD
     maxTextureSize: 512
 =======
 <<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse_3.tif.meta
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness_3.tif.meta
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,6 +122,9 @@ TextureImporter:
 ========
     maxTextureSize: 512
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_column.psd.meta
+<<<<<<< HEAD
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     resizeAlgorithm: 0
     textureFormat: -1
@@ -136,16 +151,23 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
 <<<<<<< HEAD
+<<<<<<< HEAD
     buildTarget: Android
     maxTextureSize: 512
 =======
 <<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse_3.tif.meta
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness_3.tif.meta
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     buildTarget: Server
     maxTextureSize: 2048
 ========
     buildTarget: Android
     maxTextureSize: 512
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_column.psd.meta
+<<<<<<< HEAD
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     resizeAlgorithm: 0
     textureFormat: -1

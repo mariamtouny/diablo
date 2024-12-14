@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     //public Transform playerObject;
 =======
     public Transform playerObject;
@@ -22,6 +23,9 @@ public class Enemy : MonoBehaviour
 =======
     //public Transform playerObject;
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    public Transform playerObject;
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
     public Transform playerObject;
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
@@ -46,6 +50,7 @@ public class Enemy : MonoBehaviour
     public virtual void ApproachPlayer();
 
     // State and Damage Methods
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -88,6 +93,9 @@ public class Enemy : MonoBehaviour
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    public virtual void TakeDamage();
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
     public virtual void TakeDamage();
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
