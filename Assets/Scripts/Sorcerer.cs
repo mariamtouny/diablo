@@ -122,7 +122,7 @@ public class Sorcerer : PlayerLeveling
 
             ApplyDamage(spawnPosition, 1.5f, abilities[3].abilityDamage);
 
-            StartCoroutine(ContinuousDamage(spawnPosition, 1.5f, abilities[3].abilityDamage / 2, 5f));
+            StartCoroutine(ContinuousDamage(spawnPosition, 2f, abilities[3].abilityDamage / 2, 5f));
 
             Destroy(fireCircle, 5f);
 
@@ -135,21 +135,27 @@ public class Sorcerer : PlayerLeveling
     }
     private void ApplyDamage(Vector3 position, float radius, int damage)
     {
-        Collider[] hitColliders = Physics.OverlapSphere(position, radius);
+        Debug.DrawLine(position, position + Vector3.up * radius, Color.red, 1f);
+        Debug.DrawLine(position, position - Vector3.up * radius, Color.red, 1f);
+        Vector3 spherePosition = position + Vector3.up * 2; // Adjust for height
+        Collider[] hitColliders = Physics.OverlapSphere(spherePosition, radius);
+
         foreach (var hitCollider in hitColliders)
         {
-            if (hitCollider.CompareTag("Demon"))
+            Debug.Log($"Detected object: {hitCollider.gameObject.name}");
+
+            if (hitCollider.gameObject.CompareTag("Demon")) 
             {
-                if (hitCollider.gameObject.CompareTag("Demon"))
+                Demon demon = hitCollider.gameObject.GetComponent<Demon>();
+                if (demon != null)
                 {
-                    Demon demon = hitCollider.gameObject.GetComponent<Demon>();
-                    demon.TakeDamage(20);
-                    GainXP(30);
+                    demon.TakeDamage(damage);
                 }
-                Debug.Log($"Enemy at {hitCollider.transform.position} took {damage} damage!");
             }
         }
     }
+
+
     private IEnumerator ContinuousDamage(Vector3 position, float radius, int damage, float duration)
     {
         float elapsed = 0f;
@@ -157,11 +163,13 @@ public class Sorcerer : PlayerLeveling
 
         while (elapsed < duration)
         {
+            Debug.Log($"Applying continuous damage at position {position}, elapsed: {elapsed}");
             ApplyDamage(position, radius, damage);
             yield return new WaitForSeconds(tickInterval);
             elapsed += tickInterval;
         }
     }
+
     void Update()
     {
         base.Update();
@@ -314,5 +322,11 @@ public class Sorcerer : PlayerLeveling
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 15f);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 2);
     }
 }

@@ -102,7 +102,7 @@ public class LevelGenerator : MonoBehaviour
         GenerateTrees();
         GenerateRocks();
         GenerateHouses();
-        //BakeNavMesh();
+        BakeNavMesh();
     }
 
     void GenerateMainEnvironment()
@@ -110,17 +110,17 @@ public class LevelGenerator : MonoBehaviour
         if (environmentPrefab != null)
         {
             GameObject environment = Instantiate(environmentPrefab, new Vector3(0, 4, 0), Quaternion.identity);
-            //environment.name = "MainEnvironment";
-            //environment.layer = 3;
+            environment.name = "MainEnvironment";
+            environment.layer = 3;
 
-            //foreach (Transform child in environment.transform)
-            //{
-            //    child.gameObject.layer = 3;
-            //    foreach (Transform child1 in child)
-            //    {
-            //        child1.gameObject.layer = 3;
-            //    }
-            //}
+            foreach (Transform child in environment.transform)
+            {
+                child.gameObject.layer = 3;
+                foreach (Transform child1 in child)
+                {
+                    child1.gameObject.layer = 3;
+                }
+            }
 
             // Ensure the environment maintains the correct size
             Renderer environmentRenderer = environment.GetComponent<Renderer>();
