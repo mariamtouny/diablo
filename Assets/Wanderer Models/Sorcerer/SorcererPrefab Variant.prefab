@@ -80,6 +80,10 @@ PrefabInstance:
       value: SorcererPrefab Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1380237901372832029, guid: 65eae7b5ae187684a8bdd527137e991a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380237901372832029, guid: 65eae7b5ae187684a8bdd527137e991a, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
