@@ -681,7 +681,6 @@ GameObject:
   - component: {fileID: 5660016990125177309}
   - component: {fileID: -3309145041970624525}
   - component: {fileID: -962135575748680149}
-  - component: {fileID: -7519326251126653866}
   - component: {fileID: -2058080022328930509}
   - component: {fileID: 8089164750903886654}
   m_Layer: 0
@@ -763,22 +762,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e266875cf9441504d9bab8182a91b35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-7519326251126653866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380237901372832029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63af61fb948e28c4ab4747cf3d42fd1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-  pitch: 1.5
-  yawSpeed: 100
 --- !u!114 &-2058080022328930509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,6 +796,7 @@ MonoBehaviour:
   maxLevel: 4
   xpToNextLevel: 0
   abilityPoints: 0
+  fireball: {fileID: 0}
 --- !u!1 &1382977093425507193
 GameObject:
   m_ObjectHideFlags: 0
