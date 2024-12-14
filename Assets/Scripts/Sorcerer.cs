@@ -223,18 +223,19 @@ public class Sorcerer : PlayerLeveling
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-
+        //Debug.DrawRay(ray.origin, ray.direction * 100, Color.red, 2f);
         if (Physics.Raycast(ray, out hit, 100))
         {
+            Debug.Log(hit.collider.gameObject);
             GameObject enemy = hit.collider.gameObject;
-            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5.0f);
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 10.0f);
             foreach (Collider hitCollider in hitColliders)
             {
 
                 if (hitCollider.gameObject == enemy)
                 {
 
-                    if (enemy.CompareTag("Enemy"))
+                    if (enemy.CompareTag("Demon"))
                     {
 
                         if (enemy != null)
@@ -242,7 +243,7 @@ public class Sorcerer : PlayerLeveling
                             //FaceTarget(enemy.transform);
 
                              Vector3 direction = (enemy.transform.position - transform.position).normalized;
-                            //direction.y = 0; // We only want to rotate around the y-axis
+                            direction.y = 0; // We only want to rotate around the y-axis
 
                     
                         // Calculate the target rotation that looks towards the enemy
@@ -262,7 +263,8 @@ public class Sorcerer : PlayerLeveling
                             Vector3 position = transform.position;
                             GameObject fball = Instantiate(fireball, new Vector3(position.x - 0.122494f, position.y + 1.13f, position.z + 0.9492f), Quaternion.identity);
                             fball.transform.localScale += scaleChange;
-                            StartCoroutine(MoveFireball(fball, enemy.transform.position));
+                            Vector3 demonhitpoint = enemy.transform.position +  new Vector3(0, 2.25f, 0);
+                            StartCoroutine(MoveFireball(fball, demonhitpoint));
 
                             fireball.SetActive(false);
                             Debug.Log("Mouse clicked!");
@@ -299,10 +301,10 @@ public class Sorcerer : PlayerLeveling
 
         foreach (Collider collider in colliders)
         {
-            Debug.Log("Overlap detected with: " + collider.gameObject.name);
+            //Debug.Log("Overlap detected with: " + collider.gameObject);
             if (collider.gameObject.CompareTag("Demon"))
             {
-                Demon demon = collider.gameObject.GetComponent<Demon>();
+                Demon demon = collider.gameObject.GetComponentInParent<Demon>();
                 demon.TakeDamage(5);
                 GainXP(30);
             }
