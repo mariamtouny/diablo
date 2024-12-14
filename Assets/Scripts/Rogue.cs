@@ -11,7 +11,7 @@ public class Rogue : PlayerLeveling
     Animator animator;
     Camera cam;
     public GameObject arrow;
-    private Vector3 scaleChange = new Vector3(-0.6f, -0.6f, -0.6f);
+    private Vector3 scaleChange = new Vector3(1f, 1f, 1f);
 
     void Start()
     {
@@ -20,10 +20,7 @@ public class Rogue : PlayerLeveling
         cam = Camera.main;
         animator = GetComponent<Animator>();
         renderer = GetComponent<Renderer>();
-    }
-
-    private void Awake()
-    {
+    
         abilities = new List<ability>
         {
             new ability { abilityName = "Arrow", abilityType = ability.AbilityType.Basic, activation = ability.Activation.SelectEnemy, abilityDamage = 5, abilityCooldown = 1 },
@@ -34,14 +31,16 @@ public class Rogue : PlayerLeveling
 
         // Unlock the basic ability by default
         abilities[0].unlocked = true;
+        arrow.SetActive(false);
     }
 
     public void UseAbility(string abilityName)
     {
-        var ability = abilities.Find(a => a.abilityName == abilityName && a.unlocked);
-        if (ability == null)
+        ability ability = abilities.Find(a => a.abilityName == abilityName);
+        //Debug.Log(ability + " " + ability.abilityName + " " + ability.unlocked);
+        if (!ability.unlocked)
         {
-            Debug.Log($"{abilityName} is not unlocked or does not exist!");
+            Debug.Log($"{abilityName} is not unlocked!");
             return;
         }
 
@@ -62,7 +61,7 @@ public class Rogue : PlayerLeveling
             case "Dash":
                 PerformDash();
                 break;
-            case "Shower Of Arrows":
+            case "Shower of Arrows":
                 PerformShowerOfArrows();
                 break;
             default:
@@ -88,6 +87,7 @@ public class Rogue : PlayerLeveling
 
         if (Physics.Raycast(ray, out hit, 100))
         {
+            //Debug.Log(hit.collider.gameObject);
             GameObject enemy = hit.collider.gameObject;
             Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5.0f);
             foreach (Collider hitCollider in hitColliders)
@@ -96,8 +96,9 @@ public class Rogue : PlayerLeveling
                 if (hitCollider.gameObject == enemy)
                 {
 
-                    if (enemy.CompareTag("Enemy"))
+                    if (enemy.CompareTag("Demon"))
                     {
+
 
                         if (enemy != null)
                         {
@@ -117,16 +118,22 @@ public class Rogue : PlayerLeveling
                             // Smoothly interpolate to the final target rotation
                             //transform.rotation = Quaternion.Slerp(transform.rotation, finalRotation, Time.deltaTime * 15f);
 
-                            arrow.SetActive(true);
                             animator.SetTrigger("Arrow");
-
-                            yield return new WaitForSeconds(2f);
+                            yield return new WaitForSeconds(1f);
+                            arrow.SetActive(true);
+                            Quaternion newRotation = Quaternion.Euler(90, 0, -15.58f);
+                            yield return new WaitForSeconds(1f);
+                            arrow.transform.rotation = newRotation;
+                            yield return new WaitForSeconds(1f);
                             Vector3 position = transform.position;
-                            GameObject fball = Instantiate(arrow, new Vector3(position.x - 0.122494f, position.y + 1.13f, position.z + 0.9492f), Quaternion.identity);
+                            GameObject fball = Instantiate(arrow, new Vector3(position.x - 0.122494f, position.y + 1.13f, position.z ), Quaternion.identity);
                             fball.transform.localScale += scaleChange;
-                            StartCoroutine(MoveArrow(fball, enemy.transform.position));
-
+                            fball.transform.rotation = Quaternion.Euler(0, 90, 0);
+                            Vector3 demonhitpoint = enemy.transform.position + new Vector3(0, 2.25f, 0);
+                            StartCoroutine(MoveArrow(fball, demonhitpoint));
                             arrow.SetActive(false);
+                            Quaternion oldRotation = Quaternion.Euler(0, 0, -15.58f);
+                            arrow.transform.rotation = oldRotation;
                             Debug.Log("Mouse clicked!");
 
                         }
@@ -164,7 +171,7 @@ public class Rogue : PlayerLeveling
             Debug.Log("Overlap detected with: " + collider.gameObject.name);
             if (collider.gameObject.CompareTag("Demon"))
             {
-                Demon demon = collider.gameObject.GetComponent<Demon>();
+                Demon demon = collider.gameObject.GetComponentInParent<Demon>();
                 demon.TakeDamage(5);
                 GainXP(30);
             }
@@ -191,12 +198,83 @@ public class Rogue : PlayerLeveling
     private void PerformShowerOfArrows()
     {
         Debug.Log("Shower");
+        StartCoroutine(ShowerRoutine());
+
     }
+
+    private IEnumerator ShowerRoutine()
+    {
+        Debug.Log("Select a point for Shower of arrows...");
+        while (!Input.GetMouseButtonDown(1))
+        {
+            yield return null;
+        }
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            Vector3 spawnPosition = hit.point;
+
+            
+            Debug.Log("Arrows raining at " + spawnPosition);
+
+            ApplyDamage(spawnPosition, 1.5f, 10);
+            Debug.Log("Shower of Arrows finished!");
+        }
+        else
+        {
+            Debug.Log("No valid point selected!");
+        }
+    }
+    private void ApplyDamage(Vector3 position, float radius, int damage)
+    {
+
+        Debug.DrawLine(position, position + Vector3.up * radius, Color.red, 1f);
+        Debug.DrawLine(position, position - Vector3.up * radius, Color.red, 1f);
+        Vector3 spherePosition = position + Vector3.up * 2; // Adjust for height
+        Collider[] hitColliders = Physics.OverlapSphere(spherePosition, radius);
+
+        foreach (var hitCollider in hitColliders)
+        {
+            if (hitCollider.gameObject.CompareTag("Demon"))
+            {
+                Demon demon = hitCollider.gameObject.GetComponentInParent<Demon>();
+                demon.TakeDamage(10);
+                agent = hitCollider.gameObject.GetComponentInParent<NavMeshAgent>();
+                float speed = agent.speed;
+                StartCoroutine(SlowDown(agent, speed, 3f));
+
+            }
+            else if (hitCollider.gameObject.CompareTag("Minion"))
+            {
+                //Minion minion = collider.gameObject.GetComponent<Minion>();
+                //minion.TakeDamage(5);
+            }
+        }
+    }
+
+    private IEnumerator SlowDown(NavMeshAgent agent, float speed, float duration)
+    {
+        agent.speed = speed* 0.25f;
+        yield return new WaitForSeconds(duration);
+        agent.speed = speed;
+    }
+
+
+
     void Update()
     {
+        base.Update();
        if (Input.GetKeyDown(KeyCode.Q))
         {
             UseAbility("Arrow");
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            UseAbility("Shower of Arrows");
         }
     }
 }

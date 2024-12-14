@@ -227,7 +227,7 @@ public class Sorcerer : PlayerLeveling
         //Debug.DrawRay(ray.origin, ray.direction * 100, Color.red, 2f);
         if (Physics.Raycast(ray, out hit, 100))
         {
-            Debug.Log(hit.collider.gameObject);
+            //Debug.Log(hit.collider.gameObject);
             GameObject enemy = hit.collider.gameObject;
             Collider[] hitColliders = Physics.OverlapSphere(transform.position, 10.0f);
             foreach (Collider hitCollider in hitColliders)
