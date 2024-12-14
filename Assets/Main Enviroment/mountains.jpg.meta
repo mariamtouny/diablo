@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Main Enviroment/mountains.jpg.meta
 guid: 6f5c895508d3e264096b0ad1257f4b37
+========
+guid: 4b968e99131a87442a73300a2792a745
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/Arrow_metal_Roughness.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

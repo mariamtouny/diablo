@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/diff_fence_column.psd.meta
 guid: 486b04940bb5f4b4dab1b4233ad796e1
+========
+guid: aa6c59f513a49e345ba9b78894aa3e68
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/Arrow_middle_Albedo.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

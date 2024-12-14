@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public float health;
     public float currentAttack = 0;
 
@@ -20,6 +21,8 @@ public class Enemy : MonoBehaviour
     //[SerializeField] public AudioClip deathSound;
     //public AudioSource audioSource;
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
@@ -32,6 +35,9 @@ public class Enemy : MonoBehaviour
     public AudioSource audioSource;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -44,6 +50,11 @@ public class Enemy : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        playerObject = GameObject.FindGameObjectWithTag("Player").transform;
+        agent = GetComponent<NavMeshAgent>();
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
         playerObject = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
@@ -69,6 +80,7 @@ public class Enemy : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     // State and Damage Methods
     public virtual void TakeDamage() { }
 
@@ -76,6 +88,8 @@ public class Enemy : MonoBehaviour
 
     public virtual void Die() { }
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
@@ -114,6 +128,9 @@ public class Enemy : MonoBehaviour
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6

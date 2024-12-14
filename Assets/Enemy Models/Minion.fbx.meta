@@ -436,6 +436,7 @@ ModelImporter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       parentName: Minion(Clone)
       position: {x: -0, y: 3.6908443, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
@@ -455,6 +456,15 @@ ModelImporter:
 =======
       parentName: Creep_mesh(Clone)
       position: {x: -0, y: 0.02768133, z: 0}
+=======
+      parentName: Creep_mesh(Clone)
+      position: {x: -0, y: 0.02768133, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Creep
+      parentName: Creep_mesh(Clone)
+      position: {x: 0, y: 0.004584304, z: -0.0013952294}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
     - name: Creep
@@ -485,8 +495,11 @@ ModelImporter:
       parentName: Creep
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       position: {x: -0.017560506, y: 0.015350321, z: 0.029510032}
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       position: {x: 2.2033993e-21, y: 0.000009923228, z: 0.00022544486}
@@ -666,13 +679,17 @@ ModelImporter:
       parentName: Creep
       position: {x: 0.00009338467, y: -0.0001451782, z: 0.000120114666}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
       scale: {x: 1, y: 1, z: 1}
     - name: ElbowIK.R
       parentName: Creep
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       position: {x: 0.017560506, y: 0.015350321, z: 0.029510032}
@@ -686,6 +703,8 @@ ModelImporter:
 <<<<<<< HEAD
       position: {x: -0.008891999, y: -0.0018603064, z: 0.0018058299}
 =======
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       position: {x: 0.00013170377, y: 0.0001151274, z: 0.00022132522}
       rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
       scale: {x: 1, y: 1, z: 1}
@@ -747,13 +766,20 @@ ModelImporter:
     - name: Foot.L
       parentName: Creep
       position: {x: -0.00006668999, y: -0.000013952296, z: 0.000013543724}
+<<<<<<< HEAD
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       rotation: {x: -0.25423977, y: -0.44611707, z: 0.76091963, w: 0.39666498}
       scale: {x: 1.0000104, y: 1, z: 1}
     - name: StepA1.L
       parentName: Foot.L
 <<<<<<< HEAD
+<<<<<<< HEAD
       position: {x: -0.00041442478, y: 0.003346843, z: -0.001375701}
+=======
+      position: {x: -0.0000031081856, y: 0.00002510132, z: -0.000010317757}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
       position: {x: -0.0000031081856, y: 0.00002510132, z: -0.000010317757}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -762,7 +788,11 @@ ModelImporter:
     - name: StepA2.L
       parentName: StepA1.L
 <<<<<<< HEAD
+<<<<<<< HEAD
       position: {x: 2.2351741e-10, y: 0.0034930212, z: -5.2154064e-10}
+=======
+      position: {x: 1.6763806e-12, y: 0.000026197657, z: -3.9115547e-12}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
       position: {x: 1.6763806e-12, y: 0.000026197657, z: -3.9115547e-12}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -771,7 +801,11 @@ ModelImporter:
     - name: StepB1.L
       parentName: Foot.L
 <<<<<<< HEAD
+<<<<<<< HEAD
       position: {x: 0.00033349218, y: 0.003170347, z: 0.00082929316}
+=======
+      position: {x: 0.0000025011911, y: 0.000023777604, z: 0.0000062196978}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
       position: {x: 0.0000025011911, y: 0.000023777604, z: 0.0000062196978}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -779,6 +813,7 @@ ModelImporter:
       scale: {x: 0.99999994, y: 1, z: 0.99999976}
     - name: StepB2.L
       parentName: StepB1.L
+<<<<<<< HEAD
 <<<<<<< HEAD
       position: {x: 4.4703483e-10, y: 0.0036364852, z: -4.842877e-10}
       rotation: {x: -0.04283916, y: 0.005869099, z: 0.12026887, w: 0.9917993}
@@ -1352,6 +1387,8 @@ ModelImporter:
       scale: {x: 0.99999994, y: 1, z: 0.99999976}
     - name: StepB2.L
       parentName: StepB1.L
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
       position: {x: 3.3527612e-12, y: 0.000027273636, z: -3.6321577e-12}

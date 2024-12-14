@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/diff_fence_gate.psd.meta
 guid: d2ffbe8954bf63c4cacf99a77e542412
+========
+guid: 2b4fd1f80e9b39b4494b0cdf13a885b2
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/textures/Arrow_metal_Albedo.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

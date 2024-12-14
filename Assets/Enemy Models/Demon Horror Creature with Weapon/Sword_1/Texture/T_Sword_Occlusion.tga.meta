@@ -2,6 +2,7 @@ fileFormatVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Texture/T_Sword_Occlusion.tga.meta
 guid: 42da144c7a2348c4fa960e5d82e9349e
 TextureImporter:
@@ -15,6 +16,8 @@ TextureImporter:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 guid: fd6ef4feb8902174aacf6b47e8d02e57
 TextureImporter:
   fileIDToRecycleName: {}
@@ -23,11 +26,14 @@ TextureImporter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Occlusion.tga.meta
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   mipmaps:
@@ -46,6 +52,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,6 +83,11 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -84,6 +96,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -101,6 +114,8 @@ TextureImporter:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     filterMode: -1
     aniso: -1
     mipBias: -100
@@ -110,11 +125,14 @@ TextureImporter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Occlusion.tga.meta
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   nPOTScale: 1
@@ -134,6 +152,7 @@ TextureImporter:
   textureType: 0
   textureShape: 1
   singleChannelComponent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -158,6 +177,8 @@ TextureImporter:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -168,11 +189,14 @@ TextureImporter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Texture/T_Sword_Occlusion.tga.meta
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
@@ -182,6 +206,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -199,10 +224,13 @@ TextureImporter:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 4096
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,6 +241,8 @@ TextureImporter:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -220,6 +250,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -237,10 +268,13 @@ TextureImporter:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
     maxTextureSize: 4096
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -251,6 +285,8 @@ TextureImporter:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -258,6 +294,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -277,6 +314,9 @@ TextureImporter:
 =======
     androidETC2FallbackOverride: 0
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    androidETC2FallbackOverride: 0
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -284,6 +324,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -297,10 +338,13 @@ TextureImporter:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     vertices: []
     indices: 
     edges: []
     weights: []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -324,6 +368,11 @@ TextureImporter:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
   spritePackingTag: 
   pSDRemoveMatte: 0

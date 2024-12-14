@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Items Models/arrow/source/Arrow_middle_Albedo.png.meta
 guid: aa6c59f513a49e345ba9b78894aa3e68
 ========
 guid: 4b968e99131a87442a73300a2792a745
 >>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/Arrow_metal_Roughness.png.meta
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/diff_fence_column.psd.meta
+guid: 486b04940bb5f4b4dab1b4233ad796e1
+========
+guid: aa6c59f513a49e345ba9b78894aa3e68
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/Arrow_middle_Albedo.png.meta
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,8 +42,13 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
+<<<<<<< HEAD
   textureFormat: 1
   maxTextureSize: 2048
+=======
+  textureFormat: -1
+  maxTextureSize: 512
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   textureSettings:
     serializedVersion: 2
     filterMode: 1
@@ -67,6 +80,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
+<<<<<<< HEAD
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
@@ -74,6 +88,15 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+=======
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -86,7 +109,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+<<<<<<< HEAD
     maxTextureSize: 2048
+=======
+    maxTextureSize: 512
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -99,7 +126,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+<<<<<<< HEAD
     maxTextureSize: 2048
+=======
+    maxTextureSize: 512
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1

@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/3DForge.meta
 guid: 20c732508a6ec26478bc76e9992c0853
 ========
@@ -8,6 +9,13 @@ guid: 718a8094bcade434c84275b2496f5161
 =======
 <<<<<<<< HEAD:Assets/3DForge/FantasyExteriors.meta
 guid: 50aca929d5fae4a44b1abf8ab1f2a0d4
+========
+guid: 20c732508a6ec26478bc76e9992c0853
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/3DForge.meta
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+<<<<<<<< HEAD:Assets/3DForge/FantasyExteriors/Village & Towns.meta
+guid: 5e6bd4a5af93ba64bac2b1dac662af6f
 ========
 guid: 20c732508a6ec26478bc76e9992c0853
 >>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/3DForge.meta
