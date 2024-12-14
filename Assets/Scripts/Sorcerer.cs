@@ -142,16 +142,15 @@ public class Sorcerer : PlayerLeveling
 
         foreach (var hitCollider in hitColliders)
         {
-            Debug.Log($"Detected object: {hitCollider.gameObject.name}");
-
-            if (hitCollider.gameObject.CompareTag("Enemy")) 
+            if (hitCollider.gameObject.CompareTag("Demon"))
             {
-                //Demon demon = hitCollider.gameObject.GetComponent<Demon>();
-                Enemy demon = hitCollider.gameObject.GetComponent<Enemy>();
-                if (demon != null)
-                {
-                    demon.TakeDamage(damage);
-                }
+                Demon demon = hitCollider.gameObject.GetComponentInParent<Demon>();
+                demon.TakeDamage(5);
+            }
+            else if (hitCollider.gameObject.CompareTag("Minion"))
+            {
+                //Minion minion = collider.gameObject.GetComponent<Minion>();
+                //minion.TakeDamage(5);
             }
         }
     }
