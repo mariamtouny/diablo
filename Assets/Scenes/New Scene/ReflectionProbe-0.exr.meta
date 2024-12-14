@@ -1,21 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Scenes/New Scene/ReflectionProbe-0.exr.meta
 guid: d9d8183a87d96ee42830bd01b79bbac0
-========
-guid: d2ffbe8954bf63c4cacf99a77e542412
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_gate.psd.meta
-=======
-guid: d9d8183a87d96ee42830bd01b79bbac0
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-guid: d9d8183a87d96ee42830bd01b79bbac0
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-guid: d9d8183a87d96ee42830bd01b79bbac0
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -46,23 +30,8 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  textureFormat: -1
-  maxTextureSize: 512
-=======
   textureFormat: 1
   maxTextureSize: 2048
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-  textureFormat: 1
-  maxTextureSize: 2048
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-  textureFormat: 1
-  maxTextureSize: 2048
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   textureSettings:
     serializedVersion: 2
     filterMode: 1
@@ -94,21 +63,6 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  applyGammaDecoding: 1
-  swizzle: 50462976
-  cookieLightType: 1
-  platformSettings:
-  - serializedVersion: 3
-    buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
-=======
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
@@ -116,13 +70,6 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -135,19 +82,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    maxTextureSize: 512
-=======
     maxTextureSize: 2048
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-    maxTextureSize: 2048
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-    maxTextureSize: 2048
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -160,19 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    maxTextureSize: 512
-=======
     maxTextureSize: 2048
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-    maxTextureSize: 2048
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-    maxTextureSize: 2048
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1

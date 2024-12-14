@@ -1,37 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Items Models/arrow/source/Arrow_metal_Albedo.png.meta
 guid: 3026cc60b5cc7bf41a6e5f7db862f880
-========
-guid: cdc904f97d1ea5040b465b700a4acfd8
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/DungeonModularPack/Textures/T_Arch_C.tga.meta
-=======
-<<<<<<<< HEAD:Assets/Items Models/arrow/source/Arrow_metal_Roughness.png.meta
-guid: 4b968e99131a87442a73300a2792a745
-========
-guid: 3026cc60b5cc7bf41a6e5f7db862f880
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/Arrow_metal_Albedo.png.meta
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-<<<<<<<< HEAD:Assets/Items Models/arrow/textures/Arrow_middle_Albedo.png.meta
-guid: 6e3ed525796fc5147854b31c15858876
-========
-guid: 3026cc60b5cc7bf41a6e5f7db862f880
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/Arrow_metal_Albedo.png.meta
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-<<<<<<<< HEAD:Assets/Main Enviroment/mountains.jpg.meta
-<<<<<<<< HEAD:Assets/Main Enviroment/mountains.jpg.meta
-guid: 6f5c895508d3e264096b0ad1257f4b37
-========
-guid: 4b968e99131a87442a73300a2792a745
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/Arrow_metal_Roughness.png.meta
-========
-guid: 3026cc60b5cc7bf41a6e5f7db862f880
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/Arrow_metal_Albedo.png.meta
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -125,14 +93,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -146,13 +106,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   spriteSheet:
     serializedVersion: 2
     sprites: []

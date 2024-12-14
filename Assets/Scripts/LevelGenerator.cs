@@ -1,93 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-using System.Collections.Generic;
-using UnityEngine;
-=======
 using UnityEngine;
 using UnityEngine.AI; // Include AI Navigation namespace
 using Unity.AI.Navigation;
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-using UnityEngine;
-using UnityEngine.AI; // Include AI Navigation namespace
-using Unity.AI.Navigation;
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-using UnityEngine;
-using UnityEngine.AI; // Include AI Navigation namespace
-using Unity.AI.Navigation;
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-using UnityEngine;
-using UnityEngine.AI; // Include AI Navigation namespace
-using Unity.AI.Navigation;
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-using UnityEngine;
-using UnityEngine.AI; // Include AI Navigation namespace
-using Unity.AI.Navigation;
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 
 public class LevelGenerator : MonoBehaviour
 {
     [Header("Prefabs")]
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public GameObject environmentPrefab; // Main level environment prefab
-    public GameObject playerPrefab;
-    public GameObject minionPrefab;
-    public GameObject demonPrefab;
-    public GameObject potionPrefab;
-    public GameObject runeFragmentPrefab;
-    //public GameObject gatePrefab;
-    public GameObject bossAreaPrefab;
-
-    [Header("Level Settings")]
-    public int minCamps = 3;
-    public int maxCamps = 5;
-    public Vector2 environmentSize = new Vector2(100, 100);
-    public Vector2 bossSpawnArea = new Vector2(20, 20);
-
-    [Header("Enemy Settings")]
-    public int totalMinions = 40;
-    public int totalDemons = 10;
-    public int minEnemiesPerCamp = 5;
-    public int maxEnemiesPerCamp = 15;
-
-    [Header("Other Settings")]
-    public Transform environmentParent;
-    public int requiredRuneFragments = 3;
-
-    private List<Vector3> campPositions = new List<Vector3>();
-
-    void Start()
-    {
-        GenerateEnvironment();
-    }
-
-    void GenerateEnvironment()
-    {
-        GenerateMainEnvironment();
-        Vector3 playerPosition = GeneratePlayer();
-        SetupCamera(playerPosition);
-        GenerateEnemyCamps();
-        //GenerateGate();
-        GenerateBossArea();
-=======
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     public GameObject environmentPrefab;
     public GameObject playerPrefab;
     public GameObject minionPrefab;
@@ -187,41 +104,12 @@ public class LevelGenerator : MonoBehaviour
         GenerateHouses();
 
         BakeNavMesh();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     }
 
     void GenerateMainEnvironment()
     {
         if (environmentPrefab != null)
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            GameObject environment = Instantiate(environmentPrefab, Vector3.zero, Quaternion.identity, environmentParent);
-            environment.name = "MainEnvironment";
-=======
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
             GameObject environment = Instantiate(environmentPrefab, new Vector3(0, 4, 0), Quaternion.identity);
             environment.name = "MainEnvironment";
 
@@ -237,19 +125,6 @@ public class LevelGenerator : MonoBehaviour
                 scale.z *= environmentSize.y / currentSize.z;
                 environment.transform.localScale = scale;
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         }
         else
         {
@@ -257,38 +132,6 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Vector3 GeneratePlayer()
-    {
-        Vector3 playerSpawnPosition = new Vector3(environmentSize.x / 2, 0, environmentSize.y / 2);
-        Instantiate(playerPrefab, playerSpawnPosition, Quaternion.identity, environmentParent);
-        return playerSpawnPosition;
-    }
-
-    void SetupCamera(Vector3 playerPosition)
-    {
-        Camera mainCamera = Camera.main;
-        if (mainCamera != null)
-        {
-            // Set the camera position closer to the player
-            Vector3 cameraOffset = new Vector3(-5, 7, -5); // Closer distance, above the player
-            mainCamera.transform.position = playerPosition + cameraOffset;
-
-            // Rotate the camera to look at the player
-            mainCamera.transform.LookAt(playerPosition);
-=======
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     GameObject GeneratePlayer()
     {
         Vector3 playerPosition = new Vector3(0, 0, 0);
@@ -309,117 +152,11 @@ public class LevelGenerator : MonoBehaviour
         else
         {
             Debug.LogError("Main Camera is not assigned!");
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         }
     }
 
     void GenerateEnemyCamps()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        int campCount = Random.Range(minCamps, maxCamps + 1);
-        int remainingMinions = totalMinions;
-        int remainingDemons = totalDemons;
-
-        for (int i = 0; i < campCount; i++)
-        {
-            Vector3 campPosition = GetRandomPosition(environmentSize);
-            while (IsPositionTooClose(campPosition, campPositions, 15f))
-            {
-                campPosition = GetRandomPosition(environmentSize);
-            }
-            campPositions.Add(campPosition);
-
-            int enemyCount = Random.Range(minEnemiesPerCamp, maxEnemiesPerCamp + 1);
-            enemyCount = Mathf.Min(enemyCount, remainingMinions + remainingDemons);
-
-            int demonCount = Mathf.Min(enemyCount / 5, remainingDemons); // ~20% demons
-            int minionCount = enemyCount - demonCount;
-
-            remainingMinions -= minionCount;
-            remainingDemons -= demonCount;
-
-            GenerateEnemiesInCamp(campPosition, minionCount, demonCount);
-            GenerateHealingPotions(campPosition, Random.Range(1, 3));
-            GenerateRuneFragment(campPosition);
-        }
-    }
-
-    void GenerateEnemiesInCamp(Vector3 campPosition, int minionCount, int demonCount)
-    {
-        for (int i = 0; i < minionCount; i++)
-        {
-            Vector3 spawnOffset = GetRandomPositionAround(campPosition, 5f);
-            Instantiate(minionPrefab, spawnOffset, Quaternion.identity, environmentParent);
-        }
-
-        for (int i = 0; i < demonCount; i++)
-        {
-            Vector3 spawnOffset = GetRandomPositionAround(campPosition, 5f);
-            Instantiate(demonPrefab, spawnOffset, Quaternion.identity, environmentParent);
-        }
-    }
-
-    void GenerateRuneFragment(Vector3 campPosition)
-    {
-        Vector3 spawnPosition = GetRandomPositionAround(campPosition, 2f);
-        GameObject runeFragment = Instantiate(runeFragmentPrefab, spawnPosition, Quaternion.identity, environmentParent);
-        runeFragment.SetActive(false); // Rune appears only after all enemies are defeated
-    }
-
-    void GenerateHealingPotions(Vector3 campPosition, int potionCount)
-    {
-        for (int i = 0; i < potionCount; i++)
-        {
-            Vector3 spawnPosition = GetRandomPositionAround(campPosition, 3f);
-            Instantiate(potionPrefab, spawnPosition, Quaternion.identity, environmentParent);
-        }
-    }
-
-    //void GenerateGate()
-    //{
-    //    Vector3 gatePosition = new Vector3(environmentSize.x - 10, 0, environmentSize.y - 10);
-    //    GameObject gate = Instantiate(gatePrefab, gatePosition, Quaternion.identity, environmentParent);
-    //}
-
-    void GenerateBossArea()
-    {
-        Vector3 bossPosition = GetRandomPosition(bossSpawnArea);
-        while (IsPositionTooClose(bossPosition, campPositions, 20f))
-        {
-            bossPosition = GetRandomPosition(bossSpawnArea);
-        }
-
-        Instantiate(bossAreaPrefab, bossPosition, Quaternion.identity, environmentParent);
-    }
-
-    Vector3 GetRandomPosition(Vector2 range)
-    {
-        return new Vector3(Random.Range(0, range.x), 0, Random.Range(0, range.y));
-=======
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
         foreach (Vector3 campPosition in campPositions)
         {
             GenerateCamp(campPosition);
@@ -518,19 +255,6 @@ public class LevelGenerator : MonoBehaviour
 
         // Spawn the second house at the fixed position
         Instantiate(house2Prefab, house2Position, Quaternion.identity);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     }
 
     Vector3 GetRandomPositionAround(Vector3 center, float radius)
@@ -538,32 +262,6 @@ public class LevelGenerator : MonoBehaviour
         return center + new Vector3(Random.Range(-radius, radius), 0, Random.Range(-radius, radius));
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    bool IsPositionTooClose(Vector3 position, List<Vector3> existingPositions, float minDistance)
-    {
-        foreach (var existing in existingPositions)
-        {
-            if (Vector3.Distance(position, existing) < minDistance)
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-}
-=======
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     Vector3 GetSpacedPosition(Vector3 center, float minSpacing, float maxSpacing)
     {
         float spacing = Random.Range(minSpacing, maxSpacing);
@@ -598,21 +296,4 @@ public class LevelGenerator : MonoBehaviour
             Debug.LogError("NavMeshSurface is not assigned or found!");
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
