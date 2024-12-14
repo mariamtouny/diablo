@@ -159,7 +159,7 @@ public class Barbarian : PlayerLeveling
             {
                 if (hitCollider.gameObject==enemy)
                 {
-                    if (enemy.CompareTag("Enemy"))
+                    if (enemy.CompareTag("Demon"))
                     {
                         if (enemy != null)
                         {
@@ -187,7 +187,7 @@ public class Barbarian : PlayerLeveling
             animator.SetTrigger("whirl");
             foreach (var hitCollider in hitColliders)
             {
-                if (hitCollider.CompareTag("Enemy"))
+                if (hitCollider.CompareTag("Demon"))
                 {
                     // Add damage logic here
                     Debug.Log("Iron Maelstrom hits enemy!");

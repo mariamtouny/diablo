@@ -32,6 +32,9 @@ public class Enemy : MonoBehaviour
 
     // Movement Methods
     public virtual void ApproachPlayer() { }
+
+    // State and Damage Methods
+
     public virtual void TakeDamage()
     {
         // Basic damage logic
