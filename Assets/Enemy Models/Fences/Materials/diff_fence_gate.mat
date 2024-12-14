@@ -7,7 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
   m_Name: diff_fence_gate
+========
+  m_Name: diff_fence_column
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -44,7 +48,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
         m_Texture: {fileID: 2800000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
+========
+        m_Texture: {fileID: 2800000, guid: 486b04940bb5f4b4dab1b4233ad796e1, type: 3}
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
