@@ -168,17 +168,13 @@ public class Demon : Enemy
 
     public override void TakeDamage(int damage)
     {
-        animator.SetBool("isIdle", false);
-        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 1f)
+        health -= damage;
+        if (health <= 0)
         {
-            animator.SetTrigger("damage");
-            health -= 5f;
-            if (health <= 0)
-            {
-                Die();
-            }
-            StartCoroutine(Reset());
+            Die();
         }
+        StartCoroutine(Reset());
+
     }
 
     public override void ApproachPlayer()
