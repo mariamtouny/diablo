@@ -11,6 +11,7 @@ Material:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Small Rock 1/Small Rock 1.mat
   m_Name: Small Rock 1
 ========
@@ -22,6 +23,9 @@ Material:
 =======
   m_Name: Small Rock 1
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  m_Name: Small Rock 1
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
   m_Name: Small Rock 1
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
@@ -64,6 +68,7 @@ Material:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Small Rock 1/Small Rock 1.mat
         m_Texture: {fileID: 2800000, guid: dd7f72b756861d2419b8fff498140741, type: 3}
 ========
@@ -75,6 +80,9 @@ Material:
 =======
         m_Texture: {fileID: 2800000, guid: dd7f72b756861d2419b8fff498140741, type: 3}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+        m_Texture: {fileID: 2800000, guid: dd7f72b756861d2419b8fff498140741, type: 3}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
         m_Texture: {fileID: 2800000, guid: dd7f72b756861d2419b8fff498140741, type: 3}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
@@ -117,6 +125,7 @@ Material:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Small Rock 1/Small Rock 1.mat
     - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
@@ -133,6 +142,10 @@ Material:
     - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
     - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}

@@ -11,6 +11,7 @@ Material:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Materials/fe_village_CORE.mat
   m_Name: fe_village_CORE
 ========
@@ -25,11 +26,15 @@ Material:
 =======
   m_Name: fe_village_CORE
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_Name: fe_village_CORE
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _EMISSION
+<<<<<<< HEAD
 =======
 <<<<<<<< HEAD:Assets/Enemy Models/MONS 6/MATERIAL/Material 1.mat
 <<<<<<<< HEAD:Assets/Enemy Models/MONS 6/MATERIAL/Material 1.mat
@@ -52,6 +57,8 @@ Material:
   - _EMISSION
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Materials/fe_village_CORE.mat
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_InvalidKeywords: []
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -65,9 +72,13 @@ Material:
     m_TexEnvs:
     - _BumpMap:
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Texture: {fileID: 0}
 =======
         m_Texture: {fileID: 2800000, guid: dbb275e71a099c24d841165b7f1596d1, type: 3}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+        m_Texture: {fileID: 0}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -77,9 +88,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Texture: {fileID: 0}
 =======
         m_Texture: {fileID: 2800000, guid: 2b34421b8b1a4bf4a9be0bc365bf5b99, type: 3}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+        m_Texture: {fileID: 0}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -93,6 +108,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 918ce80ee56486f499b5e482dcdb43b4, type: 3}
 =======
 <<<<<<<< HEAD:Assets/Enemy Models/MONS 6/MATERIAL/Material 1.mat
@@ -105,6 +121,9 @@ Material:
         m_Texture: {fileID: 2800000, guid: 918ce80ee56486f499b5e482dcdb43b4, type: 3}
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Materials/fe_village_CORE.mat
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+        m_Texture: {fileID: 2800000, guid: 918ce80ee56486f499b5e482dcdb43b4, type: 3}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -113,9 +132,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Texture: {fileID: 0}
 =======
         m_Texture: {fileID: 2800000, guid: 4f023762364b3e6479af341e55ac3fbc, type: 3}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+        m_Texture: {fileID: 0}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -124,11 +147,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     - _SpecGlossMap:
         m_Texture: {fileID: 2800000, guid: 4ea6d92845c998f4c9723b23b3724867, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     m_Ints: []
     m_Floats:
@@ -136,6 +162,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     - _EmissionScaleUI: 0
     - _GlossMapScale: 1
@@ -150,6 +177,11 @@ Material:
     - _Glossiness: 0
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Materials/fe_village_CORE.mat
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    - _EmissionScaleUI: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -161,6 +193,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -202,5 +235,10 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Materials/fe_village_CORE.mat
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    - _Color: {r: 0.2627451, g: 0.20000002, b: 0.14901961, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_BuildTextureStacks: []

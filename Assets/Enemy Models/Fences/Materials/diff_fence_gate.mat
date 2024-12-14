@@ -7,6 +7,7 @@ Material:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   serializedVersion: 8
 =======
   serializedVersion: 6
@@ -23,10 +24,14 @@ Material:
 =======
   serializedVersion: 8
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  serializedVersion: 8
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -62,11 +67,23 @@ Material:
   m_Name: diff_fence_gate
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 4.mat
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 4.mat
+  m_Name: diff_fence_gate 4
+========
+  m_Name: diff_fence_column
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
+========
+  m_Name: diff_fence_gate
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -100,6 +117,8 @@ Material:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -111,6 +130,7 @@ Material:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LockedProperties: 
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -120,6 +140,9 @@ Material:
 =======
   m_LockedProperties: 
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  m_LockedProperties: 
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
   m_LockedProperties: 
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
@@ -130,6 +153,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -151,6 +175,9 @@ Material:
 =======
         m_Texture: {fileID: 0}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+        m_Texture: {fileID: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -158,6 +185,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -175,6 +203,9 @@ Material:
 =======
         m_Texture: {fileID: 0}
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+        m_Texture: {fileID: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
@@ -186,6 +217,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -238,17 +270,29 @@ Material:
 =======
 <<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 6.mat
         m_Texture: {fileID: 8900000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 4.mat
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 4.mat
+        m_Texture: {fileID: 8900000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
+========
+        m_Texture: {fileID: 2800000, guid: 486b04940bb5f4b4dab1b4233ad796e1, type: 3}
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 ========
         m_Texture: {fileID: 2800000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+<<<<<<< HEAD
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 4f023762364b3e6479af341e55ac3fbc, type: 3}
@@ -261,12 +305,16 @@ Material:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+        m_Texture: {fileID: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -291,11 +339,15 @@ Material:
 =======
     m_Ints: []
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    m_Ints: []
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -322,6 +374,10 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    - _GlossMapScale: 1
+    - _Glossiness: 0
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -333,6 +389,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -377,6 +434,11 @@ Material:
 ========
     - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d

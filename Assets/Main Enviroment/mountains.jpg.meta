@@ -2,6 +2,7 @@ fileFormatVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Main Enviroment/mountains.jpg.meta
 <<<<<<<< HEAD:Assets/Main Enviroment/mountains.jpg.meta
 guid: 6f5c895508d3e264096b0ad1257f4b37
@@ -25,6 +26,10 @@ guid: 2ded0d86c411664468c8a29240c25bc1
 <<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness_2.tif.meta
 guid: 2b34421b8b1a4bf4a9be0bc365bf5b99
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Specular.tif.meta
+guid: 4ea6d92845c998f4c9723b23b3724867
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 ========
 guid: 6f5c895508d3e264096b0ad1257f4b37
 >>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Main Enviroment/mountains.jpg.meta
@@ -33,6 +38,9 @@ TextureImporter:
   externalObjects: {}
   serializedVersion: 12
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
@@ -103,7 +111,10 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     maxTextureSize: 4096
@@ -120,6 +131,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: WebGL
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
@@ -150,7 +164,11 @@ TextureImporter:
   - serializedVersion: 3
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     buildTarget: Android
+=======
+    buildTarget: Server
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
     buildTarget: Server
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d

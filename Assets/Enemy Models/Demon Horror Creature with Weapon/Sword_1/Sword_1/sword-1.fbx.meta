@@ -6,6 +6,7 @@ fileFormatVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Sword_1/sword-1.fbx.meta
 guid: c0906b17f55c28e42968429f50f91ef8
 ModelImporter:
@@ -28,6 +29,8 @@ ModelImporter:
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
@@ -79,6 +82,7 @@ ModelImporter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Demon Horror Creature with Weapon/Sword_1/Sword_1/sword-1.fbx.meta
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
@@ -90,6 +94,8 @@ ModelImporter:
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
@@ -124,6 +130,7 @@ ModelImporter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Sword_1/sword-1.fbx.meta
     isReadable: 0
 =======
@@ -150,6 +157,9 @@ ModelImporter:
 =======
     isReadable: 1
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    isReadable: 1
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -162,6 +172,7 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -204,6 +215,10 @@ ModelImporter:
     nodeNameCollisionStrategy: 0
     fileIdsGeneration: 1
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -220,6 +235,7 @@ ModelImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -247,6 +263,9 @@ ModelImporter:
 =======
     secondaryUVMarginMethod: 0
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    secondaryUVMarginMethod: 0
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
     secondaryUVMarginMethod: 0
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
@@ -293,6 +312,7 @@ ModelImporter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Sword_1/Sword_1/sword-1.fbx.meta
   animationType: 2
   humanoidOversampling: 1
@@ -315,12 +335,15 @@ ModelImporter:
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -339,6 +362,8 @@ ModelImporter:
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 =======
 >>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
 >>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
 =======
