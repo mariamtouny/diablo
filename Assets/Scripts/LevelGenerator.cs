@@ -29,10 +29,10 @@ public class LevelGenerator : MonoBehaviour
     // Fixed camp positions
     private Vector3[] campPositions = new Vector3[]
     {
-        new Vector3(0, -3.5f, 50),      // Camp 1
-        new Vector3(150, -5.5f, 100),   // Camp 2
-        new Vector3(0, -5, 250),     // Camp 3
-        new Vector3(-250, -7, 200)   // Camp 4
+        new Vector3(0, -90f, 50),      // Camp 1
+        new Vector3(150, -90f, 100),   // Camp 2
+        new Vector3(0, -90, 250),     // Camp 3
+        new Vector3(-250, -90, 200)   // Camp 4
     };
 
     // Fixed tree positions
@@ -95,15 +95,14 @@ public class LevelGenerator : MonoBehaviour
     void Start()
     {
         GenerateMainEnvironment();
-        GameObject player = GeneratePlayer();
-        SetupCamera(player);
+        //GeneratePlayer();
+        //SetupCamera(player);
         GenerateEnemyCamps();
-        GenerateBossArea();
-        GenerateTrees();
-        GenerateRocks();
-        GenerateHouses();
-
-        BakeNavMesh();
+        //GenerateBossArea();
+        //GenerateTrees();
+        //GenerateRocks();
+        //GenerateHouses();
+        //BakeNavMesh();
     }
 
     void GenerateMainEnvironment()
@@ -112,6 +111,16 @@ public class LevelGenerator : MonoBehaviour
         {
             GameObject environment = Instantiate(environmentPrefab, new Vector3(0, 4, 0), Quaternion.identity);
             environment.name = "MainEnvironment";
+            environment.layer = 3;
+
+            foreach (Transform child in environment.transform)
+            {
+                child.gameObject.layer = 3;
+                foreach (Transform child1 in child)
+                {
+                    child1.gameObject.layer = 3;
+                }
+            }
 
             // Ensure the environment maintains the correct size
             Renderer environmentRenderer = environment.GetComponent<Renderer>();
@@ -125,6 +134,7 @@ public class LevelGenerator : MonoBehaviour
                 scale.z *= environmentSize.y / currentSize.z;
                 environment.transform.localScale = scale;
             }
+            //navMeshSurface = environment.AddComponent<NavMeshSurface>();
         }
         else
         {
@@ -134,7 +144,8 @@ public class LevelGenerator : MonoBehaviour
 
     GameObject GeneratePlayer()
     {
-        Vector3 playerPosition = new Vector3(0, 0, 0);
+        Vector3 playerPosition = new Vector3(-8.04875278f, -56.0999985f, 292.410797f);
+
         return Instantiate(playerPrefab, playerPosition, Quaternion.identity);
     }
 
@@ -288,6 +299,8 @@ public class LevelGenerator : MonoBehaviour
     {
         if (navMeshSurface != null)
         {
+            navMeshSurface.collectObjects = CollectObjects.All;
+            navMeshSurface.layerMask = LayerMask.GetMask("ground");
             Debug.Log("Baking NavMesh...");
             navMeshSurface.BuildNavMesh(); // Dynamically bake the NavMesh
         }

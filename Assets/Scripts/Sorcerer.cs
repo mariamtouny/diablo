@@ -115,11 +115,14 @@ public class Sorcerer : PlayerLeveling
             Vector3 spawnPosition = hit.point;
 
             GameObject fireCircle = Instantiate(fireball, spawnPosition, Quaternion.identity);
+            fireCircle.SetActive(true);
+            fireCircle.transform.localScale = new Vector3(1.5f * 2, 0.1f, 1.5f * 2);
+            Destroy(fireCircle, 5f);
             Debug.Log("Inferno spawned at " + spawnPosition);
 
-            ApplyDamage(spawnPosition, 1.5f, abilities[3].abilityDamage);
+            ApplyDamage(spawnPosition, 1.5f, 10);
 
-            StartCoroutine(ContinuousDamage(spawnPosition, 1.5f, abilities[3].abilityDamage / 2, 5f));
+            StartCoroutine(ContinuousDamage(spawnPosition, 2f, 2, 5f));
 
             Destroy(fireCircle, 5f);
 
@@ -132,28 +135,42 @@ public class Sorcerer : PlayerLeveling
     }
     private void ApplyDamage(Vector3 position, float radius, int damage)
     {
-        Collider[] hitColliders = Physics.OverlapSphere(position, radius);
+        Debug.DrawLine(position, position + Vector3.up * radius, Color.red, 1f);
+        Debug.DrawLine(position, position - Vector3.up * radius, Color.red, 1f);
+        Vector3 spherePosition = position + Vector3.up * 2; // Adjust for height
+        Collider[] hitColliders = Physics.OverlapSphere(spherePosition, radius);
+
         foreach (var hitCollider in hitColliders)
         {
-            if (hitCollider.CompareTag("Enemy"))
+            if (hitCollider.gameObject.CompareTag("Demon"))
             {
-                // damage enemies
-                Debug.Log($"Enemy at {hitCollider.transform.position} took {damage} damage!");
+                Demon demon = hitCollider.gameObject.GetComponentInParent<Demon>();
+                demon.TakeDamage(5);
+            }
+            else if (hitCollider.gameObject.CompareTag("Minion"))
+            {
+                //Minion minion = collider.gameObject.GetComponent<Minion>();
+                //minion.TakeDamage(5);
             }
         }
     }
+
+
     private IEnumerator ContinuousDamage(Vector3 position, float radius, int damage, float duration)
     {
         float elapsed = 0f;
         float tickInterval = 1f;
+        yield return new WaitForSeconds(1f);
 
         while (elapsed < duration)
         {
+            Debug.Log($"Applying continuous damage at position {position}, elapsed: {elapsed}");
             ApplyDamage(position, radius, damage);
             yield return new WaitForSeconds(tickInterval);
             elapsed += tickInterval;
         }
     }
+
     void Update()
     {
         base.Update();
@@ -207,18 +224,19 @@ public class Sorcerer : PlayerLeveling
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-
+        //Debug.DrawRay(ray.origin, ray.direction * 100, Color.red, 2f);
         if (Physics.Raycast(ray, out hit, 100))
         {
+            //Debug.Log(hit.collider.gameObject);
             GameObject enemy = hit.collider.gameObject;
-            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5.0f);
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 10.0f);
             foreach (Collider hitCollider in hitColliders)
             {
 
                 if (hitCollider.gameObject == enemy)
                 {
 
-                    if (enemy.CompareTag("Enemy"))
+                    if (enemy.CompareTag("Demon"))
                     {
 
                         if (enemy != null)
@@ -226,7 +244,7 @@ public class Sorcerer : PlayerLeveling
                             //FaceTarget(enemy.transform);
 
                              Vector3 direction = (enemy.transform.position - transform.position).normalized;
-                            //direction.y = 0; // We only want to rotate around the y-axis
+                            direction.y = 0; // We only want to rotate around the y-axis
 
                     
                         // Calculate the target rotation that looks towards the enemy
@@ -246,7 +264,8 @@ public class Sorcerer : PlayerLeveling
                             Vector3 position = transform.position;
                             GameObject fball = Instantiate(fireball, new Vector3(position.x - 0.122494f, position.y + 1.13f, position.z + 0.9492f), Quaternion.identity);
                             fball.transform.localScale += scaleChange;
-                            StartCoroutine(MoveFireball(fball, enemy.transform.position));
+                            Vector3 demonhitpoint = enemy.transform.position +  new Vector3(0, 2.25f, 0);
+                            StartCoroutine(MoveFireball(fball, demonhitpoint));
 
                             fireball.SetActive(false);
                             Debug.Log("Mouse clicked!");
@@ -283,11 +302,18 @@ public class Sorcerer : PlayerLeveling
 
         foreach (Collider collider in colliders)
         {
-            Debug.Log("Overlap detected with: " + collider.gameObject.name);
-            if (collider.gameObject.CompareTag("Enemy"))
+            //Debug.Log("Overlap detected with: " + collider.gameObject);
+            if (collider.gameObject.CompareTag("Demon"))
             {
-                Enemy enemy = collider.gameObject.GetComponent<Enemy>();
-                enemy.TakeDamage();
+                Demon demon = collider.gameObject.GetComponentInParent<Demon>();
+                demon.TakeDamage(5);
+                GainXP(30);
+            }
+            else if (collider.gameObject.CompareTag("Minion"))
+            {
+                //Minion minion = collider.gameObject.GetComponent<Minion>();
+                //minion.TakeDamage(5);
+                GainXP(10);
             }
         }
         // Optionally, you can destroy the fireball after it has moved
@@ -299,5 +325,11 @@ public class Sorcerer : PlayerLeveling
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 15f);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 2);
     }
 }
