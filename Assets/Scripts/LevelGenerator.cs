@@ -29,10 +29,17 @@ public class LevelGenerator : MonoBehaviour
     // Fixed camp positions
     private Vector3[] campPositions = new Vector3[]
     {
+<<<<<<< HEAD
         new Vector3(0, -90f, 50),      // Camp 1
         new Vector3(150, -90f, 100),   // Camp 2
         new Vector3(0, -90, 250),     // Camp 3
         new Vector3(-250, -90, 200)   // Camp 4
+=======
+        new Vector3(150, -5.5f, 100),   // Camp 1
+        new Vector3(0, -3.5f, 50),      // Camp 2
+        new Vector3(0, -5, 250),     // Camp 3
+        new Vector3(-250, -7, 200)   // Camp 4
+>>>>>>> origin/EnemiesDONE
     };
 
     // Fixed tree positions
@@ -168,45 +175,53 @@ public class LevelGenerator : MonoBehaviour
 
     void GenerateEnemyCamps()
     {
+        int campCount = 1;
         foreach (Vector3 campPosition in campPositions)
         {
-            GenerateCamp(campPosition);
+            GenerateCamp(campPosition, campCount);
+            campCount++;
         }
     }
 
-    void GenerateCamp(Vector3 campPosition)
+    void GenerateCamp(Vector3 campPosition, int campNum)
     {
-        // Add a shadow to delineate the camp area
-        GameObject shadow = Instantiate(campShadowPrefab, campPosition, Quaternion.identity);
+        // Create camp parent object
+        GameObject campObject = new GameObject($"Camp_{campNum}");
+        campObject.transform.position = campPosition;
+
+        // Add shadow
+        GameObject shadow = Instantiate(campShadowPrefab, campPosition, Quaternion.identity, campObject.transform);
         shadow.transform.localScale = new Vector3(5, 1, 5);
 
-        // Spawn minions, demons, a rune fragment, and potions
-        int minionCount = 10;
-        int demonCount = Mathf.Max(1, campPositions.Length);
+        // Add CampManager
+        EnemyCamp campManager = campObject.AddComponent<EnemyCamp>();
 
-        // Spawn minions within the 50x50 camp area
+        // Initialize camp manager with rune fragment prefab
+        campManager.Initialize(runeFragmentPrefab, campPosition);
+
+        // Spawn minions
+        int minionCount = 10;
         for (int i = 0; i < minionCount; i++)
         {
             Vector3 spawnOffset = new Vector3(Random.Range(-15, 20), 5, Random.Range(-10, 20));
-            Instantiate(minionPrefab, campPosition + spawnOffset, Quaternion.identity);
+            GameObject minion = Instantiate(minionPrefab, campPosition + spawnOffset, Quaternion.identity, campObject.transform);
+            campManager.RegisterEnemy(minion);
         }
 
-        // Spawn demons within the 50x50 camp area
+        // Spawn demons
+        int demonCount = Mathf.Max(1, campNum);
         for (int i = 0; i < demonCount; i++)
         {
             Vector3 spawnOffset = new Vector3(Random.Range(-15, 20), 5.5f, Random.Range(-10, 20));
-            Instantiate(demonPrefab, campPosition + spawnOffset, Quaternion.identity);
+            GameObject demon = Instantiate(demonPrefab, campPosition + spawnOffset, Quaternion.identity, campObject.transform);
+            campManager.RegisterEnemy(demon);
         }
 
-        // Spawn rune fragment within the 50x50 camp area
-        Vector3 spawnOffset2 = new Vector3(Random.Range(-15, 20), 7, Random.Range(-10, 20));
-        Instantiate(runeFragmentPrefab, campPosition + spawnOffset2, Quaternion.identity);
-
-        // Spawn potions within the 50x50 camp area
+        // Spawn potions
         for (int i = 0; i < 3; i++)
         {
             Vector3 potionPosition = campPosition + new Vector3(Random.Range(-15, 20), 7, Random.Range(-10, 20));
-            Instantiate(potionPrefab, potionPosition, Quaternion.identity);
+            Instantiate(potionPrefab, potionPosition, Quaternion.identity, campObject.transform);
         }
     }
 
