@@ -2,182 +2,71 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   serializedVersion: 8
-=======
   serializedVersion: 6
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
   serializedVersion: 8
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
   serializedVersion: 8
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
   serializedVersion: 8
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
   serializedVersion: 8
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
   serializedVersion: 8
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
   m_Name: diff_fence_gate
-========
   m_Name: diff_fence_column
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
-=======
-<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 3.mat
   m_Name: diff_fence_gate 3
-========
   m_Name: diff_fence_gate
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 6.mat
   m_Name: diff_fence_gate 6
-========
   m_Name: diff_fence_gate
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
-<<<<<<<< HEAD:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Meshes/Base/Core/3 wide/Materials/fe_village_CORE.mat
-<<<<<<<< HEAD:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Meshes/Base/Core/3 wide/Materials/fe_village_CORE.mat
   m_Name: fe_village_CORE
-========
   m_Name: fe_village_colider
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Meshes/Stairs/Stairs stone/Materials/fe_village_colider.mat
-========
   m_Name: diff_fence_gate
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
-<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 4.mat
-<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 4.mat
   m_Name: diff_fence_gate 4
-========
   m_Name: diff_fence_column
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
-========
   m_Name: diff_fence_gate
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 1/Tree 1 Mat.mat
   m_Name: Tree 1 Mat
-========
   m_Name: diff_fence_gate
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/MATERIAL/Material.mat
   m_Name: Material
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-========
   m_Name: diff_fence_gate
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _NORMALMAP
   - _SPECGLOSSMAP
   m_InvalidKeywords: []
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   m_LockedProperties: 
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
   m_LockedProperties: 
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
   m_LockedProperties: 
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
   m_LockedProperties: 
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
   m_LockedProperties: 
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
   m_LockedProperties: 
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         m_Texture: {fileID: 0}
-=======
         m_Texture: {fileID: 2800000, guid: 0930a3da78b5cbd428169d021d4f9d26, type: 3}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
         m_Texture: {fileID: 2800000, guid: dbb275e71a099c24d841165b7f1596d1, type: 3}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
         m_Texture: {fileID: 0}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
         m_Texture: {fileID: 0}
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
         m_Texture: {fileID: 0}
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
         m_Texture: {fileID: 0}
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -185,27 +74,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         m_Texture: {fileID: 0}
-=======
         m_Texture: {fileID: 2800000, guid: 626ae0701a0c10b4f83278c8ad5d33b5, type: 3}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
         m_Texture: {fileID: 0}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
         m_Texture: {fileID: 0}
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
         m_Texture: {fileID: 0}
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
         m_Texture: {fileID: 0}
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
@@ -217,167 +91,74 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
         m_Texture: {fileID: 2800000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
-========
         m_Texture: {fileID: 2800000, guid: 486b04940bb5f4b4dab1b4233ad796e1, type: 3}
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
-=======
         m_Texture: {fileID: 2800000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
-<<<<<<< HEAD
-=======
-<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 1/Tree 1 Mat.mat
         m_Texture: {fileID: 2800000, guid: 3d099ac7959bdb3488c11c0c2bc63e2f, type: 3}
-=======
-<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/MATERIAL/Material.mat
         m_Texture: {fileID: 2800000, guid: a8133ba6d27bc2c40b00579c9c971ecd, type: 3}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 3.mat
         m_Texture: {fileID: 8900000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-========
         m_Texture: {fileID: 2800000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-<<<<<<< HEAD
-<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: cb71793383bb2754c955cceeb16d9840, type: 3}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 6.mat
         m_Texture: {fileID: 8900000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
-=======
-<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 4.mat
-<<<<<<<< HEAD:Assets/Enemy Models/Fences/Materials/diff_fence_gate 4.mat
         m_Texture: {fileID: 8900000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
-========
         m_Texture: {fileID: 2800000, guid: 486b04940bb5f4b4dab1b4233ad796e1, type: 3}
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-========
         m_Texture: {fileID: 2800000, guid: d2ffbe8954bf63c4cacf99a77e542412, type: 3}
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-<<<<<<< HEAD
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 4f023762364b3e6479af341e55ac3fbc, type: 3}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
         m_Texture: {fileID: 0}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
         m_Texture: {fileID: 0}
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
         m_Texture: {fileID: 0}
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     m_Ints: []
-=======
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
     - _SpecGlossMap:
         m_Texture: {fileID: 2800000, guid: 4ea6d92845c998f4c9723b23b3724867, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
     m_Ints: []
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
     m_Ints: []
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
     m_Ints: []
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
     m_Ints: []
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     - _GlossMapScale: 1
-=======
     - _GlossMapScale: 0.194
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
     - _Glossiness: 0
-=======
     - _GlossMapScale: 0.567
     - _Glossiness: 0.5
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
     - _GlossMapScale: 1
     - _Glossiness: 0
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
     - _GlossMapScale: 1
     - _Glossiness: 0
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
     - _GlossMapScale: 1
     - _Glossiness: 0
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
     - _GlossMapScale: 1
     - _Glossiness: 0
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -389,56 +170,29 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
-=======
-<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 1/Tree 1 Mat.mat
     - _Color: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-========
     - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
-<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/MATERIAL/Material.mat
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-========
     - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
->>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
     - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
-=======
     - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
-<<<<<<<< HEAD:Assets/Village Enviroment/FantasyExteriors/Village & Towns/Meshes/Base/Core/3 wide/Materials/fe_village_CORE.mat
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-========
-    - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/Materials/diff_fence_gate.mat
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-  m_BuildTextureStacks: []
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
-=======
     - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
->>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+    - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness_4.tif.meta
 guid: 5934ad7694f0813478b47c01d037a6c7
-========
-guid: d2ffbe8954bf63c4cacf99a77e542412
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_gate.psd.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,8 +30,8 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 512
+  textureFormat: 1
+  maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
     filterMode: 1
@@ -67,13 +63,12 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness_4.tif.meta
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -88,9 +83,6 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
-========
-    maxTextureSize: 512
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_gate.psd.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -103,7 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -115,13 +107,8 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness_4.tif.meta
     buildTarget: Server
     maxTextureSize: 2048
-========
-    buildTarget: Android
-    maxTextureSize: 512
->>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_gate.psd.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
