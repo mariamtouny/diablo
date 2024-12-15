@@ -439,6 +439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SorcererPrefab Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6307070917912366784, guid: 05b6513870d758e4e95a92535e681699, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6686973782930576506, guid: 05b6513870d758e4e95a92535e681699, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -507,6 +511,11 @@ PrefabInstance:
 --- !u!1 &784975696 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6307070917912366784, guid: 05b6513870d758e4e95a92535e681699, type: 3}
+  m_PrefabInstance: {fileID: 784975695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &784975703 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6686973782930576506, guid: 05b6513870d758e4e95a92535e681699, type: 3}
   m_PrefabInstance: {fileID: 784975695}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &901959902 stripped
@@ -641,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63af61fb948e28c4ab4747cf3d42fd1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 784975703}
   offset: {x: 0, y: -1.18, z: -0.79}
   pitch: 1.5
   yawSpeed: 100

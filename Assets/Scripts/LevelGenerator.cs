@@ -144,7 +144,8 @@ public class LevelGenerator : MonoBehaviour
 
     GameObject GeneratePlayer()
     {
-        Vector3 playerPosition = new Vector3(0, 0, 0);
+        Vector3 playerPosition = new Vector3(-8.04875278f, -56.0999985f, 292.410797f);
+
         return Instantiate(playerPrefab, playerPosition, Quaternion.identity);
     }
 
