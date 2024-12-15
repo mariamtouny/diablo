@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using System;
 
 public class Enemy : MonoBehaviour
 {
@@ -17,18 +18,51 @@ public class Enemy : MonoBehaviour
     [SerializeField] public AudioClip deathSound;
     public AudioSource audioSource;
 
-    // Core Lifecycle Methods
+    // Camp reference
+    protected EnemyCamp parentCamp;
+
     public virtual void Start()
     {
         playerObject = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
-        // Basic initialization to be implemented by child classes
+        parentCamp = GetComponentInParent<EnemyCamp>();
+
+        if (parentCamp == null)
+        {
+            Debug.LogWarning($"No parent EnemyCamp found for {gameObject.name}!");
+        }
     }
 
     public virtual void Update()
     {
         // Basic update logic to be implemented by child classes
     }
+
+    // Check if player is within camp range
+    protected bool IsPlayerInCampRange()
+    {
+        if (parentCamp == null || playerObject == null) return false;
+
+        float distanceToPlayer = Vector3.Distance(parentCamp.transform.position, playerObject.position);
+        return distanceToPlayer <= parentCamp.campRange;
+    }
+
+    protected bool IsPlayerInAttackRange()
+    {
+        if (playerObject == null) return false;
+        float distanceToPlayer = Vector3.Distance(transform.position, playerObject.position);
+        return distanceToPlayer <= 3f;
+    }
+
+    // Check if player is within attack range
+    //protected bool IsPlayerInAttackRange()
+    //{
+    //    if (playerObject == null) return false;
+
+    //    float distanceToPlayer = Vector3.Distance(transform.position, playerObject.position);
+    //    return distanceToPlayer <= 2f; // Keep melee range constant
+    //}
+
 
     // Movement Methods
     public virtual void ApproachPlayer() { }

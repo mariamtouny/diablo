@@ -784,6 +784,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
+      propertyPath: m_TagString
+      value: Demon
+      objectReference: {fileID: 0}
     - target: {fileID: 5314731379862679534, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: m_LocalPosition.x
       value: -168.94635

@@ -8,6 +8,8 @@ TagManager:
   - Arrow
   - Fireball
   - Ground
+  - Demon
+  - Minion
   layers:
   - Default
   - TransparentFX
