@@ -14,11 +14,12 @@ public class CharacterSelect : MonoBehaviour
     public Image displayImage;
     public int selectedCharacter = 0;
     public TextMeshProUGUI characterNameText;
-    public string[] characterNames = { "Barbarian", "Sorcerer", "   Rogue" };
+    public string[] characterNames = { "Barbarian", "Sorcerer", "Rogue" };
 
     private void Start()
     {
         updateCharacterDisplay();
+       
     }
 
     public void NextCharacter()
@@ -49,7 +50,7 @@ public class CharacterSelect : MonoBehaviour
     public void StartGame()
     {
        PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("SampleScene");
     }
 }
 

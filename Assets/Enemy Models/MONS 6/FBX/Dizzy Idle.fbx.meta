@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64b65e10e0187d442bafb07df0639339
+guid: f3b196ccebc1a6645a3b6a1a9b9cf75b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,7 +33,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Stunned
+      name: STUNNED
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
