@@ -11,6 +11,7 @@ public class MinionController : Enemy
     private new float health = 20f;
     private bool isDying = false;
     private bool cooldown = false;
+    private bool isAttacking = false;
     private Vector3 startPosition;
     NavMeshAgent a;
     Animator n;
@@ -26,6 +27,7 @@ public class MinionController : Enemy
 
     public override void Update()
     {
+        if (isDying) return;
         if (!alert)
         {
             if (Vector3.Distance(transform.position, startPosition) < 1f)
@@ -46,13 +48,16 @@ public class MinionController : Enemy
         }
         else
         {
-            a.updateRotation = true;
-            a.isStopped = false;
-            ApproachPlayer();
-            if (!a.pathPending && a.remainingDistance < 1.7f)
+            if (!isAttacking)
             {
-                SetBoolsOff();
-                Attack(100);
+                a.updateRotation = true;
+                a.isStopped = false;
+                ApproachPlayer();
+                if (!a.pathPending && a.remainingDistance < 1.7f)
+                {
+                    SetBoolsOff();
+                    Attack(0);
+                }
             }
         }
         if (GetHealth() <= 0f && !isDying)
@@ -114,6 +119,7 @@ public class MinionController : Enemy
         if (!cooldown)
         {
             cooldown = true;
+            isAttacking = true;
             n.SetTrigger("attack");
             StartCoroutine(Reset());
             return wandererHealth - 5;
@@ -160,5 +166,6 @@ public class MinionController : Enemy
         n.SetBool("idle", true);
         yield return new WaitForSeconds(2f);
         cooldown = false;
+        isAttacking = false;
     }
 }
