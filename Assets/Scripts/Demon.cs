@@ -28,7 +28,8 @@ public class Demon : Enemy
 
         if (playerObject != null)
         {
-            player = playerObject.GetComponent<Barbarian>();
+            playerObject = GameObject.FindGameObjectWithTag("Player").transform;
+            //player = playerObject.GetComponent<Barbarian>();
         }
 
         CreatePatrolPoints();
@@ -57,23 +58,6 @@ public class Demon : Enemy
                     ApproachPlayer();
                 }
 
-                //if (IsPlayerInAttackRange())
-                //{
-                //    animator.SetBool("run", false);
-                //    animator.SetBool("walking", false);
-                //    if (!isAttacking & !cooldown)
-                //    {
-                //        StartCoroutine(AttackPattern());
-                //    }
-                //}
-                //else
-                //{
-                //    if (isAttacking)
-                //    {
-                //        StopAttacking();
-                //        ApproachPlayer();
-                //    }
-                //}
 
                 if (IsPlayerInAttackRange())
                 {
@@ -197,96 +181,7 @@ public class Demon : Enemy
             ApproachPlayer();
         }
     }
-    //IEnumerator AttackPattern()
-    //{
-    //    isAttacking = true;
-
-
-    //    if (Vector3.Distance(transform.position, playerObject.position) <= 3f && isAttacking )
-    //    {
-    //        if (!cooldown & currentAttack == 0)
-    //        {
-    //            cooldown = true;
-    //            currentAttack = 1;
-    //            SwordAttack();
-    //            StartCoroutine(Reset());
-    //            cooldown = false;
-    //        }
-
-    //        if (Vector3.Distance(transform.position, playerObject.position) > 3f) goto End;
-
-    //        if (!cooldown & currentAttack == 1)
-    //        {
-    //            cooldown = true;
-    //            currentAttack = 2;
-    //            SwordAttack();
-    //            StartCoroutine(Reset());
-    //            cooldown = false;
-    //        }
-
-    //        if (Vector3.Distance(transform.position, playerObject.position) > 3f) goto End;
-
-    //        if (!cooldown & currentAttack == 2)
-    //        {
-    //            cooldown = true;
-    //            BombAttack();
-    //            StartCoroutine(Reset());
-    //            cooldown = false;
-    //        }
-    //        yield return new WaitForSeconds(5f);
-
-    //        goto End;
-    //    }
-
-    //    End:
-
-    //    isAttacking = false;
-    //    currentAttack = 0;
-
-    //    // Only ApproachPlayer if player is still in range
-    //    float distanceToPlayer = Vector3.Distance(transform.position, playerObject.position);
-    //    if (distanceToPlayer <= 10f && distanceToPlayer > 2f && !isAttacking)
-    //    {
-    //        ApproachPlayer();
-    //    }
-    //}
-
-
-    //IEnumerator AttackPattern()
-    //{
-    //    isAttacking = true;
-
-    //    if (Vector3.Distance(transform.position, playerObject.position) <= 3f && isAttacking )
-    //    {
-    //        SwordAttack();
-    //        yield return new WaitForSeconds(5f);
-
-    //        if (Vector3.Distance(transform.position, playerObject.position) > 3f) goto End;
-
-    //        SwordAttack();
-    //        yield return new WaitForSeconds(5f);
-
-    //        if (Vector3.Distance(transform.position, playerObject.position) > 3f) goto End;
-
-    //        BombAttack();
-    //        yield return new WaitForSeconds(5f);
-
-    //        goto End;
-    //    }
-
-    //    isAttacking = false;
-
-    //    End:
-
-    //    isAttacking = false;
-
-    //    // Only ApproachPlayer if player is still in range
-    //    float distanceToPlayer = Vector3.Distance(transform.position, playerObject.position);
-    //    if (distanceToPlayer <= 10f && distanceToPlayer > 1f)
-    //    {
-    //        ApproachPlayer();
-    //    }
-    //}
+    
 
     void SwordAttack()
     {
@@ -336,7 +231,6 @@ public class Demon : Enemy
     {
         agent.isStopped = false; // Make sure the agent can move
         agent.SetDestination(playerObject.position);
-        animator.SetBool("isWalking", false);
         animator.SetBool("isIdle", false);
         if (playerObject)
         {
@@ -345,6 +239,12 @@ public class Demon : Enemy
             animator.SetInteger("attack", 0);
             alert = true;
         }
+    }
+
+    public override void GetStunned()
+    {
+        animator.SetTrigger("stunned");
+        StartCoroutine(Reset());
     }
 
     public override void Die()
@@ -389,11 +289,4 @@ public class Demon : Enemy
         }
     }
 
-    //public virtual IEnumerator Reset()
-    //{
-    //    animator.SetBool("IsIdle", true);
-    //    yield return new WaitForSeconds(5f);
-    //    animator.SetBool("IsIdle", false);
-    //    cooldown = false;
-    //}
 }

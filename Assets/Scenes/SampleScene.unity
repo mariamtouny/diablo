@@ -739,7 +739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   environmentPrefab: {fileID: 3053556898663338245, guid: f7ac106dbddb32540b21bcc5fd4a7c4c, type: 3}
   playerPrefab: {fileID: 8984351863353196830, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
-  minionPrefab: {fileID: 9022760808206912335, guid: 53885a6fa81036e4f8ee908cc2e05672, type: 3}
+  minionPrefab: {fileID: 4463323181988291306, guid: 274b612a09881bb488b29af57482cec1, type: 3}
   demonPrefab: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
   campShadowPrefab: {fileID: 573614792713930383, guid: f124fc1051b4d0a4db8898a97beea416, type: 3}
   potionPrefab: {fileID: 1000013317980782, guid: 2cf6690298568294cb6b655c0a3aeb87, type: 3}

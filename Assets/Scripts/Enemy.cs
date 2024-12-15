@@ -35,7 +35,6 @@ public class Enemy : MonoBehaviour
 
     public virtual void Update()
     {
-        // Basic update logic to be implemented by child classes
     }
 
     // Check if player is within camp range
