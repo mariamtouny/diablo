@@ -13,6 +13,8 @@ public class Demon : Enemy
 
     [SerializeField] private float patrolRadius = 5f; // Configurable patrol radius
 
+    private static Demon currentApproachingDemon = null; // Tracks the demon currently approaching the player
+    private bool isAttacking = false; // Tracks if the demon is currently attacking
 
     public override void Start()
     {
@@ -34,6 +36,8 @@ public class Demon : Enemy
 
         // Create patrol points
         CreatePatrolPoints();
+
+        StartPatrole();
     }
 
     void CreatePatrolPoints()
@@ -55,26 +59,62 @@ public class Demon : Enemy
         }
     }
 
-
     public override void Update()
     {
-        if (animator.GetBool("walking") && agent.remainingDistance < 0.5f)
+        if (playerObject != null && health > 0)
         {
-            if (!alert)
+            float distanceToPlayer = Vector3.Distance(transform.position, playerObject.position);
+
+            // Follow the player dynamically while within range (10 units)
+            if (distanceToPlayer <= 10f && currentApproachingDemon == null)
             {
-                Patrole();
+                currentApproachingDemon = this;
+                ApproachPlayer();
             }
-            else
+
+            // If already approaching the player, follow dynamically or attack
+            if (currentApproachingDemon == this)
             {
-                animator.SetBool("walking", false);
-                animator.SetBool("run", false);
-                animator.SetBool("isIdle", true);
+                // Follow the player's position
+                agent.SetDestination(playerObject.position);
+
+                if (distanceToPlayer <= 10f)
+                {
+                    ApproachPlayer();
+                }
+
+                // Stop and attack when within 1 unit
+                if (distanceToPlayer <= 1f)
+                {
+                    StopWalking();
+                    if (!isAttacking) StartCoroutine(AttackPattern());
+                }
+                else
+                {
+                    StopAttacking(); // Stop attack if the player moves away
+                    ApproachPlayer();
+                }
+
+                // If the player moves out of range, return to patrol
+                if (distanceToPlayer > 10f)
+                {
+                    StopAttacking();
+                    StopWalking();
+                    currentApproachingDemon = null;
+                    StartPatrole();
+                    Patrole();
+                }
+
+                return; // Exit Update to avoid interrupting follow/attack logic
             }
         }
-        if (Input.GetKeyDown(KeyCode.P))
+
+        // Patrol Logic: Only execute when not following the player
+        if (!alert && agent.remainingDistance < 0.5f)
         {
-            ApproachPlayer();
+            Patrole();
         }
+
         if (alert && agent.remainingDistance < 0.5f)
         {
             StartCoroutine(StopRunning());
@@ -87,28 +127,35 @@ public class Demon : Enemy
         {
             GetStunned();
         }
-        else if (Input.GetKeyDown(KeyCode.J))
+    }
+
+
+    IEnumerator AttackPattern()
+    {
+        isAttacking = true;
+
+        while (health > 0)
         {
             SwordAttack();
-        }
-        else if (Input.GetKeyDown(KeyCode.K))
-        {
+            yield return new WaitForSeconds(2f);
+
+            SwordAttack();
+            yield return new WaitForSeconds(2f);
+
             BombAttack();
+            yield return new WaitForSeconds(2f);
         }
-        else if (Input.GetKeyDown(KeyCode.W))
-        {
-            StartPatrole();
-        }
+
+        isAttacking = false;
     }
 
     void SwordAttack()
     {
         animator.SetBool("isIdle", false);
-        animator.SetBool("walking", false);
         animator.SetTrigger("attack1");
         StartCoroutine(Reset());
 
-        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 4f)
+        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 1f)
         {
             player.TakeDamage(10);
         }
@@ -117,13 +164,12 @@ public class Demon : Enemy
     void BombAttack()
     {
         animator.SetBool("isIdle", false);
-        animator.SetBool("walking", false);
         animator.SetTrigger("attack2");
         StartCoroutine(Reset());
 
-        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 8f)
+        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 1f)
         {
-            player.TakeDamage(10);
+            player.TakeDamage(15);
         }
     }
 
@@ -140,45 +186,8 @@ public class Demon : Enemy
     {
         animator.SetBool("isIdle", false);
         animator.SetInteger("attack", 0);
-        i = (i + 1) % Targets.Length;
+        i = (i + 1) % Targets.Length; // Continue patrol
         agent.SetDestination(Targets[i].position);
-    }
-
-    public override void GetStunned()
-    {
-        animator.SetBool("isIdle", false);
-        animator.SetTrigger("stunned");
-        StartCoroutine(Reset());
-    }
-
-    public override void TakeDamage()
-    {
-        animator.SetBool("isIdle", false);
-        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 1f)
-        {
-            animator.SetTrigger("damage");
-            health -= 5f;
-            if (health <= 0)
-            {
-                Die();
-            }
-            StartCoroutine(Reset());
-        }
-    }
-
-    public override void TakeDamage(int damage)
-    {
-        animator.SetBool("isIdle", false);
-        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 1f)
-        {
-            animator.SetTrigger("damage");
-            health -= 5f;
-            if (health <= 0)
-            {
-                Die();
-            }
-            StartCoroutine(Reset());
-        }
     }
 
     public override void ApproachPlayer()
@@ -186,31 +195,38 @@ public class Demon : Enemy
         animator.SetBool("isIdle", false);
         if (playerObject)
         {
-            agent.SetDestination(playerObject.position);
+            agent.SetDestination(playerObject.position); // Follow player's dynamic position
             animator.SetBool("run", true);
             animator.SetInteger("attack", 0);
             alert = true;
         }
     }
 
-    public override void Die()
+    public override IEnumerator Die()
     {
         animator.SetBool("isIdle", false);
         animator.SetTrigger("death");
         audioSource.PlayOneShot(deathSound);
-        StartCoroutine(Delay());
+
+        if (currentApproachingDemon == this)
+        {
+            currentApproachingDemon = null; // Release control so another demon can approach
+        }
+        yield return new WaitForSeconds(5.5f);
+        Destroy(gameObject);
     }
 
-    private IEnumerator StopWalking()
+    private void StopAttacking()
     {
-        yield return new WaitForSeconds(0.5f);
-        animator.SetBool("walking", false);
+        isAttacking = false; // Stop the attack coroutine
         animator.SetBool("isIdle", true);
+        StopAllCoroutines(); // Stop any ongoing coroutines
     }
 
-    private IEnumerator StopRunning()
+    private void StopWalking()
     {
-        yield return new WaitForSeconds(0.5f);
+        agent.isStopped = true; // Stop the NavMeshAgent
+        animator.SetBool("walking", false);
         animator.SetBool("run", false);
         animator.SetBool("isIdle", true);
     }

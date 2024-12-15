@@ -135,10 +135,11 @@ public class MinionController : Enemy
         StartCoroutine(Reset());
     }
 
-    public override void Die()
+    public override IEnumerator Die()
     {
         Destroy(gameObject);
         // add 10 to the wanderer xp
+        yield return null;
     }
 
     public override IEnumerator Reset()

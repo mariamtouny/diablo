@@ -10,7 +10,8 @@ public class Rogue : PlayerLeveling
     private Renderer renderer;
     Animator animator;
     Camera cam;
-    GameObject fireball;
+    public GameObject arrow;
+    private Vector3 scaleChange = new Vector3(1f, 1f, 1f);
 
     void Start()
     {
@@ -19,10 +20,7 @@ public class Rogue : PlayerLeveling
         cam = Camera.main;
         animator = GetComponent<Animator>();
         renderer = GetComponent<Renderer>();
-    }
-
-    private void Awake()
-    {
+    
         abilities = new List<ability>
         {
             new ability { abilityName = "Arrow", abilityType = ability.AbilityType.Basic, activation = ability.Activation.SelectEnemy, abilityDamage = 5, abilityCooldown = 1 },
@@ -33,14 +31,16 @@ public class Rogue : PlayerLeveling
 
         // Unlock the basic ability by default
         abilities[0].unlocked = true;
+        arrow.SetActive(false);
     }
 
     public void UseAbility(string abilityName)
     {
-        var ability = abilities.Find(a => a.abilityName == abilityName && a.unlocked);
-        if (ability == null)
+        ability ability = abilities.Find(a => a.abilityName == abilityName);
+        //Debug.Log(ability + " " + ability.abilityName + " " + ability.unlocked);
+        if (!ability.unlocked)
         {
-            Debug.Log($"{abilityName} is not unlocked or does not exist!");
+            Debug.Log($"{abilityName} is not unlocked!");
             return;
         }
 
@@ -61,7 +61,7 @@ public class Rogue : PlayerLeveling
             case "Dash":
                 PerformDash();
                 break;
-            case "Shower Of Arrows":
+            case "Shower of Arrows":
                 PerformShowerOfArrows();
                 break;
             default:
@@ -72,6 +72,118 @@ public class Rogue : PlayerLeveling
     private void PerformArrow()
     {
         Debug.Log("Arrow!");
+        StartCoroutine(Arrow());
+
+    }
+    private IEnumerator Arrow()
+    {
+        while (!Input.GetMouseButtonDown(1))
+        {
+            yield return null;
+        }
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            //Debug.Log(hit.collider.gameObject);
+            GameObject enemy = hit.collider.gameObject;
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5.0f);
+            foreach (Collider hitCollider in hitColliders)
+            {
+
+                if (hitCollider.gameObject == enemy)
+                {
+
+                    if (enemy.CompareTag("Demon"))
+                    {
+
+
+                        if (enemy != null)
+                        {
+                            //FaceTarget(enemy.transform);
+
+                            Vector3 direction = (enemy.transform.position - transform.position).normalized;
+                            //direction.y = 0; // We only want to rotate around the y-axis
+
+
+                            // Calculate the target rotation that looks towards the enemy
+                            Quaternion targetRotation = Quaternion.LookRotation(direction);
+
+                            // Rotate 60 degrees around the Y-axis
+                            Quaternion additionalRotation = Quaternion.Euler(0, 60, 0);
+                            Quaternion finalRotation = targetRotation * additionalRotation;
+
+                            // Smoothly interpolate to the final target rotation
+                            //transform.rotation = Quaternion.Slerp(transform.rotation, finalRotation, Time.deltaTime * 15f);
+
+                            animator.SetTrigger("Arrow");
+                            yield return new WaitForSeconds(1f);
+                            arrow.SetActive(true);
+                            Quaternion newRotation = Quaternion.Euler(90, 0, -15.58f);
+                            yield return new WaitForSeconds(1f);
+                            arrow.transform.rotation = newRotation;
+                            yield return new WaitForSeconds(1f);
+                            Vector3 position = transform.position;
+                            GameObject fball = Instantiate(arrow, new Vector3(position.x - 0.122494f, position.y + 1.13f, position.z ), Quaternion.identity);
+                            fball.transform.localScale += scaleChange;
+                            fball.transform.rotation = Quaternion.Euler(0, 90, 0);
+                            Vector3 demonhitpoint = enemy.transform.position + new Vector3(0, 2.25f, 0);
+                            StartCoroutine(MoveArrow(fball, demonhitpoint));
+                            arrow.SetActive(false);
+                            Quaternion oldRotation = Quaternion.Euler(0, 0, -15.58f);
+                            arrow.transform.rotation = oldRotation;
+                            Debug.Log("Mouse clicked!");
+
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+    private IEnumerator MoveArrow(GameObject Arrow, Vector3 targetPosition)
+    {
+        float speed = 5f; // Adjust the speed of the fireball
+        float journeyLength = Vector3.Distance(Arrow.transform.position, targetPosition);
+        float startTime = Time.time;
+
+        while (Vector3.Distance(Arrow.transform.position, targetPosition) > 0.1f)
+        {
+            // Calculate how far along the journey we are
+            float distCovered = (Time.time - startTime) * speed;
+            float fractionOfJourney = distCovered / journeyLength;
+
+            // Move the fireball towards the target
+            Arrow.transform.position = Vector3.Lerp(Arrow.transform.position, targetPosition, fractionOfJourney);
+            // Wait for the next frame
+            yield return null;
+        }
+
+        Collider[] colliders = Physics.OverlapSphere(Arrow.transform.position, 1f); // Radius 1
+
+        foreach (Collider collider in colliders)
+        {
+            Debug.Log("Overlap detected with: " + collider.gameObject.name);
+            if (collider.gameObject.CompareTag("Demon"))
+            {
+                Demon demon = collider.gameObject.GetComponentInParent<Demon>();
+                demon.TakeDamage(5);
+                GainXP(30);
+            }
+            else if (collider.gameObject.CompareTag("Minion"))
+            {
+                //Minion minion = collider.gameObject.GetComponent<Minion>();
+                //minion.TakeDamage(5);
+                GainXP(10);
+            }
+        }
+        // Optionally, you can destroy the fireball after it has moved
+        Destroy(Arrow);
     }
     private void PerformSmokeBomb()
     {
@@ -86,9 +198,83 @@ public class Rogue : PlayerLeveling
     private void PerformShowerOfArrows()
     {
         Debug.Log("Shower");
+        StartCoroutine(ShowerRoutine());
+
     }
-    void Update()
+
+    private IEnumerator ShowerRoutine()
+    {
+        Debug.Log("Select a point for Shower of arrows...");
+        while (!Input.GetMouseButtonDown(1))
+        {
+            yield return null;
+        }
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            Vector3 spawnPosition = hit.point;
+
+            
+            Debug.Log("Arrows raining at " + spawnPosition);
+
+            ApplyDamage(spawnPosition, 1.5f, 10);
+            Debug.Log("Shower of Arrows finished!");
+        }
+        else
+        {
+            Debug.Log("No valid point selected!");
+        }
+    }
+    private void ApplyDamage(Vector3 position, float radius, int damage)
     {
 
+        Debug.DrawLine(position, position + Vector3.up * radius, Color.red, 1f);
+        Debug.DrawLine(position, position - Vector3.up * radius, Color.red, 1f);
+        Vector3 spherePosition = position + Vector3.up * 2; // Adjust for height
+        Collider[] hitColliders = Physics.OverlapSphere(spherePosition, radius);
+
+        foreach (var hitCollider in hitColliders)
+        {
+            if (hitCollider.gameObject.CompareTag("Demon"))
+            {
+                Demon demon = hitCollider.gameObject.GetComponentInParent<Demon>();
+                demon.TakeDamage(10);
+                agent = hitCollider.gameObject.GetComponentInParent<NavMeshAgent>();
+                float speed = agent.speed;
+                StartCoroutine(SlowDown(agent, speed, 3f));
+
+            }
+            else if (hitCollider.gameObject.CompareTag("Minion"))
+            {
+                //Minion minion = collider.gameObject.GetComponent<Minion>();
+                //minion.TakeDamage(5);
+            }
+        }
+    }
+
+    private IEnumerator SlowDown(NavMeshAgent agent, float speed, float duration)
+    {
+        agent.speed = speed* 0.25f;
+        yield return new WaitForSeconds(duration);
+        agent.speed = speed;
+    }
+
+
+
+    void Update()
+    {
+        base.Update();
+       if (Input.GetKeyDown(KeyCode.Q))
+        {
+            UseAbility("Arrow");
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            UseAbility("Shower of Arrows");
+        }
     }
 }

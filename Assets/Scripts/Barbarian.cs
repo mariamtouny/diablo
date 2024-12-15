@@ -13,6 +13,7 @@ public class Barbarian : PlayerLeveling
     Animator animator;
     Camera cam;
     private float aoeRadius = 1.5f;
+    //private bool charge = false;
 
     private void Awake()
     {
@@ -159,7 +160,7 @@ public class Barbarian : PlayerLeveling
             {
                 if (hitCollider.gameObject==enemy)
                 {
-                    if (enemy.CompareTag("Enemy"))
+                    if (enemy.CompareTag("Demon"))
                     {
                         if (enemy != null)
                         {
@@ -167,6 +168,8 @@ public class Barbarian : PlayerLeveling
                             Debug.Log("Mouse clicked!");
                             agent.SetDestination(enemy.transform.position);
                             FaceTarget(enemy.transform);
+                            Demon demon = hitCollider.gameObject.GetComponentInParent<Demon>();
+                            demon.TakeDamage(5);
                         }
                     }
                 }
@@ -187,9 +190,10 @@ public class Barbarian : PlayerLeveling
             animator.SetTrigger("whirl");
             foreach (var hitCollider in hitColliders)
             {
-                if (hitCollider.CompareTag("Enemy"))
+                if (hitCollider.gameObject.CompareTag("Demon"))
                 {
-                    // Add damage logic here
+                    Demon demon = hitCollider.gameObject.GetComponentInParent<Demon>();
+                    demon.TakeDamage(10);
                     Debug.Log("Iron Maelstrom hits enemy!");
                 }
             }
@@ -216,24 +220,40 @@ public class Barbarian : PlayerLeveling
 
         if (Physics.Raycast(ray, out hit, 100))
         {
-
+            //charge = true;
             agent.SetDestination(hit.point);
 
             FaceTarget(hit.transform);
 
             animator.SetTrigger("Run");
+            StartCoroutine(UnCharge());
             Debug.Log("runs");
 
             agent.updateRotation = true;
-            Collider[] hitColliders = Physics.OverlapSphere(transform.position, aoeRadius);
-
-            foreach (Collider hitCollider in hitColliders)
-            {
-                //enemies taking damage here
-                     
-            }
+            
         }
 
+    }
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    Debug.Log("collision");
+    //    if (charge)
+    //    {
+    //        if (collision.gameObject.CompareTag("Demon"))
+    //        {
+    //            Demon demon = collision.gameObject.GetComponentInParent<Demon>();
+    //            StartCoroutine(demon.Die());
+    //            GainXP(30);
+    //        }
+    //    }
+    //}
+
+    public IEnumerator UnCharge()
+    {
+        yield return new WaitForSeconds(2f);
+        animator.SetTrigger("Run");
+        //charge = false;
     }
 
     private void PerformCharge()
