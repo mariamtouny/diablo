@@ -10,6 +10,7 @@ public class MinionController : Enemy
     public float speed = 1;
     private new float health = 20f;
     private bool isDying = false;
+    private bool cooldown = false;
     private Vector3 startPosition;
     NavMeshAgent a;
     Animator n;
@@ -48,7 +49,7 @@ public class MinionController : Enemy
             a.updateRotation = true;
             a.isStopped = false;
             ApproachPlayer();
-            if (!a.pathPending && a.remainingDistance < 2f && a.remainingDistance > 0f && a.velocity.sqrMagnitude == 0f)
+            if (!a.pathPending && a.remainingDistance < 1.7f)
             {
                 SetBoolsOff();
                 Attack(100);
@@ -60,7 +61,7 @@ public class MinionController : Enemy
             SetDying();
             SetBoolsOff();
             n.SetTrigger("die");
-            Invoke(nameof(Die), 1f);
+            Invoke(nameof(Death), 1f);
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -110,9 +111,16 @@ public class MinionController : Enemy
 
     public float Attack(float wandererHealth)
     {
-        n.SetTrigger("attack");
-        StartCoroutine(Reset());
-        return wandererHealth - 5;
+        if (!cooldown)
+        {
+            cooldown = true;
+            n.SetTrigger("attack");
+            StartCoroutine(Reset());
+            return wandererHealth - 5;
+        }
+            SetBoolsOff();
+            n.SetBool("idle", true);
+            return wandererHealth;
     }
 
     public override void ApproachPlayer()
@@ -135,16 +143,22 @@ public class MinionController : Enemy
         StartCoroutine(Reset());
     }
 
-    public override IEnumerator Die()
+    public void Death()
     {
         Destroy(gameObject);
-        // add 10 to the wanderer xp
+    }
+
+    public override IEnumerator Die()
+    {
+        Debug.Log("enemy died");
         yield return null;
     }
 
     public override IEnumerator Reset()
     {
-        yield return new WaitForSeconds(5f);
-        n.SetTrigger("break");
+        SetBoolsOff();
+        n.SetBool("idle", true);
+        yield return new WaitForSeconds(2f);
+        cooldown = false;
     }
 }
