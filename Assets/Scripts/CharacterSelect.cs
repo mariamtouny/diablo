@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
+
 
 [System.Serializable]
 public class CharacterSelect : MonoBehaviour
@@ -11,6 +13,8 @@ public class CharacterSelect : MonoBehaviour
     public Sprite[] characterSprites;
     public Image displayImage;
     public int selectedCharacter = 0;
+    public TextMeshProUGUI characterNameText;
+    public string[] characterNames = { "Barbarian", "Sorcerer", "   Rogue" };
 
     private void Start()
     {
@@ -40,6 +44,7 @@ public class CharacterSelect : MonoBehaviour
     private void updateCharacterDisplay()
     {
         displayImage.sprite = characterSprites[selectedCharacter];
+        characterNameText.text = characterNames[selectedCharacter];
     }
     public void StartGame()
     {
