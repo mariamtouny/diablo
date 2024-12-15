@@ -247,7 +247,42 @@ public class Demon : Enemy
         StartCoroutine(Reset());
     }
 
-    public override void Die()
+    //public override void Die()
+    //{
+    //    animator.SetBool("isIdle", false);
+    //    animator.SetTrigger("death");
+    //    audioSource.PlayOneShot(deathSound);
+
+    //    if (currentApproachingDemon == this)
+    //    {
+    //        currentApproachingDemon = null; // Release control so another demon can approach
+    //    }
+    //    StartCoroutine(Delay());
+    //    Destroy(gameObject);
+    //}
+
+    public override void TakeDamage()
+    {
+        animator.SetBool("isIdle", false);
+        animator.SetTrigger("damage");
+        health -= 5f;
+        if (health <= 0)
+        {
+            StartCoroutine(Die());
+        }
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        animator.SetBool("isIdle", false);
+        animator.SetTrigger("damage");
+        health -= damage;
+        if (health <= 0)
+        {
+            StartCoroutine(Die());
+        }
+    }
+    public override IEnumerator Die()
     {
         animator.SetBool("isIdle", false);
         animator.SetTrigger("death");
@@ -257,7 +292,7 @@ public class Demon : Enemy
         {
             currentApproachingDemon = null; // Release control so another demon can approach
         }
-        StartCoroutine(Delay());
+        yield return new WaitForSeconds(5.5f);
         Destroy(gameObject);
     }
 

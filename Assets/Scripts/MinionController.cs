@@ -136,8 +136,7 @@ public class MinionController : Enemy
             GetComponent<AudioSource>().Play();
             SetDying();
             SetBoolsOff();
-            n.SetTrigger("die");
-            Invoke(nameof(Death), 1f);
+            StartCoroutine(Die());
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -281,9 +280,26 @@ public class MinionController : Enemy
 
     public override void TakeDamage()
     {
+        SetBoolsOff();
         n.SetTrigger("damage");
         SetHealth(GetHealth() - 5f);
         StartCoroutine(Reset());
+        if (health <= 0)
+        {
+            StartCoroutine(Die());
+        }
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        SetBoolsOff();
+        n.SetTrigger("damage");
+        SetHealth(GetHealth() - damage);
+        StartCoroutine(Reset());
+        if (health <= 0)
+        {
+            StartCoroutine(Die());
+        }
     }
 
     public override void GetStunned()
@@ -292,20 +308,16 @@ public class MinionController : Enemy
         StartCoroutine(Reset());
     }
 
-    public void Death()
+    public override IEnumerator Die()
     {
+        n.SetTrigger("die");
         if (alert)
         {
             RemoveFromAlertedMinions();
         }
+        yield return new WaitForSeconds(5.5f);
         Destroy(gameObject);
     }
-
-    //public override IEnumerator Die()
-    //{
-    //    Debug.Log("enemy died");
-    //    yield return null;
-    //}
 
     public override IEnumerator Reset()
     {

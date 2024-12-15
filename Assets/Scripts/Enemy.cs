@@ -70,10 +70,10 @@ public class Enemy : MonoBehaviour
     public virtual void TakeDamage()
     {
         // Basic damage logic
-        health -= 5f;
+        health -= 5;
         if (health <= 0)
         {
-            Die();
+            StartCoroutine(Die());
         }
     }
 
@@ -83,7 +83,7 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            Die();
+            StartCoroutine(Die());
         }
     }
 
@@ -92,10 +92,10 @@ public class Enemy : MonoBehaviour
         // Basic stun logic
     }
 
-    public virtual void Die()
+    public virtual IEnumerator Die()
     {
-        // Basic death logic
-        Debug.Log("enemy died");
+        yield return new WaitForSeconds(5.5f);
+        Destroy(gameObject);
     }
 
     // Coroutines
