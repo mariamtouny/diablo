@@ -194,7 +194,7 @@ MonoBehaviour:
   abilityPoints: 0
   fireball: {fileID: 1579792872809178550}
   clonePrefab: {fileID: 3056538289296464794, guid: d09ce8f7f17f83641bcc9c2229631ac9, type: 3}
-  explosionPrefab: {fileID: 2012865289054322547, guid: 8dffa934a52bde949909ae1178089575, type: 3}
+  explosionPrefab: {fileID: 3268360135372085136, guid: 9b1981d791f5de642b47c836750c2dac, type: 3}
 --- !u!195 &7240055334353771643
 NavMeshAgent:
   m_ObjectHideFlags: 0
