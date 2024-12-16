@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   environmentPrefab: {fileID: 8058781032062967712, guid: 4efa8bcfb6bf7394c8be1ab830080364, type: 3}
-  playerPrefab: {fileID: 6307070917912366784, guid: 05b6513870d758e4e95a92535e681699, type: 3}
+  playerPrefab: {fileID: 8984351863353196830, guid: 0c5005530fa6fed48b26591906a2ba70, type: 3}
   minionPrefab: {fileID: 4463323181988291306, guid: 274b612a09881bb488b29af57482cec1, type: 3}
   demonPrefab: {fileID: 559670741228145182, guid: 608806a22ea7ef547960f6c34d20cafe, type: 3}
   campShadowPrefab: {fileID: 573614792713930383, guid: f124fc1051b4d0a4db8898a97beea416, type: 3}
@@ -1048,6 +1048,10 @@ PrefabInstance:
     - target: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794759809555920212, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
+      propertyPath: m_TagString
+      value: Demon
       objectReference: {fileID: 0}
     - target: {fileID: 5314731379862679534, guid: fcb88cadb56df8046bb16495ff1a6012, type: 3}
       propertyPath: m_LocalPosition.x

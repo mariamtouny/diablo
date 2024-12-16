@@ -1235,15 +1235,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6344267737925822773}
   serializedVersion: 2
-<<<<<<< HEAD
-  m_LocalRotation: {x: -0.18368287, y: 0.021037443, z: 0.29160455, w: 0.93850136}
-  m_LocalPosition: {x: 0, y: 0.014533905, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-=======
   m_LocalRotation: {x: 0.20959583, y: -0.67337346, z: 0.68776137, w: -0.17211081}
   m_LocalPosition: {x: -0.01671782, y: -0.008334074, z: 0.016953675}
   m_LocalScale: {x: 0.99999976, y: 0.9999997, z: 0.99999994}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4298425751815902255}
@@ -1339,15 +1333,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6898268483398658030}
   serializedVersion: 2
-<<<<<<< HEAD
-  m_LocalRotation: {x: 0.18368214, y: 0.021038458, z: 0.29160455, w: -0.9385015}
-  m_LocalPosition: {x: 0, y: 0.014533904, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-=======
   m_LocalRotation: {x: -0.20959592, y: -0.6733735, z: 0.6877613, w: 0.1721107}
   m_LocalPosition: {x: 0.01671782, y: -0.008334074, z: 0.016953675}
   m_LocalScale: {x: 0.9999994, y: 0.9999996, z: 0.99999964}
->>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4414400649234588287}
@@ -1860,7 +1848,7 @@ GameObject:
   - component: {fileID: 2349952523557718927}
   m_Layer: 0
   m_Name: Minion_Prefab
-  m_TagString: Untagged
+  m_TagString: Minion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
