@@ -2908,6 +2908,7 @@ MonoBehaviour:
   xpToNextLevel: 0
   abilityPoints: 0
   arrow: {fileID: 0}
+  smoke: {fileID: 0}
 --- !u!195 &3441358097887956238
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2918,7 +2919,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 7
   m_Acceleration: 99999
   avoidancePriority: 50
   m_AngularSpeed: 9999

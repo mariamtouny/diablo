@@ -28,12 +28,13 @@ public class LevelGenerator : MonoBehaviour
 
     // Fixed camp positions
     private Vector3[] campPositions = new Vector3[]
-    {
-        new Vector3(0, -90f, 50),      // Camp 1
-        new Vector3(150, -90f, 100),   // Camp 2
-        new Vector3(0, -90, 250),     // Camp 3
-        new Vector3(-250, -90, 200)   // Camp 4
-    };
+     {
+        new Vector3(150, -5.5f, 100),   // Camp 1
+        new Vector3(0, -3.5f, 50),      // Camp 2
+        new Vector3(0, -5, 250),     // Camp 3
+        new Vector3(-250, -7, 200)   // Camp 4
+     };
+
 
     // Fixed tree positions
     private Vector3[] treePositions = new Vector3[]
@@ -95,14 +96,14 @@ public class LevelGenerator : MonoBehaviour
     void Start()
     {
         GenerateMainEnvironment();
-        //GeneratePlayer();
+        GeneratePlayer();
         //SetupCamera(player);
         GenerateEnemyCamps();
         //GenerateBossArea();
         //GenerateTrees();
         //GenerateRocks();
         //GenerateHouses();
-        //BakeNavMesh();
+        BakeNavMesh();
     }
 
     void GenerateMainEnvironment()
