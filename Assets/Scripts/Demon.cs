@@ -189,7 +189,7 @@ public class Demon : Enemy
         animator.SetTrigger("attack1");
         StartCoroutine(Reset());
 
-        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 2f)
+        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 5f)
         {
             player.TakeDamage(10);
         }
@@ -201,7 +201,7 @@ public class Demon : Enemy
         animator.SetTrigger("attack2");
         StartCoroutine(Reset());
 
-        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 2f)
+        if (playerObject != null && Vector3.Distance(transform.position, playerObject.position) <= 7f)
         {
             player.TakeDamage(15);
         }

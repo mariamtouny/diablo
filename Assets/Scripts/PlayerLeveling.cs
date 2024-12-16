@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Playables;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerLeveling : MonoBehaviour
@@ -10,6 +11,7 @@ public class PlayerLeveling : MonoBehaviour
     public int maxHealth = 100;
     public int healingPotions = 0;
     public int maxHealingPotions = 3;
+    public GameObject GameOverPanel;
 
     public int currentXP = 0;
     public int currentLevel = 1;
@@ -108,7 +110,9 @@ public class PlayerLeveling : MonoBehaviour
 
     public void Die()
     {
-        //gameOver
+        // Time.timescale = 0f;
+        GameOverPanel.SetActive(true);
+
     }
 
     public void UnlockAbility(int abilityIndex)

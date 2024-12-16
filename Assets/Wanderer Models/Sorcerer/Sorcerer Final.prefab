@@ -186,6 +186,7 @@ MonoBehaviour:
   maxHealth: 100
   healingPotions: 0
   maxHealingPotions: 3
+  GameOverPanel: {fileID: 1688620485523428671, guid: e945b51c9fcda63449bab4ec9ce05b1b, type: 3}
   currentXP: 0
   currentLevel: 1
   maxLevel: 4

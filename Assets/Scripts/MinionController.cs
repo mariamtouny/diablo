@@ -6,8 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class MinionController : Enemy
 {
-    public float speed = 1;
-    private new float health = 20f;
+    public float speed = 2;
     private bool isDying = false;
     private bool cooldown = false;
     private bool isAttacking = false;
@@ -27,7 +26,7 @@ public class MinionController : Enemy
         startPosition = transform.position;
         a.speed = speed * Time.deltaTime * 100;
         a.isStopped = false;
-
+        health = 20f;
         if (playerObject != null)
         {
             playerObject = GameObject.FindGameObjectWithTag("Player").transform;
@@ -36,6 +35,7 @@ public class MinionController : Enemy
 
     public override void Update()
     {
+        base.Update();
         if (isDying) return;
 
         bool wasAlerted = alert;
@@ -282,8 +282,8 @@ public class MinionController : Enemy
     {
         SetBoolsOff();
         n.SetTrigger("damage");
-        SetHealth(GetHealth() - 5f);
-        StartCoroutine(Reset());
+        health -= 5;
+        //StartCoroutine(Reset());
         if (health <= 0)
         {
             StartCoroutine(Die());
@@ -294,8 +294,8 @@ public class MinionController : Enemy
     {
         SetBoolsOff();
         n.SetTrigger("damage");
-        SetHealth(GetHealth() - damage);
-        StartCoroutine(Reset());
+        health-=damage;
+        //StartCoroutine(Reset());
         if (health <= 0)
         {
             StartCoroutine(Die());
@@ -315,7 +315,7 @@ public class MinionController : Enemy
         {
             RemoveFromAlertedMinions();
         }
-        yield return new WaitForSeconds(5.5f);
+        yield return new WaitForSeconds(2.5f);
         Destroy(gameObject);
     }
 

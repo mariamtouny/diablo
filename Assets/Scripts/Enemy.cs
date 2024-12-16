@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public bool alert = false;
 
     // Health and Attack Variables
-    public float health = 40f;
+    public float health;
     public float currentAttack = 0;
 
     // Audio Variables

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7925e36133e71d488f70c496dc9d601
+guid: 6821a41337d4ba64e844f4e7d9c1dbaa
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ball
-    second: {fileID: 2100000, guid: 9d181445f36c7be4aa22693f7386f38a, type: 2}
+    second: {fileID: 2100000, guid: 2145b3859aa67314e8ccd81e6cf510be, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Demon
-    second: {fileID: 2100000, guid: 9835f6dd3bbf2a740b24471abd86ae40, type: 2}
+    second: {fileID: 2100000, guid: 45fa0126f1c99894c91c87edcc486b37, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -24,7 +24,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 1
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -34,7 +34,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -163,7 +163,7 @@ ModelImporter:
       takeName: Demon|Get-damage
       internalID: -922236753715791470
       firstFrame: 0
-      lastFrame: 121
+      lastFrame: 32
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -199,7 +199,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -228,7 +228,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -337,7 +337,7 @@ ModelImporter:
       takeName: Demon|Punch1
       internalID: 5825753709171574083
       firstFrame: 0
-      lastFrame: 20
+      lastFrame: 19
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -431,7 +431,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -857,15 +857,15 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 0
+  importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

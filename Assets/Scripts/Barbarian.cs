@@ -12,7 +12,7 @@ public class Barbarian : PlayerLeveling
     private Renderer renderer;
     Animator animator;
     Camera cam;
-    private float aoeRadius = 1.5f;
+    private float aoeRadius = 5f;
     //private bool charge = false;
 
     private void Awake()
@@ -150,7 +150,11 @@ public class Barbarian : PlayerLeveling
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
+        Debug.DrawRay(ray.origin, ray.direction * 100, Color.red, 2f);
 
+        // Log hitting directly
+        bool isHit = Physics.Raycast(ray, out hit, 100);
+        Debug.Log("Raycast Hit: " + isHit + " Collider: " + hit.collider.gameObject);
         if (Physics.Raycast(ray, out hit, 100))
         {
             GameObject enemy = hit.collider.gameObject;
@@ -162,15 +166,26 @@ public class Barbarian : PlayerLeveling
                 {
                     if (enemy.CompareTag("Demon"))
                     {
-                        if (enemy != null)
-                        {
+                        
                             animator.SetTrigger("Bash");
                             Debug.Log("Mouse clicked!");
                             agent.SetDestination(enemy.transform.position);
                             FaceTarget(enemy.transform);
                             Demon demon = hitCollider.gameObject.GetComponentInParent<Demon>();
                             demon.TakeDamage(5);
-                        }
+                        
+                    }
+
+                    if (enemy.CompareTag("Minion"))
+                    {
+                        
+                            animator.SetTrigger("Bash");
+                            Debug.Log("Mouse clicked!");
+                            agent.SetDestination(enemy.transform.position);
+                            FaceTarget(enemy.transform);
+                            MinionController minion = hitCollider.gameObject.GetComponent<MinionController>();
+                            minion.TakeDamage(5);
+                        
                     }
                 }
             }

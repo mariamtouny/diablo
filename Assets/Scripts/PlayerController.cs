@@ -33,12 +33,12 @@ public class PlayerController : MonoBehaviour
             RaycastHit hit;
             //Debug.DrawRay(ray.origin, ray.direction * 100, Color.red, 2f);
 
-            // Log hitting directly
+            //// Log hitting directly
             //bool isHit = Physics.Raycast(ray, out hit, 100);
             //Debug.Log("Raycast Hit: " + isHit + " Collider: " + hit.collider);
             if (Physics.Raycast(ray, out hit, 100, movementMask))
             {            
-                //Debug.Log(hit.transform.position);
+                Debug.Log(hit.transform.position);
                 motor.MoveToPoint(hit.point);
                 anim.SetBool("isWalking", true);
                 agent.updateRotation = true;
