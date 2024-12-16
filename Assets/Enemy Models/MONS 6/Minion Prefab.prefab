@@ -1080,18 +1080,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 4463323181988291306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a0773037c30b44ba8666b5fb84ed0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 4440aaf2088448248a2b58305d1c0121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
-  agent: {fileID: 2606824919197292191}
-  animator: {fileID: 5296790164966357951}
+  agent: {fileID: 0}
+  animator: {fileID: 0}
   alert: 0
   health: 40
   currentAttack: 0
-  deathSound: {fileID: 8300000, guid: d3845e7013eb9cf48b3408522bec278a, type: 3}
-  audioSource: {fileID: 8026454611494059800}
-  player: {fileID: 0}
+  deathSound: {fileID: 0}
+  audioSource: {fileID: 0}
   speed: 1
 --- !u!195 &2606824919197292191
 NavMeshAgent:

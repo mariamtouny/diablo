@@ -181,7 +181,7 @@ public class Demon : Enemy
             ApproachPlayer();
         }
     }
-    
+
 
     void SwordAttack()
     {
@@ -235,7 +235,7 @@ public class Demon : Enemy
         if (playerObject)
         {
             agent.SetDestination(playerObject.position);
-            animator.SetBool("run",true);
+            animator.SetBool("run", true);
             animator.SetInteger("attack", 0);
             alert = true;
         }

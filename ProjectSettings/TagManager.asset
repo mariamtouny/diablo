@@ -9,10 +9,7 @@ TagManager:
   - Fireball
   - Ground
   - Demon
-<<<<<<< HEAD
-=======
   - Minion
->>>>>>> origin/EnemiesDONE
   layers:
   - Default
   - TransparentFX
