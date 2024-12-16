@@ -9,6 +9,7 @@ TagManager:
   - Fireball
   - Ground
   - Demon
+  - Minion
   layers:
   - Default
   - TransparentFX

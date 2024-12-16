@@ -88,6 +88,54 @@ public class Sorcerer : PlayerLeveling
     private void PerformClone()
     {
         Debug.Log("Clone!");
+        StartCoroutine(CloneRoutine());
+    }
+
+    private IEnumerator CloneRoutine()
+    {
+        Debug.Log("Select a point to spawn the clone...");
+
+        // Wait for user to select a position
+        while (!Input.GetMouseButtonDown(1))
+        {
+            yield return null;
+        }
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            Vector3 spawnPosition = hit.point;
+            GameObject clone = Instantiate(gameObject, spawnPosition, Quaternion.identity); // Create a clone
+            NavMeshAgent cloneAgent = clone.GetComponent<NavMeshAgent>();
+
+            // Adjust clone properties to differentiate it
+            Renderer cloneRenderer = clone.GetComponent<Renderer>();
+            if (cloneRenderer != null)
+            {
+                cloneRenderer.material.color = new Color(0.5f, 0.5f, 1.0f); // Give the clone a blue tint
+            }
+
+            // Disable specific behaviors in the clone, e.g., abilities (optional)
+            Sorcerer cloneSorcerer = clone.GetComponent<Sorcerer>();
+            if (cloneSorcerer != null)
+            {
+                cloneSorcerer.enabled = false; // Disable abilities on the clone
+            }
+
+            Debug.Log("Clone spawned at " + spawnPosition);
+
+            // Optional: Make the clone follow a specific target or wander
+            StartCoroutine(CloneBehaviorRoutine(clone, cloneAgent));
+
+            // Destroy the clone after a duration
+            Destroy(clone, 10f); // Clone exists for 10 seconds
+        }
+        else
+        {
+            Debug.Log("No valid point selected for the clone!");
+        }
     }
 
     private void PerformInferno()

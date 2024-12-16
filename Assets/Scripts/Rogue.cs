@@ -203,7 +203,7 @@
                 smokeCircle.transform.localScale = new Vector3(1.5f * 2, 0.1f, 1.5f * 2);
                 Debug.Log("Smoke Bomb detonated");
 
-                ApplyStun(transform.position, 1.5f, 10);
+                ApplyStun(transform.position, 5f, 10);
 
 
                 Destroy(smokeCircle, 5f);
@@ -219,14 +219,16 @@
 
             foreach (var hitCollider in hitColliders)
             {
+            Debug.Log(hitCollider.gameObject);
                 if (hitCollider.gameObject.CompareTag("Demon"))
                 {
+
                     Demon demon = hitCollider.gameObject.GetComponentInParent<Demon>();
                     demon.GetStunned();
                 }
                 else if (hitCollider.gameObject.CompareTag("Minion"))
                 {
-                    MinionController minion = hitCollider.gameObject.GetComponentInParent<MinionController>(); 
+                    MinionController minion = hitCollider.gameObject.GetComponent   <MinionController>(); 
                     minion.GetStunned();
                 }
             }
