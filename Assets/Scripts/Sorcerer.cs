@@ -12,7 +12,8 @@ public class Sorcerer : PlayerLeveling
     public GameObject fireball;
     private Vector3 scaleChange = new Vector3(-0.6f, -0.6f, -0.6f);
     private Vector3 positionChange = new Vector3(0.0f, 0.0f, 5.0f);
-
+    public GameObject clonePrefab;
+    public GameObject explosionPrefab;
 
 
     void Start()
@@ -107,37 +108,78 @@ public class Sorcerer : PlayerLeveling
         if (Physics.Raycast(ray, out hit, 100))
         {
             Vector3 spawnPosition = hit.point;
-            GameObject clone = Instantiate(gameObject, spawnPosition, Quaternion.identity); // Create a clone
+            GameObject clone = Instantiate(clonePrefab, spawnPosition, Quaternion.identity);
             NavMeshAgent cloneAgent = clone.GetComponent<NavMeshAgent>();
 
-            // Adjust clone properties to differentiate it
             Renderer cloneRenderer = clone.GetComponent<Renderer>();
             if (cloneRenderer != null)
             {
-                cloneRenderer.material.color = new Color(0.5f, 0.5f, 1.0f); // Give the clone a blue tint
+                cloneRenderer.material.color = new Color(1.5f, 0.5f, 0.5f); 
             }
 
-            // Disable specific behaviors in the clone, e.g., abilities (optional)
-            Sorcerer cloneSorcerer = clone.GetComponent<Sorcerer>();
-            if (cloneSorcerer != null)
-            {
-                cloneSorcerer.enabled = false; // Disable abilities on the clone
-            }
+            Debug.Log("modifying");
+
+            string originalTag = gameObject.tag;
+            gameObject.tag = "PlayerTemporary";
+
+            //Sorcerer cloneSorcerer = clone.GetComponent<Sorcerer>();
+            //if (cloneSorcerer != null)
+            //{
+            //    cloneSorcerer.enabled = false;
+            //}
 
             Debug.Log("Clone spawned at " + spawnPosition);
 
             // Optional: Make the clone follow a specific target or wander
             //StartCoroutine(CloneBehaviorRoutine(clone, cloneAgent));
 
-            // Destroy the clone after a duration
-            Destroy(clone, 10f); // Clone exists for 10 seconds
+            StartCoroutine(DestroyCloneAfterDuration(clone, 5f, originalTag));
         }
         else
         {
             Debug.Log("No valid point selected for the clone!");
         }
     }
+    private IEnumerator DestroyCloneAfterDuration(GameObject clone, float duration, string originalTag)
+    {
+        yield return new WaitForSeconds(duration);
 
+        if (clone != null)
+        {
+            Debug.Log("Clone exploded!");
+            Explode(clone.transform.position, 5f);
+            Destroy(clone);
+        }
+
+        gameObject.tag = originalTag;
+    }
+
+    private void Explode(Vector3 position, float radius)
+    {
+        GameObject explosionEffect = Instantiate(explosionPrefab, position, Quaternion.identity);
+        Destroy(explosionEffect, 2f);
+
+        Collider[] hitColliders = Physics.OverlapSphere(position, radius);
+
+        foreach (Collider hit in hitColliders)
+        {
+            if (hit.CompareTag("Demon"))
+            {
+                Demon demon = hit.GetComponentInParent<Demon>();
+                if (demon != null)
+                {
+                    demon.TakeDamage(10);
+                    Debug.Log("Damaged enemy: " + hit.name);
+                }
+            }
+            if (hit.CompareTag("Minion"))
+            {
+                MinionController minion = hit.GetComponent<MinionController>();
+                minion.TakeDamage(10);
+                Debug.Log("Damaged minion: " + hit.name);
+            }
+        }
+    }
     private void PerformInferno()
     {
         if (abilities[3].unlocked && !abilities[3].IsOnCoolDown())
@@ -238,6 +280,12 @@ public class Sorcerer : PlayerLeveling
         if (Input.GetKeyDown(KeyCode.F))
         {
             PerformFireball();
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            PerformClone();
         }
 
     }
