@@ -13,8 +13,11 @@
         public GameObject arrow;
         private Vector3 scaleChange = new Vector3(1f, 1f, 1f);
         public GameObject smoke;
+        private bool isDashing = false;
+        private Vector3 dashTarget;
 
-        void Start()
+
+    void Start()
         {
             base.Start();
             agent = GetComponent<NavMeshAgent>();
@@ -237,6 +240,44 @@
     private void PerformDash()
     {
         Debug.Log("Dashing!");
+        if (isDashing)
+            return;
+
+        StartCoroutine(DashRoutine());
+    }
+
+    private IEnumerator DashRoutine()
+    {
+        while (!Input.GetMouseButtonDown(1))
+        {
+            yield return null;
+        }
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            dashTarget = hit.point;
+            isDashing = true;
+            agent.speed *= 2;
+
+            animator.SetBool("isRunning", true);
+
+            while (Vector3.Distance(transform.position, dashTarget) > 0.1f)
+            {
+                agent.SetDestination(dashTarget);
+                yield return null;
+            }
+
+            agent.speed /= 2;
+            isDashing = false;
+            animator.SetBool("isRunning", false);
+        }
+        else
+        {
+            Debug.Log("No valid point selected for the dash!");
+        }
     }
 
     private void PerformShowerOfArrows()
@@ -324,6 +365,11 @@
         if(Input.GetKeyDown(KeyCode.Space))
         {
             UseAbility("Smoke Bomb");
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            UseAbility("Dash");
         }
     }
 }
