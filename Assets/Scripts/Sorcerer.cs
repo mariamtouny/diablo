@@ -127,7 +127,7 @@ public class Sorcerer : PlayerLeveling
             Debug.Log("Clone spawned at " + spawnPosition);
 
             // Optional: Make the clone follow a specific target or wander
-            StartCoroutine(CloneBehaviorRoutine(clone, cloneAgent));
+            //StartCoroutine(CloneBehaviorRoutine(clone, cloneAgent));
 
             // Destroy the clone after a duration
             Destroy(clone, 10f); // Clone exists for 10 seconds

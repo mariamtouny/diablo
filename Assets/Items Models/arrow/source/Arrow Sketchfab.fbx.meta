@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: blinn1
-    second: {fileID: 2100000, guid: f137aec13c3d1074abab185fb311ccec, type: 2}
+    second: {fileID: 2100000, guid: 13f93b8b9fbe93d439b4f022b6eca99a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
