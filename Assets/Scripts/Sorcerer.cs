@@ -206,11 +206,11 @@ public class Sorcerer : PlayerLeveling
 
             GameObject fireCircle = Instantiate(fireball, spawnPosition, Quaternion.identity);
             fireCircle.SetActive(true);
-            fireCircle.transform.localScale = new Vector3(1.5f * 2, 0.1f, 1.5f * 2);
+            fireCircle.transform.localScale = new Vector3(5f * 2, 1f, 5f * 2);
             Destroy(fireCircle, 5f);
             Debug.Log("Inferno spawned at " + spawnPosition);
 
-            ApplyDamage(spawnPosition, 1.5f, 10);
+            ApplyDamage(spawnPosition, 5f, 10);
 
             StartCoroutine(ContinuousDamage(spawnPosition, 2f, 2, 5f));
 
