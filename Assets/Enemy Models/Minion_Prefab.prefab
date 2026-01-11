@@ -90,7 +90,8 @@ Transform:
   m_LocalPosition: {x: 0.0000000021792947, y: 0.009580788, z: 0.000000001899898}
   m_LocalScale: {x: 0.99999976, y: 0.9999998, z: 1.0000006}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2204400688492851748}
   m_Father: {fileID: 6650631003158757684}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &301976981798978482
@@ -346,7 +347,8 @@ Transform:
   m_LocalPosition: {x: -0.0000000023469329, y: 0.009580785, z: -5.587935e-10}
   m_LocalScale: {x: 0.9999999, y: 1.0000001, z: 1.0000005}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5726249117199678483}
   m_Father: {fileID: 6162812658790830937}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1220385310937389376
@@ -603,8 +605,6 @@ Transform:
   - {fileID: 6590206463206306049}
   - {fileID: 4571409023910210932}
   - {fileID: 6912959118268872570}
-  - {fileID: 5726249117199678483}
-  - {fileID: 2204400688492851748}
   - {fileID: 5288156513823188340}
   - {fileID: 6310429918197531842}
   - {fileID: 482989979158686275}
@@ -1244,7 +1244,7 @@ Transform:
   - {fileID: 7447455802651738603}
   - {fileID: 5238147279391480578}
   - {fileID: 766317874773020690}
-  m_Father: {fileID: 3544675397520377367}
+  m_Father: {fileID: 6218600654199123732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6526477976182997960
 GameObject:
@@ -1342,7 +1342,7 @@ Transform:
   - {fileID: 1408076126279948606}
   - {fileID: 747123281262143912}
   - {fileID: 8363310578550561091}
-  m_Father: {fileID: 3544675397520377367}
+  m_Father: {fileID: 630049292436209410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7174208051947672285
 GameObject:
@@ -1848,7 +1848,7 @@ GameObject:
   - component: {fileID: 2349952523557718927}
   m_Layer: 0
   m_Name: Minion_Prefab
-  m_TagString: Untagged
+  m_TagString: Minion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

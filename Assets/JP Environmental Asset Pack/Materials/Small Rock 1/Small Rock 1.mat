@@ -7,7 +7,31 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Small Rock 1/Small Rock 1.mat
   m_Name: Small Rock 1
+========
+  m_Name: diff_fence_column
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
+=======
+  m_Name: Small Rock 1
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  m_Name: Small Rock 1
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  m_Name: Small Rock 1
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_Name: Small Rock 1
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_Name: Small Rock 1
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 4
@@ -40,7 +64,31 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Small Rock 1/Small Rock 1.mat
         m_Texture: {fileID: 2800000, guid: dd7f72b756861d2419b8fff498140741, type: 3}
+========
+        m_Texture: {fileID: 2800000, guid: 486b04940bb5f4b4dab1b4233ad796e1, type: 3}
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
+=======
+        m_Texture: {fileID: 2800000, guid: dd7f72b756861d2419b8fff498140741, type: 3}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+        m_Texture: {fileID: 2800000, guid: dd7f72b756861d2419b8fff498140741, type: 3}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+        m_Texture: {fileID: 2800000, guid: dd7f72b756861d2419b8fff498140741, type: 3}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+        m_Texture: {fileID: 2800000, guid: dd7f72b756861d2419b8fff498140741, type: 3}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+        m_Texture: {fileID: 2800000, guid: dd7f72b756861d2419b8fff498140741, type: 3}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -73,5 +121,36 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Small Rock 1/Small Rock 1.mat
     - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+========
+    - _Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Enemy Models/Fences/Materials/diff_fence_column.mat
+=======
+    - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    - _Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d

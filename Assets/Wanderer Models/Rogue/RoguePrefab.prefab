@@ -2734,6 +2734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7452341251203137913}
   - component: {fileID: 3570268422091168515}
+  - component: {fileID: -7177592025664798161}
   m_Layer: 0
   m_Name: RoguePrefab
   m_TagString: Untagged
@@ -2773,7 +2774,7 @@ Animator:
   m_GameObject: {fileID: 7793435512462924739}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 14fd341493fac1348a57e53fc2e76427, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 244542d05c35fbd45adba0c03d7e7fb7, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2784,6 +2785,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-7177592025664798161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793435512462924739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a00e77ca9338af459bb866a3e650b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilities: []
+  currentHealth: 0
+  maxHealth: 100
+  healingPotions: 0
+  maxHealingPotions: 3
+  currentXP: 0
+  currentLevel: 1
+  maxLevel: 4
+  xpToNextLevel: 0
+  abilityPoints: 0
+  arrow: {fileID: 0}
 --- !u!1 &7964861574113480679
 GameObject:
   m_ObjectHideFlags: 0

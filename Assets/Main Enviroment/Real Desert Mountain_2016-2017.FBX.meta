@@ -3,7 +3,12 @@ guid: 072b2e0e2264a4d4d8e641ac12b23aca
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Real Desert Mountain
+    second: {fileID: 2100000, guid: 85a81f54e01a931429128da3df2d569a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -1,9 +1,46 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Enemy Models/Fences/diff_fence_gate.psd.meta
 guid: d2ffbe8954bf63c4cacf99a77e542412
+========
+guid: 2b4fd1f80e9b39b4494b0cdf13a885b2
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/textures/Arrow_metal_Albedo.png.meta
+=======
+guid: d2ffbe8954bf63c4cacf99a77e542412
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse_4.tif.meta
+guid: 0a346981946da4c45a5149c185ed16d3
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness_4.tif.meta
+guid: 5934ad7694f0813478b47c01d037a6c7
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+<<<<<<<< HEAD:Assets/DungeonModularPack/Textures/T_Handrail_C.tga.meta
+guid: ff4e33b57398d794c9a62a93d9d8d68c
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+========
+guid: d2ffbe8954bf63c4cacf99a77e542412
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_gate.psd.meta
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+<<<<<<< HEAD
+  serializedVersion: 12
+<<<<<<< HEAD
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  serializedVersion: 13
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -69,7 +106,39 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     maxTextureSize: 512
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse_4.tif.meta
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness_4.tif.meta
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+========
+    maxTextureSize: 512
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_gate.psd.meta
+<<<<<<< HEAD
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    maxTextureSize: 512
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -93,9 +162,34 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+  - serializedVersion: 3
+<<<<<<< HEAD
+<<<<<<< HEAD
+    buildTarget: Android
+    maxTextureSize: 512
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Diffuse_4.tif.meta
+=======
+<<<<<<<< HEAD:Assets/Enemy Models/MONS 6/TEXTURES/T_MONS6_Glossiness_4.tif.meta
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+    buildTarget: Server
+    maxTextureSize: 2048
+========
+    buildTarget: Android
+    maxTextureSize: 512
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_gate.psd.meta
+<<<<<<< HEAD
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+<<<<<<<< HEAD:Assets/DungeonModularPack/Textures/T_Handrail_C.tga.meta
+========
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 512
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -106,6 +200,10 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+=======
+>>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d:Assets/Enemy Models/Fences/diff_fence_gate.psd.meta
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   spriteSheet:
     serializedVersion: 2
     sprites: []

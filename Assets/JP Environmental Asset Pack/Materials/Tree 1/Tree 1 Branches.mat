@@ -7,7 +7,27 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 1/Tree 1 Branches.mat
   m_Name: Tree 1 Branches
+========
+  m_Name: blinn2
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/blinn2.mat
+=======
+  m_Name: Tree 1 Branches
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+  m_Name: Tree 1 Branches
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_Name: Tree 1 Branches
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+  m_Name: Tree 1 Branches
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -69,7 +89,27 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 1/Tree 1 Branches.mat
     - _Glossiness: 0.277
+========
+    - _Glossiness: 0.14671333
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/blinn2.mat
+=======
+    - _Glossiness: 0.277
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    - _Glossiness: 0.277
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    - _Glossiness: 0.277
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    - _Glossiness: 0.277
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
     - _GlossyReflections: 1
     - _Metallic: 0.327
     - _Mode: 1
@@ -81,6 +121,31 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/JP Environmental Asset Pack/Materials/Tree 1/Tree 1 Branches.mat
     - _Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+========
+    - _Color: {r: 0.6624204, g: 0.6624204, b: 0.6624204, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+>>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6:Assets/Items Models/arrow/source/blinn2.mat
+=======
+    - _Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> d469a7ef73a6f0b749da8f70ec6bf505f4ce1ed6
+=======
+    - _Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    - _Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
+=======
+    - _Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> 425f62003e3c212f09c0399d45f61408f2aff59d
   m_BuildTextureStacks: []
